@@ -1,13 +1,14 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource          ../../tests/Log_Out/LogOut_TC001_Test.robot
+Resource         ../../pages/Login/Login_TC001_Pages.robot
+Resource          ../../pages/Login/Login_TC003_Pages.robot
+Resource          ../../pages/Log_Out/LogOut_TC001_Pages.robot
+
 
 *** Keywords ***
-Login to ubykotex
+Login to Thinx
 	Login Page Opened
-	Click Accept Cookies Button
 	Enter Username      ${user}
     Enter Password      ${pwd}
-	Click On SignIn Button
-	Click On Dropdown And Sign Out
+	Validate clicked Logout CTA to Logout
 	Validate landed on home page after logged out
