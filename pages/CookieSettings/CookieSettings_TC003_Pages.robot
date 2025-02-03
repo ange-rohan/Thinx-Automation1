@@ -3,10 +3,10 @@ Library     SeleniumLibrary
 Resource          ../../pages/CookieSettings/CookieSettings_TC002_Pages.robot
 
 *** Variables ***
-${PerformanceCookieToggleBtn}       //*[@id="ot-pc-content"]/section/div[2]/div[1]/div[2]/label/span[1]
-${FunctionalCookieToggleBtn}        //*[@id="ot-pc-content"]/section/div[3]/div[1]/div[2]/label/span[1]
-${TargetingCookieToggleBtn}     //*[@id="ot-pc-content"]/section/div[4]/div[1]/div[2]/label/span[1]
-${MarketingCookieToggleBtn}     //*[@id="ot-pc-content"]/section/div[5]/div[1]/div[2]/label/span[1]
+${PerformanceCookieToggleBtn}       //div[@class='ot-desc-cntr']//div[@class='ot-tgl']
+${FunctionalCookieToggleBtn}       //div[@class='ot-desc-cntr']//div[@class='ot-tgl']
+${TargetingCookieToggleBtn}        //div[@class='ot-desc-cntr']//div[@class='ot-tgl']
+${MarketingCookieToggleBtn}     //div[@class='ot-desc-cntr']/div[@class='ot-grp-hdr1']/div[@class='ot-tgl']
 ${SaveSettingsCTA}          css: .ot-pc-footer .save-preference-btn-handler
 ${AllowAllCTA}      css: #onetrust-consent-sdk #accept-recommended-btn-handler
 
@@ -16,6 +16,9 @@ Turn Off Performance cookie
 	Scroll Element Into View    ${TargetingCookies}
 	Scroll Element Into View    ${MarketingCookies}
     Sleep    5
+	Wait Until Element Is Visible    ${PerformanceCookies}
+	Click Element    ${PerformanceCookies}
+	Capture Page Screenshot
     Wait Until Page Contains Element        ${PerformanceCookieToggleBtn}
 	Wait Until Element Is Visible       ${PerformanceCookieToggleBtn}
 	Element Should Be Visible       ${PerformanceCookieToggleBtn}
