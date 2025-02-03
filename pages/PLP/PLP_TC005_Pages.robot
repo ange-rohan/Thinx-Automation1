@@ -2,8 +2,11 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${Products}        //div[@class='product-list-wrapper ']
-${FilterSection}        //div[@class='product-list-left-wrapper']
-${SecondProduct}        (//h3[@class='product-name'])[2]
-${NumberOfProducts}        //*[@class='count']
-${ProdText}        //*[@class='filter-container']/span[2]
+${ThinxSleepShortsProduct}   //article[contains(.,'no dig waistbandXSSMLXL1X2X3X4XPeriodComfort Stretch Hiphugger$36BlackPlumSlateB')]
+${SaverSetProduct}        //article[.='$14 saved!XSSMLXL1X2X3X4XPeriodCotton Overnight Set$133$119Black']
+${TFALProduct}        //article[.='XSSMLXL2XL3XLBladderThong$28BlackBeige']
+${TeensProduct}        //article[.='9-1011-1213-1415-16TeensAll-Day Bikini$16Lucky StarsBlack']
+${PeriodNav}              //span[.='period']
+${BladderNav}              //span[.='bladder']
+${TeensNav}                 //span[.='teens']
+${SetsNav}                  //span[.='saver sets']

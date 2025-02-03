@@ -3,18 +3,18 @@ Library    SeleniumLibrary
 Resource          ../../pages/CookieSettings/CookieSettings_TC001_Pages.robot
 
 *** Variables ***
-${PerformanceCookies}   xpath: //button[@aria-controls='ot-desc-id-C0002']
-${FunctionalCookies}    xpath: //button[@aria-controls='ot-desc-id-C0003']
-${TargetingCookies}     xpath: //button[@aria-controls='ot-desc-id-C0004']
-${MarketingCookies}     xpath: //button[@aria-controls='ot-desc-id-C0012']
-${StrictlyNecCookies}   xpath: //button[@aria-controls='ot-desc-id-C0001']
-${AlwaysActive}         css: .ot-always-active-group .ot-always-active
+${PerformanceCookies}   //div[.='Performance Cookies']
+${FunctionalCookies}    //div[.='Functional Cookies']
+${TargetingCookies}    //div[.='Targeting Cookies']
+${MarketingCookies}     //div[.='Marketing Cookies']
+${StrictlyNecCookies}   //div[.='Strictly Necessary Cookies']
+${AlwaysActive}         //div[@class='ot-always-active']
 ${AllToggleButtons}     xpath: //input[@aria-checked='true']
-${StrNecCookiesText}    css: .ot-acc-txt #ot-desc-id-C0001
-${PerformanceCookiesText}   css: .ot-acc-txt #ot-desc-id-C0002
-${FunctionalCookiesText}    css: .ot-acc-txt #ot-desc-id-C0003
-${TargetingCookiesText}     css: .ot-acc-txt #ot-desc-id-C0004
-${MarketingCookiesText}     css: .ot-acc-txt #ot-desc-id-C0012
+${StrNecCookiesText}        //p[contains(.,'These cookies are necessary for the website to function and cannot be switched o')]
+${PerformanceCookiesText}   //p[contains(.,'These cookies allow us to count visits and traffic sources so we can measure and')]
+${FunctionalCookiesText}    //div[@class='ot-desc-cntr']/p[@class='ot-grp-desc ot-category-desc']
+${TargetingCookiesText}     //p[contains(.,'These cookies may be set through our site by our advertising partners. They may')]
+${MarketingCookiesText}     //div[@class='ot-desc-cntr']/p[@class='ot-grp-desc ot-category-desc']
 
 
 *** Keywords ***
@@ -37,13 +37,7 @@ Validate all the Consent Preferences
 	Capture Page Screenshot
 	Sleep    2
 
-Validate Always active text and toggle button in manage content preference section
-	Wait Until Element Is Visible   ${StrictlyNecCookies}
-	Element Should Be Visible       ${StrictlyNecCookies}
 
-	Wait Until Element Is Visible   ${AlwaysActive}
-	Element Should Be Visible       ${AlwaysActive}
-	Sleep    2
 
 Validate + icon and expand and view all the descriptions
 	Click Element    ${StrictlyNecCookies}
@@ -51,6 +45,8 @@ Validate + icon and expand and view all the descriptions
 	Log    The Strictly necessary cookies description after expanding + icon: ${StrictlyNecCookiesDescription}
 	Capture Element Screenshot      ${StrNecCookiesText}
     Sleep    2
+	Wait Until Element Is Visible   ${AlwaysActive}
+	Element Should Be Visible       ${AlwaysActive}
 
 	Click Element    ${PerformanceCookies}
 	${PerformanceCookiesDescription}=  Get Text   ${PerformanceCookiesText}

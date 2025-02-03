@@ -1,7 +1,5 @@
 # Script Name: CookieSettings_TC001_Test
 # Description: When user click on cookies settings, User should see the cookies preference center dialog opened
-# Author: Sneha Banad
-# Created on: 30/10/2023
 # Modified by:
 # MOdified on:
 # Comments:
@@ -13,13 +11,17 @@ Library             SeleniumLibrary
 Resource          ../../resources.robot
 Resource          ../../pages/CookieSettings/CookieSettings_TC001_Pages.robot
 Resource          ../../pages/Registration/Registration_TC004_Pages.robot
-Test Setup        Open Ubykotex Page Using Chrome Browser
+Resource          ../../steps/PDP/PDP_TC004_Steps.robot
+Test Setup        Open Thinx Homepage Using Chrome Browser
 Test Teardown     Close Browser
 
 *** Test Cases ***
-Open ubykotex
+Open Thinx
 	Click Accept Cookies Button
-	Sleep    10
+	Sleep    5
+    Accept Cookies and Close Welcome Modal
+	Sleep    5
+	Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
 	Click on Cookie Settings
 	Validate brand logo and close icon
 	Validate title and description in cookie settings

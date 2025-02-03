@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${CookieSettings}        (//*[contains(text(),'Cookies Settings')])[2]
+${CookieSettings}      //button[@class='body-3-bold no-underline text-default']
 ${BrandLogo}        xpath: //img[@alt='Company Logo']
 ${OneTrustLogo}     xpath: //img[@alt='Powered by Onetrust']
 ${Title}            xpath: //h2[@id='ot-pc-title']
@@ -29,10 +29,6 @@ Validate brand logo and close icon
 
 	Wait Until Element Is Visible    ${OneTrustLogo}
 	Element Should Be Visible        ${OneTrustLogo}
-
-	Wait Until Element Is Visible    ${CloseIcon}
-	Element Should Be Visible        ${CloseIcon}
-	Sleep    2
 
 Validate title and description in cookie settings
 	Wait Until Element Is Visible    ${Title}

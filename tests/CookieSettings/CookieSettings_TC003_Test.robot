@@ -1,7 +1,5 @@
 # Script Name: CookieSettings_TC003_Test
 # Description:
-# Author: Sneha Banad
-# Created on:
 # Modified by:
 # MOdified on:
 # Comments:
@@ -15,21 +13,22 @@ Library             Dialogs
 Resource          ../../resources.robot
 Resource          ../../pages/Registration/Registration_TC004_Pages.robot
 Resource          ../../pages/CookieSettings/CookieSettings_TC003_Pages.robot
-Test Setup        Open Ubykotex Page Using Chrome Browser
+Resource          ../../steps/PDP/PDP_TC004_Steps.robot
+Test Setup        Open Thinx Homepage Using Chrome Browser
 Test Teardown     Close Browser
 
 
 *** Test Cases ***
-Open ubykotex
+Open Thinx
 	Click Accept Cookies Button
 	Sleep    10
+	Accept Cookies and Close Welcome Modal
 	Click on Cookie Settings
 	Turn Off Performance cookie
 	Turn Off Functional cookie
-	Turn Off Targeting cookie
-	Turn Off Marketing cookie
 	Click on Save Settings CTA on cookie settings dialog box
 	#To validate weather the tpggle buttons are set to OFF
 	Click on Cookie Settings
 	Validate all the toggle buttons are OFF
+
 

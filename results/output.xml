@@ -1,110 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-01-30T08:39:14.544406" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-01-30T12:48:42.621365" rpa="false" schemaversion="5">
 <suite id="s1" name="Thinx-Automation1" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1">
 <suite id="s1-s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
 <suite id="s1-s1-s1" name="Log Out" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Log_Out">
 <suite id="s1-s1-s1-s1" name="LogOut TC001 Test" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Log_Out/LogOut_TC001_Test.robot">
-<test id="s1-s1-s1-s1-t1" name="Login to Thinx" line="26">
+<test id="s1-s1-s1-s1-t1" name="Login to Thinx" line="27">
 <kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-01-30T08:39:14.982562" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<msg time="2025-01-30T12:48:43.226843" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
 <arg>${ThinxHomepage}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-01-30T08:39:14.982371" elapsed="4.331585"/>
+<status status="PASS" start="2025-01-30T12:48:43.226610" elapsed="4.042013"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-01-30T08:39:19.314536" elapsed="0.373958"/>
+<status status="PASS" start="2025-01-30T12:48:47.269252" elapsed="0.364783"/>
 </kw>
-<status status="PASS" start="2025-01-30T08:39:14.981898" elapsed="4.707242"/>
+<status status="PASS" start="2025-01-30T12:48:43.226029" elapsed="4.408257"/>
 </kw>
 <kw name="Login Page Opened" owner="Login_TC001_Pages">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${SignIn_Nav}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-30T08:39:19.690533" elapsed="0.013415"/>
+<status status="PASS" start="2025-01-30T12:48:47.634936" elapsed="0.068948"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-01-30T08:39:19.712325" level="INFO">Element '//header[@class='flex justify-between items-center px-3 h-[3.25rem] lg:h-14.5 lg:px-8 bg-white border-b border-b-brand-tangerine']//a[contains(.,'Sign in')]' is displayed.</msg>
+<msg time="2025-01-30T12:48:47.710529" level="INFO">Element '//header[@class='flex justify-between items-center px-3 h-[3.25rem] lg:h-14.5 lg:px-8 bg-white border-b border-b-brand-tangerine']//a[contains(.,'Sign in')]' is displayed.</msg>
 <arg>${SignIn_Nav}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-30T08:39:19.704100" elapsed="0.008571"/>
+<status status="PASS" start="2025-01-30T12:48:47.704099" elapsed="0.006609"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-30T08:39:19.713143" level="INFO">Clicking element '//header[@class='flex justify-between items-center px-3 h-[3.25rem] lg:h-14.5 lg:px-8 bg-white border-b border-b-brand-tangerine']//a[contains(.,'Sign in')]'.</msg>
+<msg time="2025-01-30T12:48:47.711081" level="INFO">Clicking element '//header[@class='flex justify-between items-center px-3 h-[3.25rem] lg:h-14.5 lg:px-8 bg-white border-b border-b-brand-tangerine']//a[contains(.,'Sign in')]'.</msg>
 <arg>${SignIn_Nav}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T08:39:19.712816" elapsed="0.035931"/>
+<status status="PASS" start="2025-01-30T12:48:47.710833" elapsed="0.049137"/>
 </kw>
-<status status="PASS" start="2025-01-30T08:39:19.690021" elapsed="0.058863"/>
+<status status="PASS" start="2025-01-30T12:48:47.634651" elapsed="0.125684"/>
 </kw>
 <kw name="Enter Username" owner="Login_TC003_Pages">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${Email}</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-01-30T08:39:19.749488" elapsed="1.125969"/>
+<status status="PASS" start="2025-01-30T12:48:47.761393" elapsed="1.218796"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-30T08:39:20.875829" level="INFO">Typing text 'thinx.automation1@yopmail.com' into text field '//input[@id='CustomerEmail']'.</msg>
+<msg time="2025-01-30T12:48:48.980634" level="INFO">Typing text 'thinx.automation1@yopmail.com' into text field '//input[@id='CustomerEmail']'.</msg>
 <arg>${Email}</arg>
 <arg>${user}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T08:39:20.875600" elapsed="0.114238"/>
+<status status="PASS" start="2025-01-30T12:48:48.980389" elapsed="0.119905"/>
 </kw>
 <arg>${user}</arg>
-<status status="PASS" start="2025-01-30T08:39:19.749215" elapsed="1.240740"/>
+<status status="PASS" start="2025-01-30T12:48:47.760768" elapsed="1.339676"/>
 </kw>
 <kw name="Enter Password" owner="Login_TC003_Pages">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-30T08:39:25.992924" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-01-30T12:48:54.101925" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-30T08:39:20.990836" elapsed="5.002253"/>
+<status status="PASS" start="2025-01-30T12:48:49.101028" elapsed="5.001055"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2025-01-30T08:39:36.259714" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-01-30T08:39:36.260069" level="FAIL">Element 'Xpath: //input[@name='consumer_password']' not visible after 10 seconds.</msg>
+<msg time="2025-01-30T12:49:04.362938" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-30T12:49:04.363112" level="FAIL">Element 'Xpath: //input[@name='consumer_password']' not visible after 10 seconds.</msg>
 <arg>${Password}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-01-30T08:39:25.993235" elapsed="10.283078">Element 'Xpath: //input[@name='consumer_password']' not visible after 10 seconds.</status>
+<status status="FAIL" start="2025-01-30T12:48:54.102226" elapsed="10.287330">Element 'Xpath: //input[@name='consumer_password']' not visible after 10 seconds.</status>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${Password}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="NOT RUN" start="2025-01-30T08:39:36.276649" elapsed="0.000098"/>
+<status status="NOT RUN" start="2025-01-30T12:49:04.389888" elapsed="0.000164"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>${Password}</arg>
 <arg>${pwd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-01-30T08:39:36.276830" elapsed="0.000043"/>
+<status status="NOT RUN" start="2025-01-30T12:49:04.390151" elapsed="0.000050"/>
 </kw>
 <arg>${pwd}</arg>
-<status status="FAIL" start="2025-01-30T08:39:20.990117" elapsed="15.286847">Element 'Xpath: //input[@name='consumer_password']' not visible after 10 seconds.</status>
+<status status="FAIL" start="2025-01-30T12:48:49.100669" elapsed="15.289659">Element 'Xpath: //input[@name='consumer_password']' not visible after 10 seconds.</status>
+</kw>
+<kw name="Click On SignIn CTA" owner="Login_TC003_Pages">
+<status status="NOT RUN" start="2025-01-30T12:49:04.390541" elapsed="0.000083"/>
+</kw>
+<kw name="Validate successfully landed on profile page" owner="Login_TC003_Pages">
+<status status="NOT RUN" start="2025-01-30T12:49:04.390749" elapsed="0.000055"/>
 </kw>
 <kw name="Validate clicked Logout CTA to Logout" owner="LogOut_TC001_Pages">
-<status status="NOT RUN" start="2025-01-30T08:39:36.277193" elapsed="0.000084"/>
+<status status="NOT RUN" start="2025-01-30T12:49:04.390898" elapsed="0.000047"/>
 </kw>
 <kw name="Validate landed on home page after logged out" owner="LogOut_TC001_Pages">
-<status status="NOT RUN" start="2025-01-30T08:39:36.277404" elapsed="0.000053"/>
+<status status="NOT RUN" start="2025-01-30T12:49:04.391028" elapsed="0.000048"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-01-30T08:39:36.277645" elapsed="0.178584"/>
+<status status="PASS" start="2025-01-30T12:49:04.391243" elapsed="0.187050"/>
 </kw>
-<status status="FAIL" start="2025-01-30T08:39:14.981328" elapsed="21.475105">Element 'Xpath: //input[@name='consumer_password']' not visible after 10 seconds.</status>
+<status status="FAIL" start="2025-01-30T12:48:43.225308" elapsed="21.353145">Element 'Xpath: //input[@name='consumer_password']' not visible after 10 seconds.</status>
 </test>
-<status status="FAIL" start="2025-01-30T08:39:14.587134" elapsed="21.869942"/>
+<status status="FAIL" start="2025-01-30T12:48:42.668712" elapsed="21.910302"/>
 </suite>
-<status status="FAIL" start="2025-01-30T08:39:14.586287" elapsed="21.871345"/>
+<status status="FAIL" start="2025-01-30T12:48:42.667834" elapsed="21.911975"/>
 </suite>
-<status status="FAIL" start="2025-01-30T08:39:14.585448" elapsed="21.872649"/>
+<status status="FAIL" start="2025-01-30T12:48:42.666935" elapsed="21.913431"/>
 </suite>
-<status status="FAIL" start="2025-01-30T08:39:14.548320" elapsed="21.910227"/>
+<status status="FAIL" start="2025-01-30T12:48:42.629427" elapsed="21.951439"/>
 </suite>
 <statistics>
 <total>
@@ -120,6 +126,5 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2025-01-30T08:39:14.976341" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Log_Out/LogOut_TC001_Test.robot' on line 14: Resource file '../../pages/Login/Login_TC004_Pages.robot' does not exist.</msg>
 </errors>
 </robot>
