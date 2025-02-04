@@ -54,8 +54,8 @@ Click Reviews Link In Footer
 	Element Should Be Visible    ${ReviewsError}
 
 Click Product Link Meganav
-    Wait Until Element Is Visible    ${PeriodNav}
-	Click Element    ${PeriodNav}
+    Wait Until Element Is Visible    ${MeetBrandsNav}
+	Click Element    ${MeetBrandsNav}
 	Sleep    2s
 	Wait Until Element Is Visible    ${PeriodProductCard1}
 	Capture Page Screenshot
