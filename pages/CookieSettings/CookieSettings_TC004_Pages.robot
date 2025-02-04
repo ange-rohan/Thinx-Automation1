@@ -1,80 +1,27 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource          ../../pages/CookieSettings/CookieSettings_TC002_Pages.robot
+Resource          ../../pages/Meganav/Meganav_TC003_Pages.robot
 
 *** Variables ***
-${Exelator}     xpath: //li[@data-optanongroupid='C0009']
-${FunctionalCookieDetails}  xpath: //button[@data-parent-id='C0003']
-${TargetingCookiesDetail}   xpath: //button[@data-parent-id='C0004']
-${YouTube}  xpath: //li[@data-optanongroupid='C0022']
-${BazaarVoice}  xpath: //li[@data-optanongroupid='C0014']
-${SurveyGizmo}  xpath: //li[@data-optanongroupid='C0015']
-${Revtrax}  xpath: //li[@data-optanongroupid='C0016']
-${SmartCommerce}    xpath: //li[@data-optanongroupid='C0017']
-${GoogleAnalytics}  xpath: //li[@data-optanongroupid='C0019']
-${BriteVerify}  xpath: //li[@data-optanongroupid='C0021']
-${Equalweb}     xpath: //li[@data-optanongroupid='C0010']
-${FullStory}    xpath: //li[@data-optanongroupid='C0039']
-${MarketingCookieDetails}   xpath: //button[@data-parent-id='C0012']
+${RejectCookies}     //button[@id='onetrust-reject-all-handler']
+${VideoModule}       //div[@class='relative hidden md:flex aspect-video overflow-hidden rounded-lg+']/p[.='Uh oh! Content did not load. Check your cookie settings.']
+${NewsletterCheckbox}  //input[@id='opt_in']
+${PeriodNav}            .flex[href='/collections/period-shop-all']  
+${NewsletterField}    //input[@id='newsletter-email']
+${NewsletterSubmit}    //div[@class='flex flex-col gap-10']/div[1]//button[@class='underline body-2 absolute top-0 translate-x-1/2 right-[36px] !leading-0 pr-6 disabled:text-grey-dark disabled:opacity-60 focus-visible:decoration-4 focus-visible:outline-none focus-visible:font-medium h-full']
+${NewsletterError}    //span[.='Unable to complete request. Please review cookie settings.']
+${ReviewsLink}        //a[.='read more reviews']
+${ReviewsLinkFooter}    //div[@class='lg:flex lg:justify-between lg:gap-x-[144px] lg:gap-y-4 lg:flex-wrap']/div[@class='lg:w-[150px] hidden lg:block']//a[.='reviews']
+${ReviewsError}       //p[.='Uh oh! Content did not load. Check your cookie settings.']
+${TakeTheQuizError}  //p[.='Uh oh! Content did not load. Check your cookie settings.']
+${PeriodProductCard1}       //div[.='extra coverageXSSMLXL']
+${PeriodProductReviewsError}    //div[@class='flex flex-col gap-y-2']//p[.='Uh oh! Content did not load. Check your cookie settings.']
+${PeriodProductReviewsError2}    //section[@class='shopify-section']//p[.='Uh oh! Content did not load. Check your cookie settings.']
+${StoreLocatorLink}        //div[@class='lg:flex lg:justify-between lg:gap-x-[144px] lg:gap-y-4 lg:flex-wrap']/div[@class='lg:w-[150px] hidden lg:block']//a[.='store locator']    
+${StoreLocatorError}        //p[.='Uh oh! Content did not load. Check your cookie settings.']
 
-*** Keywords ***
-Validate detail link of Functional cookies
-	Wait Until Element Is Visible   ${FunctionalCookies}
-	Element Should Be Visible   ${FunctionalCookies}
-	Click Element    ${FunctionalCookies}
-	Element Should Be Visible    ${FunctionalCookieDetails}
-	${ExelatorText}=    Get Text    ${Exelator}
-	log  The functional cookie of description is: ${ExelatorText}
-	Sleep    2
 
-Validate detail link of Targeting cookies
-	Wait Until Element Is Visible     ${TargetingCookies}
-	Element Should Be Visible   ${TargetingCookies}
-	Click Element   ${TargetingCookies}
-	Element Should Be Visible    ${TargetingCookiesDetail}
-	${YouTubeText}=     Get Text    ${YouTube}
-	Log    The targeting cookie of description is: ${YouTubeText}
-    Sleep    2
 
-Validate detail link of Marketing cookies
-	Wait Until Element Is Visible     ${MarketingCookies}
-	Element Should Be Visible   ${MarketingCookies}
-	Click Element   ${MarketingCookies}
-    Sleep    2
 
-	Element Should Be Visible    ${BazaarVoice}
-	${BazaarVoiceText}=     Get Text    ${BazaarVoice}
-	Log    The Marketing cookie of Bazaar Voice description is: ${BazaarVoiceText}
-    Sleep    2
 
-	Element Should Be Visible    ${SurveyGizmo}
-	${SurveyGizmoText}=     Get Text    ${SurveyGizmo}
-	Log    The Marketing cookie of SurveyGizmo description is: ${SurveyGizmoText}
-
-	Element Should Be Visible    ${Revtrax}
-	${RevtraxText}=     Get Text    ${Revtrax}
-	Log    The Marketing cookie of Revtrax description is: ${RevtraxText}
-
-	Element Should Be Visible    ${SmartCommerce}
-	${SmartCommerceText}=     Get Text    ${SmartCommerce}
-	Log    The Marketing cookie of SmartCommerce description is: ${SmartCommerceText}
-    Sleep    2
-
-	Element Should Be Visible    ${GoogleAnalytics}
-	${GoogleAnalyticsText}=     Get Text    ${GoogleAnalytics}
-	Log    The Marketing cookie of GoogleAnalytics description is: ${GoogleAnalyticsText}
-
-	Element Should Be Visible    ${BriteVerify}
-	${BriteVerifyText}=     Get Text    ${BriteVerify}
-	Log    The Marketing cookie of BriteVerify description is: ${BriteVerifyText}
-
-	Element Should Be Visible    ${Equalweb}
-	${EqualwebText}=     Get Text    ${Equalweb}
-	Log    The Marketing cookie of Equalweb description is: ${EqualwebText}
-
-	Element Should Be Visible    ${FullStory}
-	${FullStoryText}=     Get Text    ${FullStory}
-	Log    The Marketing cookie of FullStory description is: ${FullStoryText}
-    Sleep    2
-
-	Element Should Be Visible    ${MarketingCookieDetails}

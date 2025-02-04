@@ -1,7 +1,5 @@
 # Script Name: CookieSettings_TC004_Test
 # Description: Cookie Details link Page-User should see list of cookie details with expand and collapse option
-# Author: Sneha Banad
-# Created on: 30/10/2023
 # Modified by:
 # MOdified on:
 # Comments:
@@ -15,15 +13,24 @@ Library             Dialogs
 Resource          ../../resources.robot
 Resource          ../../pages/Registration/Registration_TC004_Pages.robot
 Resource          ../../pages/CookieSettings/CookieSettings_TC004_Pages.robot
-Test Setup        Open Ubykotex Page Using Chrome Browser
+Resource          ../../steps/CookieSettings/CookieSettings_TC004_Steps.robot
+Resource          ../../steps/PDP/PDP_TC004_Steps.robot
+Test Setup        Open Thinx Homepage Using Chrome Browser
 Test Teardown     Close Browser
+
+*** Variables ***
+${user}     thinx.automation1@yopmail.com
 
 
 *** Test Cases ***
-Open ubykotex
-	Click Accept Cookies Button
-	Sleep    10
-	Click on Cookie Settings
-	Validate detail link of Functional cookies
-	Validate detail link of Targeting cookies
-	Validate detail link of Marketing cookies
+Open Thinx
+    Reject All Cookies
+    Accept Cookies and Close Welcome Modal
+    Review Homepage Elements to Ensure Cookie Error Messaging is Visible
+    Review Footer & Email Signup Functionality
+    Enter Test Email in Newsletter Signup
+    Click Store Locator Link In Footer
+    Click Quiz Link In Meganav
+    Click Reviews Link In Footer
+    Click Product Link Meganav
+    Validate PDP Does Not Contain Reviews
