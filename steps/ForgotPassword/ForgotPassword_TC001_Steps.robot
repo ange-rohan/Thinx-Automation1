@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 Resource          ../../tests/ForgotPassword/ForgotPassword_TC001_Test.robot
 
 *** Keywords ***
-Login to ubykotex
+Open Thinx
 	Login Page Opened
 	Click Accept Cookies Button
 	Click on forgot password link
