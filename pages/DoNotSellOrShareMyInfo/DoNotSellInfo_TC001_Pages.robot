@@ -4,8 +4,8 @@ Library    SeleniumLibrary
 *** Variables ***
 ${DoNotSellInfo}    //a[.='Do not share or sell my personal information']
 ${Heading}      //h1[@class='heading-1']
-${DoNotSell}      //div[@class='my-4 flex flex-col gap-1.5']/div[1]/input[@class='input-checkbox']
-${LimitTheUse}    //div[@class='my-4 flex flex-col gap-1.5']/div[2]/input[@class='input-checkbox']
+${DoNotSellCheckbox}      //div[@class='my-4 flex flex-col gap-1.5']/div[1]/input[@class='input-checkbox']
+${LimitTheUseCheckbox}    //div[@class='my-4 flex flex-col gap-1.5']/div[2]/input[@class='input-checkbox']
 ${SubmitCTA}        //button[@id='submit-button']
 ${CancelCTA}        //a[@id='cancel-button']
 
@@ -31,18 +31,18 @@ Validate all the fields on Do not sell footer section
     Execute Javascript    window.scrollTo(0,600)
     Sleep    5
 
-	Wait Until Element Is Visible      ${DoNotSell}
-	Element Should Be Visible       ${DoNotSell}
-	${DoNotSellCheckboxMsg}=     Get Text    ${DoNotSell}
+	Wait Until Element Is Visible      ${DoNotSellCheckbox} 
+	Element Should Be Visible       ${DoNotSellCheckbox} 
+	${DoNotSellCheckboxMsg}=     Get Text    ${DoNotSellCheckbox} 
 	Log    Do not sell or share my personal information checkbox is displayed as: ${DoNotSellCheckboxMsg}
-    Capture Element Screenshot    ${DoNotSell}
+    Capture Element Screenshot    ${DoNotSellCheckbox} 
     Sleep    2
 
-	Wait Until Element Is Visible      ${LimitTheUse}
-	Element Should Be Visible       ${LimitTheUse}
-	${LimitTheUseMsg}=     Get Text    ${LimitTheUse}
+	Wait Until Element Is Visible      ${LimitTheUseCheckbox}
+	Element Should Be Visible      ${LimitTheUseCheckbox}
+	${LimitTheUseMsg}=     Get Text   ${LimitTheUseCheckbox}
 	Log    Limit the Use of My Sensitive Personal Information checkbox is displayed as: ${LimitTheUseMsg}
-    Capture Element Screenshot    ${LimitTheUse}
+    Capture Element Screenshot   ${LimitTheUseCheckbox}
     Sleep   5
 
     Wait Until Page Contains Element      ${SubmitCTA}
