@@ -2,12 +2,12 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${DoNotSellInfo}    xpath: //*[@class="links show"]/li[3]/a
-${Heading}      css: #wrapper .privacyContent h1
-${DoNotSell}      css: .consumer-DoNotSellMyInfoFlag-label
-${LimitTheUse}          css: .consumer-LimittheUseofMyPersonalInfoFlag-label
-${SubmitCTA}        //button[contains(text(),'Submit')]
-${CancelCTA}    css: #btn-DataPrivacyPreference-cancel
+${DoNotSellInfo}    //a[.='Do not share or sell my personal information']
+${Heading}      //h1[@class='heading-1']
+${DoNotSell}      //div[@class='my-4 flex flex-col gap-1.5']/div[1]/input[@class='input-checkbox']
+${LimitTheUse}    //div[@class='my-4 flex flex-col gap-1.5']/div[2]/input[@class='input-checkbox']
+${SubmitCTA}        //button[@id='submit-button']
+${CancelCTA}        //a[@id='cancel-button']
 
 *** Keywords ***
 Click on Do Not Sell Info Link from footer section
