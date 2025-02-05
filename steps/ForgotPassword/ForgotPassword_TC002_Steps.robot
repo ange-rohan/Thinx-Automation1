@@ -3,9 +3,9 @@ Library    SeleniumLibrary
 Resource          ../../tests/ForgotPassword/ForgotPassword_TC002_Test.robot
 
 *** Keywords ***
-Login to ubykotex
+Login to Thinx
 	Login Page Opened
-	Click Accept Cookies Button
 	Click on forgot password link
-	Validate email address is blank
-	Validate send email CTA is disabled
+	Enter the email address    ${EmailAddress}
+	Validate send email CTA is enabled and click on it
+	Validate the success message after entering email and click on send email
