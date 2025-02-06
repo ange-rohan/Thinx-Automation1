@@ -13,14 +13,6 @@ ${URL}        https://www.thinx.com/
 
 
 *** Keywords ***
-Reject Cookies And Check Console Logs
-    [Arguments]  ${log_type}=browser  ${text_to_check}=load:delghtd
-    ${logs}=  Get Console Logs  ${log_type}
-    ${text_found}=  Set Variable  False
-    :FOR  ${log}  IN  @{logs}
-    \   ${message}=  Get From Dictionary  ${log}  message
-    \   Run Keyword If  '${text_to_check}' in '${message}'  Set Variable  ${text_found}  True
-    Run Keyword If  '${text_found}' == True  Fail  Text '${text_to_check}' found in console logs
-    Log  Text '${text_to_check}' not found in console logs
+
 
 

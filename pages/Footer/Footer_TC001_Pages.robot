@@ -2,5 +2,4 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${SiteLogo}        //div[@class='row']/div/a/img
-${GlobalMainFooterSection}        //div[@class='container-fluid']
+${GlobalMainFooterSection}       //div[@id='shopify-section-footer']
