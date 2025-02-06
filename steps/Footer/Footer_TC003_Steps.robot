@@ -1,76 +1,79 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource          ../../pages/Footer/Footer_TC003_Pages.robot
-Resource          ../../steps/SiteMap/SiteMap_TC001_Steps.robot
+
 
 *** Keywords ***
-Validate SiteMap Link is present on Footer Section
-    Execute Javascript    window.scrollTo(0,5000)
+
+Validate Terms Link Section Is Visible
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
     Sleep    5
-    Wait Until Page Contains Element        ${SiteMap}    
-    Element Should Be Visible        ${SiteMap}     
-    ${SiteMapLink}=     Get Text        ${SiteMap}     
-    Log        ${SiteMapLink}
-    Capture Page Screenshot    
-    Capture Element Screenshot        ${SiteMap}
+    Wait Until Element Is Visible    ${TermsLinkSection}
+    Element Should Be Visible    ${TermsLinkSection}
+
+
+Click on Terms and Conditions Link from Footer Section
+    Wait Until Page Contains Element        ${CookieSettings}    
+    Element Should Be Visible        ${CookieSettings}      
     
-Validate Language Dropdown present on Footer Section
-    Wait Until Page Contains Element        ${LanguageSection}    
-    Element Should Be Visible        ${LanguageSection}     
-    ${LanguageSectionText}=    Get Text        ${LanguageSection}     
-    Log        ${LanguageSectionText}
-    Capture Element Screenshot        ${LanguageSection}
- 
-Click on Language Dropdown
-    Element Should Be Visible        ${LanguageSection}    
-    Click Element        ${LanguageSection}
-    Sleep    2 
-       
-Click on First Language from dropdown and validate the page
-    Wait Until Page Contains Element        ${FirstLanguage}    
-    Element Should Be Visible        ${FirstLanguage} 
-    Click Element        ${FirstLanguage}
-    Sleep    2
-    Capture Page Screenshot
-    Sleep    3
-    Execute Javascript    window.history.back()
-    Sleep    3
-
-Click on Second Language from dropdown and validate the page
-    Click on Language Dropdown
-    Wait Until Page Contains Element        ${SecondLanguage}
-    Element Should Be Visible        ${SecondLanguage}
-    Click Element        ${SecondLanguage}
-    Sleep    2
-    Capture Page Screenshot
-    Sleep    3
-    Execute Javascript    window.history.back()
-    Sleep    3
-
-Click on Third Language from dropdown and validate the page
-    Click on Language Dropdown
-    Wait Until Page Contains Element        ${ThirdLanguage}
-    Element Should Be Visible        ${ThirdLanguage}
-    Click Element        ${ThirdLanguage}
-    Sleep    2
-    Capture Page Screenshot
-    Sleep    3
-    Execute Javascript    window.history.back()
-    Sleep    3
-    
-Validate Copyright Statement Link is present on Footer Section
-    Execute Javascript    window.scrollTo(0,5000)
+Validate Navigation to Privacy Page
+	Wait Until Element Is Visible        ${PrivacyPolicyFooter}
+	Element Should Be Visible      ${PrivacyPolicyFooter}
+    Click Element            ${PrivacyPolicyFooter}
     Sleep    5
-    Wait Until Page Contains Element        ${CopyrightStatementLink}    
-    Element Should Be Visible        ${CopyrightStatementLink}
-    Capture Element Screenshot        ${CopyrightStatementLink}
+    Location Should Be    ${PrivacyURL}
+    Wait Until Element Is Visible     ${H1}
+        ${H1}=    Get Text     ${H1}
+    Should Contain      ${H1}      Privacy Policy
 
-Click on Copyright Statement Link
-    Click Element        ${CopyrightStatementLink}
+
+Validate Navigation to Terms Page
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    Wait Until Element Is Visible        ${TermsCondLinkFooter}
+	Element Should Be Visible       ${TermsCondLinkFooter}
+    Click Element             ${TermsCondLinkFooter}
     Sleep    5
+    Location Should Be    ${TermsURL}
+    Wait Until Element Is Visible     ${H1}
+        ${H1}=    Get Text     ${H1}
+    Should Contain      ${H1}      Terms of Use
 
-Validate Copyright Statement Page
-    Wait Until Page Contains Element        ${KCLogo}
-    Element Should Be Visible        ${KCLogo}
-    Capture Element Screenshot        ${KCLogo}
-    Capture Page Screenshot
+
+Validate Navigation to Sitemap
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    Wait Until Element Is Visible        ${Sitemap}
+	Element Should Be Visible        ${Sitemap}
+    Click Element              ${Sitemap}
+    Sleep    5
+    Location Should Be    ${SitemapURL}
+    Wait Until Element Is Visible     ${H1}
+        ${H1}=    Get Text     ${H1}
+    Should Contain      ${H1}      Sitemap   
+
+Validate Navigation to Accessibility Page
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    Wait Until Element Is Visible        ${Accessibility}
+	Scroll Element Into View        ${Accessibility}
+    Click Element              ${Accessibility}
+    Sleep    5
+    Location Should Be    ${AccessibilityURL}
+    Wait Until Element Is Visible     ${H2}
+        ${H2}=    Get Text     ${H2}
+    Should Contain      ${H2}      website accessibility statement
+
+
+Validate Navigation to Limit the Use of My Sensitive Personal Information Page
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    Wait Until Page Contains Element        ${LimitTheUseLinkFooter}
+    Scroll Element Into View    ${LimitTheUseLinkFooter}
+    Click Element    locator=${LimitTheUseLinkFooter}
+    Sleep    2
+    Location Should Be    ${LimitTheUseURL}
+    Wait Until Element Is Visible     ${H1}
+        ${H1}=    Get Text     ${H1}
+    Should Contain      ${H1}      We respect your right to be in charge of your personal info
+
+
+
+
+

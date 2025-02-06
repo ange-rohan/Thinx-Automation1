@@ -1,11 +1,7 @@
-# Script Name: Footer_TC003_Test
-# Description: Navigation - Global Main Footer - Validation of link lists present in footer section
-# Author: Sneha Banad
-# Created on: 11/01/2024
-# Modified by:
-# MOdified on:
+# Script Name: Footer_TC004_Test
+# Description: Navigation - Footer - Privacy Policy and Terms of Use
 # Comments:
-# Run Command: robot. \QA-Automation\tests\Footer\Footer_TC003_Test.robot
+# Run Command: robot. \QA-Automation\tests\Footer\Footer_TC004_Test.robot
 
 # Importing the Libraries
 *** Settings ***
@@ -14,25 +10,24 @@ Resource          ../../resources.robot
 Resource          ../../pages/Registration/Registration_TC004_Pages.robot
 Resource          ../../steps/Footer/Footer_TC001_Steps.robot
 Resource          ../../steps/Footer/Footer_TC003_Steps.robot
-Test Setup        Open Ubykotex Page Using Chrome Browser
+Resource          ../../steps/PDP/PDP_TC004_Steps.robot
+Test Setup        Open Thinx Homepage Using Chrome Browser
 Test Teardown     Close Browser
 
 *** Test Cases ***
-Open UbyKotex
+Open Thinx
     Click Accept Cookies Button
 	Sleep   5
+	Accept Cookies and Close Welcome Modal
 	Scroll to the Footer Section
-	# Validate SiteMap Link is present
-	Validate SiteMap Link is present on Footer Section
-	# Validate language dropdown section
-	Validate Language Dropdown present on Footer Section
-	Click on Language Dropdown
-	# Validate all other Languages page
-	Click on First Language from dropdown and validate the page
-	Click on Second Language from dropdown and validate the page
-	Click on Third Language from dropdown and validate the page
-	# Validate copyright statement section
-	Validate Copyright Statement Link is present on Footer Section
-	Click on Copyright Statement Link
-	Validate Copyright Statement Page
+	Validate Terms Link Section Is Visible
+	Click on Terms and Conditions Link from Footer Section
+	Validate Navigation to Privacy Page
+    Validate Navigation to Terms Page
+    Validate Navigation to Sitemap
+    Validate Navigation to Accessibility Page
+    Validate Navigation to Limit the Use of My Sensitive Personal Information Page
+
+
+
 

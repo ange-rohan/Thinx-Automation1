@@ -1,143 +1,450 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-05T14:23:58.298829" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-06T16:25:57.776369" rpa="false" schemaversion="5">
 <suite id="s1" name="Thinx-Automation1" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1">
 <suite id="s1-s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
 <suite id="s1-s1-s1" name="Footer" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Footer">
-<suite id="s1-s1-s1-s1" name="Footer TC001 Test" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Footer/Footer_TC001_Test.robot">
-<test id="s1-s1-s1-s1-t1" name="Open Thinx" line="17">
+<suite id="s1-s1-s1-s1" name="Footer TC003 Test" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Footer/Footer_TC003_Test.robot">
+<test id="s1-s1-s1-s1-t1" name="Open Thinx" line="18">
 <kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-05T14:23:58.413036" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<msg time="2025-02-06T16:25:57.941675" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
 <arg>${ThinxHomepage}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-05T14:23:58.412870" elapsed="1.612926"/>
+<status status="PASS" start="2025-02-06T16:25:57.941518" elapsed="1.823254"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-05T14:24:00.026898" elapsed="1.929278"/>
+<status status="PASS" start="2025-02-06T16:25:59.767130" elapsed="1.788237"/>
 </kw>
-<status status="PASS" start="2025-02-05T14:23:58.412445" elapsed="3.543953"/>
+<status status="PASS" start="2025-02-06T16:25:57.941129" elapsed="3.614794"/>
 </kw>
 <kw name="Click Accept Cookies Button" owner="Registration_TC004_Pages">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-05T14:24:11.958203" level="INFO">Slept 10 seconds.</msg>
+<msg time="2025-02-06T16:26:11.558046" level="INFO">Slept 10 seconds.</msg>
 <arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-05T14:24:01.956943" elapsed="10.001492"/>
+<status status="PASS" start="2025-02-06T16:26:01.557365" elapsed="10.001422"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${AcceptCookies}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-05T14:24:11.958562" elapsed="0.006367"/>
+<status status="PASS" start="2025-02-06T16:26:11.559346" elapsed="0.020098"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-05T14:24:11.965234" level="INFO">Clicking element 'xpath: //*[@id="onetrust-accept-btn-handler"]'.</msg>
+<msg time="2025-02-06T16:26:11.580164" level="INFO">Clicking element 'xpath: //*[@id="onetrust-accept-btn-handler"]'.</msg>
 <arg>${AcceptCookies}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-05T14:24:11.965058" elapsed="0.041683"/>
+<status status="PASS" start="2025-02-06T16:26:11.579754" elapsed="0.051298"/>
 </kw>
-<status status="PASS" start="2025-02-05T14:24:01.956664" elapsed="10.050769"/>
+<status status="PASS" start="2025-02-06T16:26:01.556855" elapsed="10.074324"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-06T16:26:16.632491" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-06T16:26:11.631384" elapsed="5.001633"/>
 </kw>
 <kw name="Accept Cookies and Close Welcome Modal" owner="PDP_TC004_Steps">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-05T14:24:17.010652" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-06T16:26:21.637274" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-05T14:24:12.008349" elapsed="5.003060"/>
+<status status="PASS" start="2025-02-06T16:26:16.634919" elapsed="5.003629"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${CloseModal}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-05T14:24:17.012228" elapsed="2.395569"/>
+<status status="PASS" start="2025-02-06T16:26:21.639419" elapsed="0.027785"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-05T14:24:19.408394" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
+<msg time="2025-02-06T16:26:21.667673" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
 <arg>${CloseModal}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-05T14:24:19.408038" elapsed="0.044332"/>
+<status status="PASS" start="2025-02-06T16:26:21.667412" elapsed="0.035293"/>
 </kw>
-<status status="PASS" start="2025-02-05T14:24:12.008023" elapsed="7.444492"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-05T14:24:24.454536" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-05T14:24:19.452699" elapsed="5.002440"/>
+<status status="PASS" start="2025-02-06T16:26:16.633971" elapsed="5.068859"/>
 </kw>
 <kw name="Scroll to the Footer Section" owner="Footer_TC001_Steps">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-02-05T14:24:24.458087" level="INFO">Executing JavaScript:
+<msg time="2025-02-06T16:26:21.703519" level="INFO">Executing JavaScript:
 window.scrollTo(0,2000)
 Without any arguments.</msg>
 <arg>window.scrollTo(0,2000)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-02-05T14:24:24.456977" elapsed="0.012752"/>
+<status status="PASS" start="2025-02-06T16:26:21.703248" elapsed="0.004421"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-05T14:24:27.471179" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-02-06T16:26:24.708949" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-05T14:24:24.470182" elapsed="3.001551"/>
+<status status="PASS" start="2025-02-06T16:26:21.707872" elapsed="3.001825"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-02-05T14:24:27.473384" level="INFO">Executing JavaScript:
+<msg time="2025-02-06T16:26:24.713398" level="INFO">Executing JavaScript:
 window.scrollTo(0,3000)
 Without any arguments.</msg>
 <arg>window.scrollTo(0,3000)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-02-05T14:24:27.472230" elapsed="0.011088"/>
+<status status="PASS" start="2025-02-06T16:26:24.710464" elapsed="0.015044"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-05T14:24:32.484743" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-06T16:26:29.728246" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-05T14:24:27.483720" elapsed="5.001349"/>
+<status status="PASS" start="2025-02-06T16:26:24.726105" elapsed="5.002688"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-02-05T14:24:32.486886" level="INFO">Executing JavaScript:
+<msg time="2025-02-06T16:26:29.730537" level="INFO">Executing JavaScript:
 window.scrollTo(0,4500)
 Without any arguments.</msg>
 <arg>window.scrollTo(0,4500)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-02-05T14:24:32.485374" elapsed="0.007434"/>
+<status status="PASS" start="2025-02-06T16:26:29.729326" elapsed="0.011038"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-05T14:24:37.494860" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-06T16:26:34.742216" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-05T14:24:32.493071" elapsed="5.002911"/>
+<status status="PASS" start="2025-02-06T16:26:29.740764" elapsed="5.001986"/>
 </kw>
-<status status="PASS" start="2025-02-05T14:24:24.456051" elapsed="13.040575"/>
+<status status="PASS" start="2025-02-06T16:26:21.703020" elapsed="13.040097"/>
 </kw>
-<kw name="Capture the Global Main Footer Section" owner="Footer_TC001_Steps">
+<kw name="Validate Terms Link Section Is Visible" owner="Footer_TC003_Steps">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:34.745810" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-06T16:26:34.744839" elapsed="0.024890"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-06T16:26:39.771075" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-06T16:26:34.770058" elapsed="5.001860"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TermsLinkSection}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-06T16:26:39.772421" elapsed="0.027548"/>
+</kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-02-05T14:24:37.525162" level="INFO">Element '//div[@id='shopify-section-footer']' is displayed.</msg>
-<arg>${GlobalMainFooterSection}</arg>
+<msg time="2025-02-06T16:26:39.811086" level="INFO">Element '//ul[@class='flex flex-wrap gap-y-3']' is displayed.</msg>
+<arg>${TermsLinkSection}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-05T14:24:37.498446" elapsed="0.026877"/>
+<status status="PASS" start="2025-02-06T16:26:39.800253" elapsed="0.010963"/>
 </kw>
-<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
-<msg time="2025-02-05T14:24:37.725765" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-55.png"&gt;&lt;img src="selenium-element-screenshot-55.png" width="400px"&gt;&lt;/a&gt;</msg>
-<arg>${GlobalMainFooterSection}</arg>
-<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
-<status status="PASS" start="2025-02-05T14:24:37.525511" elapsed="0.200410"/>
+<status status="PASS" start="2025-02-06T16:26:34.743860" elapsed="5.067465"/>
 </kw>
-<status status="PASS" start="2025-02-05T14:24:37.497432" elapsed="0.228596"/>
+<kw name="Click on Terms and Conditions Link from Footer Section" owner="Footer_TC003_Steps">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${CookieSettings}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-06T16:26:39.812020" elapsed="0.006353"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:39.825633" level="INFO">Element '//button[@class='body-3-bold no-underline text-default']' is displayed.</msg>
+<arg>${CookieSettings}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-06T16:26:39.818519" elapsed="0.007257"/>
+</kw>
+<status status="PASS" start="2025-02-06T16:26:39.811654" elapsed="0.014226"/>
+</kw>
+<kw name="Validate Navigation to Privacy Page" owner="Footer_TC003_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PrivacyPolicyFooter}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-06T16:26:39.826444" elapsed="0.008966"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:39.842500" level="INFO">Element '//*[contains(text(),'Privacy Policy')]' is displayed.</msg>
+<arg>${PrivacyPolicyFooter}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-06T16:26:39.835553" elapsed="0.007046"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:39.842917" level="INFO">Clicking element '//*[contains(text(),'Privacy Policy')]'.</msg>
+<arg>${PrivacyPolicyFooter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T16:26:39.842710" elapsed="0.030914"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-06T16:26:44.875761" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-06T16:26:39.873755" elapsed="5.002871"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:44.898115" level="INFO">Current location is 'https://www.thinx.com/pages/privacy-policy'.</msg>
+<arg>${PrivacyURL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-02-06T16:26:44.877462" elapsed="0.020926"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${H1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-06T16:26:44.898667" elapsed="0.012985"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:44.922938" level="INFO">${H1} = Privacy Policy</msg>
+<var>${H1}</var>
+<arg>${H1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T16:26:44.911821" elapsed="0.011203"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${H1}</arg>
+<arg>Privacy Policy</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-06T16:26:44.923162" elapsed="0.000243"/>
+</kw>
+<status status="PASS" start="2025-02-06T16:26:39.826204" elapsed="5.097297"/>
+</kw>
+<kw name="Validate Navigation to Terms Page" owner="Footer_TC003_Steps">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:44.924289" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-06T16:26:44.923968" elapsed="0.002543"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TermsCondLinkFooter}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-06T16:26:44.926613" elapsed="0.019956"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:44.952231" level="INFO">Element '//a[.='terms of use']' is displayed.</msg>
+<arg>${TermsCondLinkFooter}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-06T16:26:44.946726" elapsed="0.005609"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:44.952660" level="INFO">Clicking element '//a[.='terms of use']'.</msg>
+<arg>${TermsCondLinkFooter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T16:26:44.952449" elapsed="0.025969"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-06T16:26:49.979877" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-06T16:26:44.978572" elapsed="5.002034"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:50.004409" level="INFO">Current location is 'https://www.thinx.com/pages/terms-of-use'.</msg>
+<arg>${TermsURL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-02-06T16:26:49.981427" elapsed="0.023216"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${H1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-06T16:26:50.004906" elapsed="0.011434"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:50.025442" level="INFO">${H1} = Terms of Use</msg>
+<var>${H1}</var>
+<arg>${H1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T16:26:50.016619" elapsed="0.008913"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${H1}</arg>
+<arg>Terms of Use</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-06T16:26:50.025684" elapsed="0.000244"/>
+</kw>
+<status status="PASS" start="2025-02-06T16:26:44.923724" elapsed="5.102296"/>
+</kw>
+<kw name="Validate Navigation to Sitemap" owner="Footer_TC003_Steps">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:50.026902" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-06T16:26:50.026584" elapsed="0.002617"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Sitemap}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-06T16:26:50.029305" elapsed="0.018464"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:50.053668" level="INFO">Element '//a[.='sitemap']' is displayed.</msg>
+<arg>${Sitemap}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-06T16:26:50.047919" elapsed="0.005870"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:50.054137" level="INFO">Clicking element '//a[.='sitemap']'.</msg>
+<arg>${Sitemap}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T16:26:50.053923" elapsed="0.024188"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-06T16:26:55.079931" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-06T16:26:50.078246" elapsed="5.002430"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:55.103459" level="INFO">Current location is 'https://www.thinx.com/pages/sitemap'.</msg>
+<arg>${SitemapURL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-02-06T16:26:55.081455" elapsed="0.022274"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${H1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-06T16:26:55.104020" elapsed="0.011215"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:55.124164" level="INFO">${H1} = Sitemap</msg>
+<var>${H1}</var>
+<arg>${H1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T16:26:55.115458" elapsed="0.008815"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${H1}</arg>
+<arg>Sitemap</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-06T16:26:55.124431" elapsed="0.000236"/>
+</kw>
+<status status="PASS" start="2025-02-06T16:26:50.026352" elapsed="5.098400"/>
+</kw>
+<kw name="Validate Navigation to Accessibility Page" owner="Footer_TC003_Steps">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:55.126083" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-06T16:26:55.125680" elapsed="0.002956"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Accessibility}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-06T16:26:55.128758" elapsed="0.018632"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${Accessibility}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-06T16:26:55.147593" elapsed="0.277574"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:26:55.425889" level="INFO">Clicking element '//a[.='accessibility']'.</msg>
+<arg>${Accessibility}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T16:26:55.425464" elapsed="0.034161"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-06T16:27:00.460704" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-06T16:26:55.459782" elapsed="5.001640"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:27:00.485571" level="INFO">Current location is 'https://www.thinx.com/pages/accessibility'.</msg>
+<arg>${AccessibilityURL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-02-06T16:27:00.462668" elapsed="0.023143"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${H2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-06T16:27:00.486072" elapsed="0.013599"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:27:00.508355" level="INFO">${H2} = website accessibility statement</msg>
+<var>${H2}</var>
+<arg>${H2}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T16:27:00.499888" elapsed="0.008562"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${H2}</arg>
+<arg>website accessibility statement</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-06T16:27:00.508597" elapsed="0.000157"/>
+</kw>
+<status status="PASS" start="2025-02-06T16:26:55.125326" elapsed="5.383501"/>
+</kw>
+<kw name="Validate Navigation to Limit the Use of My Sensitive Personal Information Page" owner="Footer_TC003_Steps">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:27:00.509601" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-06T16:27:00.509294" elapsed="0.002703"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${LimitTheUseLinkFooter}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-06T16:27:00.512123" elapsed="0.020837"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${LimitTheUseLinkFooter}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-06T16:27:00.533420" elapsed="0.266224"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:27:00.800168" level="INFO">Clicking element '//a[.='Limit use of my sensitive personal information']'.</msg>
+<arg>locator=${LimitTheUseLinkFooter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T16:27:00.799857" elapsed="0.031343"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-06T16:27:02.831852" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-06T16:27:00.831365" elapsed="2.000846"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:27:03.083036" level="INFO">Current location is 'https://www.thinx.com/pages/do-not-sell-my-personal-information'.</msg>
+<arg>${LimitTheUseURL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-02-06T16:27:02.832525" elapsed="0.250679"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${H1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-06T16:27:03.083394" elapsed="0.009592"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:27:03.104319" level="INFO">${H1} = We respect your right to be in charge of your personal info</msg>
+<var>${H1}</var>
+<arg>${H1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T16:27:03.093155" elapsed="0.011294"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${H1}</arg>
+<arg>We respect your right to be in charge of your personal info</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-06T16:27:03.104604" elapsed="0.000223"/>
+</kw>
+<status status="PASS" start="2025-02-06T16:27:00.509027" elapsed="2.595968"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-05T14:24:37.726272" elapsed="0.196646"/>
+<status status="PASS" start="2025-02-06T16:27:03.105254" elapsed="0.200698"/>
 </kw>
-<status status="PASS" start="2025-02-05T14:23:58.412038" elapsed="39.511103"/>
+<status status="PASS" start="2025-02-06T16:25:57.940664" elapsed="65.365515"/>
 </test>
-<status status="PASS" start="2025-02-05T14:23:58.312277" elapsed="39.611409"/>
+<status status="PASS" start="2025-02-06T16:25:57.788919" elapsed="65.517890"/>
 </suite>
-<status status="PASS" start="2025-02-05T14:23:58.311762" elapsed="39.612518"/>
+<status status="PASS" start="2025-02-06T16:25:57.788394" elapsed="65.519040"/>
 </suite>
-<status status="PASS" start="2025-02-05T14:23:58.311082" elapsed="39.613613"/>
+<status status="PASS" start="2025-02-06T16:25:57.787578" elapsed="65.520253"/>
 </suite>
-<status status="PASS" start="2025-02-05T14:23:58.301532" elapsed="39.623521"/>
+<status status="PASS" start="2025-02-06T16:25:57.778994" elapsed="65.529229"/>
 </suite>
 <statistics>
 <total>
@@ -149,10 +456,10 @@ Without any arguments.</msg>
 <stat pass="1" fail="0" skip="0" id="s1" name="Thinx-Automation1">Thinx-Automation1</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">Thinx-Automation1.Tests</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Footer">Thinx-Automation1.Tests.Footer</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Footer TC001 Test">Thinx-Automation1.Tests.Footer.Footer TC001 Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Footer TC003 Test">Thinx-Automation1.Tests.Footer.Footer TC003 Test</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-02-05T14:23:58.410031" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC004_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.</msg>
+<msg time="2025-02-06T16:25:57.938928" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC004_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.</msg>
 </errors>
 </robot>
