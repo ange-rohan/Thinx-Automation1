@@ -12,7 +12,6 @@
 Library             SeleniumLibrary
 Resource          ../../resources.robot
 Resource          ../../pages/Registration/Registration_TC004_Pages.robot
-Resource          ../../pages/CookieSettings/CookieSettings_TC10_Pages.robot
 Resource          ../../steps/PDP/PDP_TC004_Steps.robot
 Test Setup        Open Thinx PDP Using Chrome Browser
 Test Teardown     Close Browser

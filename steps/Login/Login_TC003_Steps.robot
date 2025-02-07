@@ -1,6 +1,5 @@
 *** Settings ***
 Library       SeleniumLibrary
-Resource          ../../pages/Registration/Registration_TC004_Pages.robot
 Resource          ../../pages/Login/Login_TC003_Pages.robot
 
 *** Variables ***

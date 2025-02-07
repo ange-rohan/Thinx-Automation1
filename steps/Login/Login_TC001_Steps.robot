@@ -1,7 +1,7 @@
 *** Settings ***
 Library       SeleniumLibrary
 Resource         ../../pages/Login/Login_TC001_Pages.robot
-Resource          ../../pages/Registration/Registration_TC004_Pages.robot
+Resource          ../../pages/Registration/Registration_TC001_Pages.robot
 
 
 *** Keywords ***

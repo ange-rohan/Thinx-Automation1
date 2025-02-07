@@ -18,6 +18,7 @@ Enter Username
 Enter Password
 	 [Arguments]                       ${pwd}
     Sleep    5
+    Scroll Element Into View    locator=${Password}
     Wait Until Element Is Visible      ${Password}  timeout=10s
     Wait Until Element Is Enabled     ${Password}          10
     Input Text                       ${Password}          ${pwd}

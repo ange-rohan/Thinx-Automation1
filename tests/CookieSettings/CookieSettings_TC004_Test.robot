@@ -1,8 +1,5 @@
 # Script Name: CookieSettings_TC004_Test
 # Description: Cookie Details link Page-User should see list of cookie details with expand and collapse option
-# Modified by:
-# MOdified on:
-# Comments:
 # Run Command: robot. \QA-Automation\tests\CookieSettings\CookieSettings_TC004_Test.robot
 
 

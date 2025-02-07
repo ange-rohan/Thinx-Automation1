@@ -8,7 +8,6 @@
 *** Settings ***
 Library             SeleniumLibrary
 Resource          ../../resources.robot
-Resource          ../../pages/Registration/Registration_TC004_Pages.robot
 Resource          ../../pages/DoNotSellOrShareMyInfo/DoNotSellInfo_TC001_Pages.robot
 Resource          ../../steps/PDP/PDP_TC004_Steps.robot
 Test Setup        Open Thinx Homepage Using Chrome Browser
