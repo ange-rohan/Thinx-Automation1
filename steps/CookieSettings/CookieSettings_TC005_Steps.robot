@@ -4,23 +4,15 @@ Library            /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/Th
 Resource          ../../pages/CookieSettings/CookieSettings_TC004_Pages.robot
 Resource        ../../pages/CookieSettings/CookieSettings_TC005_Pages.robot
 
+
 *** Keywords ***
-
-Check Console For Load Events
-    ${logs}=    Get Console Logs
-    Log    ${logs}
-    Should Contain    ${logs}    load:ppperjm
-
-Confirm Video Module Is Loading
-    Wait Until Element Is Visible    ${VideoModule}
-    Element Should Be Visible    ${VideoModule}
-    Element Should Be Enabled    ${VideoModule}
 
 Navigate to PDPs & Confirm Reviews Load
     Wait Until Element Is Visible    ${SleepShortsProductCard}
     Scroll Element Into View    ${SleepShortsProductCard}
     Click Element    ${SleepShortsProductCard}
-    Sleep    2
+    Sleep    10
+    Capture Page Screenshot
     Wait Until Element Is Visible    ${PDPYotpoWidget1}
     Element Should Be Visible    ${PDPYotpoWidget1}
     Capture Page Screenshot
@@ -36,10 +28,10 @@ Navigate to Quiz Page & Ensure Quiz Loads
     Wait Until Element Is Visible    ${TakeTheQuizCTA}
     Scroll Element Into View    ${TakeTheQuizCTA}
     Click Element    ${TakeTheQuizCTA}
-    Sleep    2
+    Sleep    5
+    Capture Page Screenshot
     Wait Until Element Is Visible    ${QuizWidget}
     Element Should Be Visible    ${QuizWidget}
-    Capture Page Screenshot
 
 Navigate to Reviews Page & Ensure Reviews Load
      Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)

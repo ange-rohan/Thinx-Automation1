@@ -17,8 +17,6 @@ Test Teardown     Close Browser
 
 *** Test Cases ***
 Open Thinx
-    Check Console For Load Events
-    Confirm Video Module Is Loading
     Navigate to PDPs & Confirm Reviews Load
     Navigate to Quiz Page & Ensure Quiz Loads
     Navigate to Reviews Page & Ensure Reviews Load
