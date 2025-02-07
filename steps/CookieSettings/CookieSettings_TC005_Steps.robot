@@ -1,13 +1,13 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    CustomKeywords.py
+Library            /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/CustomKeywords.py
 Resource          ../../pages/CookieSettings/CookieSettings_TC004_Pages.robot
 Resource        ../../pages/CookieSettings/CookieSettings_TC005_Pages.robot
 
 *** Keywords ***
 
 Check Console For Load Events
-    ${logs}=    Get Console Logs    ${URL}
+    ${logs}=    Get Console Logs
     Log    ${logs}
     Should Contain    ${logs}    load:ppperjm
 

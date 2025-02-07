@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    CustomKeywords.py
+Library            /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/CustomKeywords.py
 Resource          ../../pages/CookieSettings/CookieSettings_TC004_Pages.robot
 
 

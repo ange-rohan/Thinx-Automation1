@@ -1,69 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-07T10:14:13.816745" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-07T10:35:33.448243" rpa="false" schemaversion="5">
 <suite id="s1" name="Thinx-Automation1" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1">
 <suite id="s1-s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
 <suite id="s1-s1-s1" name="CookieSettings" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/CookieSettings">
 <suite id="s1-s1-s1-s1" name="CookieSettings TC005 Test" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/CookieSettings/CookieSettings_TC005_Test.robot">
-<test id="s1-s1-s1-s1-t1" name="Open Thinx" line="20">
+<test id="s1-s1-s1-s1-t1" name="Open Thinx" line="19">
 <kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-07T10:14:13.944025" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<msg time="2025-02-07T10:35:33.568035" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
 <arg>${ThinxHomepage}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-07T10:14:13.943888" elapsed="1.690854"/>
+<status status="PASS" start="2025-02-07T10:35:33.567847" elapsed="4.076588"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-07T10:14:15.643751" elapsed="2.085484"/>
+<status status="PASS" start="2025-02-07T10:35:37.645138" elapsed="0.389278"/>
 </kw>
-<status status="PASS" start="2025-02-07T10:14:13.943540" elapsed="3.785991"/>
+<status status="PASS" start="2025-02-07T10:35:33.567379" elapsed="4.467200"/>
 </kw>
 <kw name="Check Console For Load Events" owner="CookieSettings_TC005_Steps">
-<kw name="Get Console Logs">
-<msg time="2025-02-07T10:14:17.732373" level="FAIL">No keyword with name 'Get Console Logs' found.</msg>
+<kw name="Get Console Logs" owner="CustomKeywords">
+<msg time="2025-02-07T10:35:38.035318" level="FAIL">Keyword 'CustomKeywords.Get Console Logs' expected 1 argument, got 0.</msg>
 <var>${logs}</var>
-<arg>${URL}</arg>
-<status status="FAIL" start="2025-02-07T10:14:17.731647" elapsed="0.000959">No keyword with name 'Get Console Logs' found.</status>
+<status status="FAIL" start="2025-02-07T10:35:38.035177" elapsed="0.000360">Keyword 'CustomKeywords.Get Console Logs' expected 1 argument, got 0.</status>
 </kw>
 <kw name="Log" owner="BuiltIn">
 <arg>${logs}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-02-07T10:14:17.733323" elapsed="0.000061"/>
+<status status="NOT RUN" start="2025-02-07T10:35:38.035635" elapsed="0.000113"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${logs}</arg>
 <arg>load:ppperjm</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="NOT RUN" start="2025-02-07T10:14:17.733454" elapsed="0.000038"/>
+<status status="NOT RUN" start="2025-02-07T10:35:38.035817" elapsed="0.000049"/>
 </kw>
-<status status="FAIL" start="2025-02-07T10:14:17.729892" elapsed="0.003672">No keyword with name 'Get Console Logs' found.</status>
+<status status="FAIL" start="2025-02-07T10:35:38.034869" elapsed="0.001071">Keyword 'CustomKeywords.Get Console Logs' expected 1 argument, got 0.</status>
 </kw>
 <kw name="Confirm Video Module Is Loading" owner="CookieSettings_TC005_Steps">
-<status status="NOT RUN" start="2025-02-07T10:14:17.733833" elapsed="0.000162"/>
+<status status="NOT RUN" start="2025-02-07T10:35:38.036155" elapsed="0.000134"/>
 </kw>
 <kw name="Navigate to PDPs &amp; Confirm Reviews Load" owner="CookieSettings_TC005_Steps">
-<status status="NOT RUN" start="2025-02-07T10:14:17.734188" elapsed="0.000063"/>
+<status status="NOT RUN" start="2025-02-07T10:35:38.036497" elapsed="0.000091"/>
 </kw>
 <kw name="Navigate to Quiz Page &amp; Ensure Quiz Loads" owner="CookieSettings_TC005_Steps">
-<status status="NOT RUN" start="2025-02-07T10:14:17.734364" elapsed="0.000091"/>
+<status status="NOT RUN" start="2025-02-07T10:35:38.036695" elapsed="0.000048"/>
 </kw>
 <kw name="Navigate to Reviews Page &amp; Ensure Reviews Load" owner="CookieSettings_TC005_Steps">
-<status status="NOT RUN" start="2025-02-07T10:14:17.734638" elapsed="0.000048"/>
+<status status="NOT RUN" start="2025-02-07T10:35:38.036840" elapsed="0.000042"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-07T10:14:17.734865" elapsed="0.129639"/>
+<status status="PASS" start="2025-02-07T10:35:38.037044" elapsed="0.150058"/>
 </kw>
-<status status="FAIL" start="2025-02-07T10:14:13.943051" elapsed="3.921637">No keyword with name 'Get Console Logs' found.</status>
+<status status="FAIL" start="2025-02-07T10:35:33.566863" elapsed="4.620404">Keyword 'CustomKeywords.Get Console Logs' expected 1 argument, got 0.</status>
 </test>
-<status status="FAIL" start="2025-02-07T10:14:13.829040" elapsed="4.036251"/>
+<status status="FAIL" start="2025-02-07T10:35:33.460700" elapsed="4.727191"/>
 </suite>
-<status status="FAIL" start="2025-02-07T10:14:13.828593" elapsed="4.037144"/>
+<status status="FAIL" start="2025-02-07T10:35:33.459964" elapsed="4.728613"/>
 </suite>
-<status status="FAIL" start="2025-02-07T10:14:13.827930" elapsed="4.038251"/>
+<status status="FAIL" start="2025-02-07T10:35:33.459224" elapsed="4.729882"/>
 </suite>
-<status status="FAIL" start="2025-02-07T10:14:13.819512" elapsed="4.047041"/>
+<status status="FAIL" start="2025-02-07T10:35:33.451055" elapsed="4.738469"/>
 </suite>
 <statistics>
 <total>
@@ -79,11 +78,8 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2025-02-07T10:14:13.927620" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/CookieSettings/CookieSettings_TC005_Test.robot' on line 8: Library 'CustomKeywords.py' does not exist.</msg>
-<msg time="2025-02-07T10:14:13.939196" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/CookieSettings/CookieSettings_TC004_Test.robot' on line 18: Setting 'Test Setup' is not allowed in resource file.</msg>
-<msg time="2025-02-07T10:14:13.939398" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/CookieSettings/CookieSettings_TC004_Test.robot' on line 19: Setting 'Test Teardown' is not allowed in resource file.</msg>
-<msg time="2025-02-07T10:14:13.939571" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/CookieSettings/CookieSettings_TC004_Steps.robot' on line 3: Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/CookieSettings/CookieSettings_TC004_Test.robot' on line 25: Resource file with 'Test Cases' section is invalid.</msg>
-<msg time="2025-02-07T10:14:13.940875" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/pages/CookieSettings/CookieSettings_TC005_Pages.robot' on line 3: Library 'CustomKeywords.py' does not exist.</msg>
-<msg time="2025-02-07T10:14:13.942264" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/CookieSettings/CookieSettings_TC005_Steps.robot' on line 3: Library 'CustomKeywords.py' does not exist.</msg>
+<msg time="2025-02-07T10:35:33.562579" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/CookieSettings/CookieSettings_TC004_Test.robot' on line 18: Setting 'Test Setup' is not allowed in resource file.</msg>
+<msg time="2025-02-07T10:35:33.562809" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/CookieSettings/CookieSettings_TC004_Test.robot' on line 19: Setting 'Test Teardown' is not allowed in resource file.</msg>
+<msg time="2025-02-07T10:35:33.562924" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/CookieSettings/CookieSettings_TC004_Steps.robot' on line 3: Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/CookieSettings/CookieSettings_TC004_Test.robot' on line 25: Resource file with 'Test Cases' section is invalid.</msg>
 </errors>
 </robot>
