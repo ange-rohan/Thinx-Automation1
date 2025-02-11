@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource          ../../tests/CookieSettings/CookieSettings_TC001_Test.robot
+Resource          ../../pages/CookieSettings/CookieSettings_TC001_Pages.robot
 
 *** Keywords ***
 Open Thinx

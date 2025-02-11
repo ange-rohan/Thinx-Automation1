@@ -1,19 +1,14 @@
 ==============================================================================
-Tests                                                                         
+Pdp                                                                           
 ==============================================================================
-Tests.CookieSettings                                                          
+Pdp.PDP TC001 Test                                                            
 ==============================================================================
-Tests.CookieSettings.CookieSettings TC001 Test                                
-==============================================================================
-Open Thinx                                                            | PASS |
+Open Thinx PDP Using Chrome Browser                                   | PASS |
 ------------------------------------------------------------------------------
-Tests.CookieSettings.CookieSettings TC001 Test                        | PASS |
+Pdp.PDP TC001 Test                                                    | PASS |
 1 test, 1 passed, 0 failed
 ==============================================================================
-Tests.CookieSettings                                                  | PASS |
-1 test, 1 passed, 0 failed
-==============================================================================
-Tests                                                                 | PASS |
+Pdp                                                                   | PASS |
 1 test, 1 passed, 0 failed
 ==============================================================================
 Output:  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/pabot_results/0/output.xml

@@ -1,35 +1,8 @@
-datasources:0c03cb9bf7e5f649f3d86606c441572f27e35595
-commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+datasources:38d6e062947a96ce75eed93990750f4901cf57e3
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
 suitesfrom:no-suites-from-option
-file:2198607d5296c15de3d43c12e164adab8d5dea62
---test Tests.CookieSettings.CookieSettings TC001 Test.Open Thinx
---test Tests.CookieSettings.CookieSettings TC002 Test.Open Thinx
---test Tests.CookieSettings.CookieSettings TC003 Test.Open Thinx
---test Tests.CookieSettings.CookieSettings TC004 Test.Open Thinx
---test Tests.CookieSettings.CookieSettings TC005 Test.Open Thinx
---test Tests.DoNotSellOrShareMyInfo.DoNotSellInfo TC001 Test.Open Thinx
---test Tests.DoNotSellOrShareMyInfo.DoNotSellInfo TC002 Test.Open Thinx
---test Tests.DoNotSellOrShareMyInfo.DoNotSellInfo TC003 Test.Open Thinx
---test Tests.Footer.Footer TC001 Test.Open Thinx
---test Tests.Footer.Footer TC002 Test.Open Thinx
---test Tests.Footer.Footer TC003 Test.Open Thinx
---test Tests.ForgotPassword.ForgotPassword TC001 Test.Login to Thinx
---test Tests.ForgotPassword.ForgotPassword TC002 Test.Login to Thinx
---test Tests.HomePage.HomePage TC001 Test.Open Thinx Homepage Using Chrome Browser
---test Tests.HomePage.HomePage TC002 Test.Open Thinx Homepage Using Chrome Browser
---test Tests.HomePage.HomePage TC003 Test.Open Thinx Homepage Using Chrome Browser
---test Tests.Login.Login TC001 Test.Login to Thinx
---test Tests.Login.Login TC002 Test.Login to Thinx
---test Tests.Login.Login TC003 Test.Login to Thinx
---test Tests.Logout.Logout TC001 Tests.Login to Thinx
---test Tests.Meganav.Meganav TC001 Tests.Open Thinx Homepage Using Chrome Browser
---test Tests.Meganav.Meganav TC002 Tests.Open Thinx Homepage Using Chrome Browser
---test Tests.PDP.PDP TC001 Test.Open Thinx PDP Using Chrome Browser
---test Tests.PDP.PDP TC002 Test.Open Thinx PDP Using Chrome Browser
---test Tests.PDP.PDP TC003 Test.Open Thinx PDP Using Chrome Browser options=${CHROME_OPTIONS}
---test Tests.PDP.PDP TC004 Test.Open Thinx PDP Using Chrome Browser
---test Tests.PLP.PLP TC001 Test.Open Thinx Collections Page Using Chrome Browser
---test Tests.PLP.PLP TC002 Test.Open Thinx Collections Page Using Chrome Browser
---test Tests.PLP.PLP TC003 Test.Open Thinx Collections
---test Tests.Registration.Registration TC001 Test.Registration of Thinx
---test Tests.Registration.Registration TC002 Test.Registration of Thinx
+file:60028face6c739b4ec47cfff91e56e5b56fb6c01
+--suite Pdp.PDP TC001 Test
+--suite Pdp.PDP TC002 Test
+--suite Pdp.PDP TC003 Test
+--suite Pdp.PDP TC004 Test

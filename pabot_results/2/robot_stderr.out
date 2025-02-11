@@ -1,1 +1,3 @@
+[ ERROR ] Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC003_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.
 [ ERROR ] Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC004_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.
+[ WARN ] Multiple tests with name 'Open Thinx PDP Using Chrome Browser options=${CHROME_OPTIONS}' executed in suite 'Pdp.PDP TC003 Test'.

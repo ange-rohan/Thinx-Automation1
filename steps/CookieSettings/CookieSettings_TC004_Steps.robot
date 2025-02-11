@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource          ../../tests/CookieSettings/CookieSettings_TC004_Test.robot
+Resource          ../../pages/CookieSettings/CookieSettings_TC004_Pages.robot
 
 *** Variables ***
 ${user}     thinx.automation1@yopmail.com
