@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-11T10:51:46.559602" rpa="false" schemaversion="5">
+<suite id="s1" name="Cookiesettings" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/cookiesettings">
+<suite id="s1-s1" name="CookieSettings TC003 Test" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/cookiesettings/CookieSettings_TC003_Test.robot">
+<test id="s1-s1-t1" name="Open Thinx" line="22">
+<kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:51:47.140865" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<arg>${ThinxHomepage}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-11T10:51:47.140741" elapsed="6.219619"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-11T10:51:53.361637" elapsed="0.403475"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:51:47.140405" elapsed="6.625116"/>
+</kw>
+<kw name="Click Accept Cookies Button">
+<msg time="2025-02-11T10:51:53.768763" level="FAIL">No keyword with name 'Click Accept Cookies Button' found.</msg>
+<status status="FAIL" start="2025-02-11T10:51:53.768417" elapsed="0.000493">No keyword with name 'Click Accept Cookies Button' found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-02-11T10:51:53.769116" elapsed="0.000039"/>
+</kw>
+<kw name="Accept Cookies and Close Welcome Modal" owner="PDP_TC004_Steps">
+<status status="NOT RUN" start="2025-02-11T10:51:53.769329" elapsed="0.000042"/>
+</kw>
+<kw name="Click on Cookie Settings" owner="CookieSettings_TC001_Pages">
+<status status="NOT RUN" start="2025-02-11T10:51:53.769453" elapsed="0.000024"/>
+</kw>
+<kw name="Turn Off Performance cookie" owner="CookieSettings_TC003_Pages">
+<status status="NOT RUN" start="2025-02-11T10:51:53.769549" elapsed="0.000022"/>
+</kw>
+<kw name="Turn Off Functional cookie" owner="CookieSettings_TC003_Pages">
+<status status="NOT RUN" start="2025-02-11T10:51:53.769621" elapsed="0.000019"/>
+</kw>
+<kw name="Click on Save Settings CTA on cookie settings dialog box" owner="CookieSettings_TC003_Pages">
+<status status="NOT RUN" start="2025-02-11T10:51:53.769686" elapsed="0.000017"/>
+</kw>
+<kw name="Click on Cookie Settings" owner="CookieSettings_TC001_Pages">
+<status status="NOT RUN" start="2025-02-11T10:51:53.769752" elapsed="0.000020"/>
+</kw>
+<kw name="Validate all the toggle buttons are OFF" owner="CookieSettings_TC003_Pages">
+<status status="NOT RUN" start="2025-02-11T10:51:53.770213" elapsed="0.000046"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-11T10:51:53.770857" elapsed="0.290466"/>
+</kw>
+<status status="FAIL" start="2025-02-11T10:51:47.140062" elapsed="6.921431">No keyword with name 'Click Accept Cookies Button' found.</status>
+</test>
+<status status="FAIL" start="2025-02-11T10:51:46.579828" elapsed="7.482542"/>
+</suite>
+<status status="FAIL" start="2025-02-11T10:51:46.572801" elapsed="7.490526"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Cookiesettings">Cookiesettings</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="CookieSettings TC003 Test">Cookiesettings.CookieSettings TC003 Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-02-11T10:51:47.131261" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/cookiesettings/CookieSettings_TC003_Test.robot' on line 14: Resource file '../../pages/Registration/Registration_TC004_Pages.robot' does not exist.</msg>
+<msg time="2025-02-11T10:51:47.138849" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC004_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.</msg>
+</errors>
+</robot>

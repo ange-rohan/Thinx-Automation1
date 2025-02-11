@@ -11,8 +11,14 @@ ${MoreInfoLink}     xpath: //a[@class='privacy-notice-link']
 ${CloseIcon}        xpath: //button[@class='ot-close-icon']
 ${SaveCTA}          css: #onetrust-consent-sdk .ot-pc-footer .save-preference-btn-handler
 ${ConsentPref}       css: #ot-pc-content .ot-cat-grp
+${AcceptCookies}    //button[@id='onetrust-accept-btn-handler']
 
 *** Keywords ***
+Click Accept Cookies Button
+    Wait Until Element Is Visible ${AcceptCookies}
+	Click Element    ${AcceptCookies}
+	Sleep    3
+
 Click on Cookie Settings
     Execute Javascript    window.scrollTo(0,2000)
     Sleep    3

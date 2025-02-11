@@ -1,0 +1,24 @@
+==============================================================================
+Cookiesettings                                                                
+==============================================================================
+Cookiesettings.CookieSettings TC001 Test                                      
+==============================================================================
+Open Thinx                                                              
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/cookiesettings/CookieSettings_TC001_Test.robot:19
+    T:  Open Thinx    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/cookiesettings/CookieSettings_TC001_Test.robot:20
+      Click Accept Cookies Button    
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'Click Accept Cookies Button' found.
+------------------------------------------------------------------------------
+Cookiesettings.CookieSettings TC001 Test                              | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Cookiesettings                                                        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/pabot_results/0/output.xml

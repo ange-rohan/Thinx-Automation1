@@ -1,0 +1,9 @@
+datasources:647d917057dbe44c81bb17bc11075b0c9661d7d4
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:004e42e5cab8848af741fe28c078be311e491102
+--suite Cookiesettings.CookieSettings TC001 Test
+--suite Cookiesettings.CookieSettings TC002 Test
+--suite Cookiesettings.CookieSettings TC003 Test
+--suite Cookiesettings.CookieSettings TC004 Test
+--suite Cookiesettings.CookieSettings TC005 Test
