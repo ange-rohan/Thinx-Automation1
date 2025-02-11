@@ -11,7 +11,7 @@
 *** Settings ***
 Library             SeleniumLibrary
 Resource          ../../resources.robot
-Resource          ../../pages/Registration/Registration_TC004_Pages.robot
+Resource          ../../pages/CookieSettings/CookieSettings_TC001_Pages.robot
 Resource          ../../steps/PDP/PDP_TC004_Steps.robot
 Test Setup        Open Thinx PDP Using Chrome Browser
 Test Teardown     Close Browser
@@ -21,5 +21,6 @@ Open Thinx PDP Using Chrome Browser
     Click Accept Cookies Button
 	Sleep   5
 	Accept Cookies and Close Welcome Modal
+    Sleep   5
     Validate You Can Select Different Color Swatch
     Validate You Can Add Different Colors to Cart

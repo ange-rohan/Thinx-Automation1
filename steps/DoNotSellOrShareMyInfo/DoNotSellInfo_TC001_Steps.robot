@@ -1,6 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource            ../../tests/DoNotSellOrShareMyInfo/DoNotSellInfo_TC001_Test.robot
+Resource            ../../pages/CookieSettings/CookieSettings_TC001_Pages.robot
 
 
 *** Keywords ***

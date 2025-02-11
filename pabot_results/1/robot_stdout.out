@@ -1,24 +1,19 @@
 ==============================================================================
-Cookiesettings                                                                
+Tests                                                                         
 ==============================================================================
-Cookiesettings.CookieSettings TC002 Test                                      
+Tests.CookieSettings                                                          
 ==============================================================================
-Open Thinx                                                              
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/cookiesettings/CookieSettings_TC002_Test.robot:22
-    T:  Open Thinx    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/cookiesettings/CookieSettings_TC002_Test.robot:23
-      Click Accept Cookies Button    
-______________________________________________________________________________
-| FAIL |
-No keyword with name 'Click Accept Cookies Button' found.
+Tests.CookieSettings.CookieSettings TC002 Test                                
+==============================================================================
+Open Thinx                                                            | PASS |
 ------------------------------------------------------------------------------
-Cookiesettings.CookieSettings TC002 Test                              | FAIL |
-1 test, 0 passed, 1 failed
+Tests.CookieSettings.CookieSettings TC002 Test                        | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Cookiesettings                                                        | FAIL |
-1 test, 0 passed, 1 failed
+Tests.CookieSettings                                                  | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
 Output:  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/pabot_results/1/output.xml

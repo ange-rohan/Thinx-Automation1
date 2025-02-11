@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-11T11:35:12.901077" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
+<suite id="s1-s1" name="Meganav" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Meganav">
+<suite id="s1-s1-s1" name="Meganav TC002 Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Meganav/Meganav_TC002_Tests.robot">
+<test id="s1-s1-s1-t1" name="Open Thinx Homepage Using Chrome Browser" line="14">
+<kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:13.272854" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<arg>${ThinxHomepage}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-11T11:35:13.272686" elapsed="11.068605"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-11T11:35:24.342707" elapsed="0.370040"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:35:13.272303" elapsed="11.440749"/>
+</kw>
+<kw name="Validate Meganav Displays" owner="Meganav_TC002_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PeriodNav}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T11:35:24.713989" elapsed="0.016014"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:24.730703" level="INFO">Simulating Mouse Over on element '//span[.='period']'.</msg>
+<arg>${PeriodNav}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:24.730273" elapsed="0.277559"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PeriodSubMenu}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T11:35:25.008233" elapsed="0.016779"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:35:24.713519" elapsed="0.311694"/>
+</kw>
+<kw name="Validate Shop All Nav Directs to Right Page" owner="Meganav_TC002_Steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:25.026394" level="INFO">Clicking element '//span[.='shop all']'.</msg>
+<arg>${ShopAllNav}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:25.026214" elapsed="0.265093"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${H1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T11:35:25.291424" elapsed="3.195379"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:28.522364" level="INFO">${h1_text} = shop all</msg>
+<var>${h1_text}</var>
+<arg>${H1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:28.486931" elapsed="0.035485"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${h1_text}</arg>
+<arg>shop all</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-11T11:35:28.522643" elapsed="0.000200"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${ShopAllURL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2025-02-11T11:35:28.523012" elapsed="0.013952"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:28.553105" level="INFO">Current location is 'https://www.thinx.com/collections/shop-all'.</msg>
+<arg>${ShopAllURL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-02-11T11:35:28.537175" elapsed="0.016075"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:35:25.025748" elapsed="3.527627"/>
+</kw>
+<kw name="Validate Period Nav Directs to Right Page" owner="Meganav_TC002_Steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:28.554266" level="INFO">Clicking element '//span[.='period']'.</msg>
+<arg>${PeriodNav}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:28.553978" elapsed="0.222519"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${PeriodURL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2025-02-11T11:35:28.776763" elapsed="1.926547"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:30.736478" level="INFO">Current location is 'https://www.thinx.com/collections/period-shop-all'.</msg>
+<arg>${PeriodURL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-02-11T11:35:30.703466" elapsed="0.033198"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${H1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T11:35:30.736943" elapsed="0.054986"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:30.864537" level="INFO">${h1_text} = shop period</msg>
+<var>${h1_text}</var>
+<arg>${H1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:30.792151" elapsed="0.072414"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${h1_text}</arg>
+<arg>shop period</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-11T11:35:30.864674" elapsed="0.000145"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:35:28.553609" elapsed="2.311347"/>
+</kw>
+<kw name="Validate Bladder Nav Directs to Right Page" owner="Meganav_TC002_Steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:30.865729" level="INFO">Clicking element '//span[.='bladder']'.</msg>
+<arg>${BladderNav}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:30.865444" elapsed="0.101331"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BladderURL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2025-02-11T11:35:30.966916" elapsed="1.187539"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:32.157454" level="INFO">Current location is 'https://www.thinx.com/collections/bladder-shop-all'.</msg>
+<arg>${BladderURL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-02-11T11:35:32.154695" elapsed="0.002825"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${H1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T11:35:32.157624" elapsed="0.012505"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:32.219672" level="INFO">${h1_text} = shop all bladder</msg>
+<var>${h1_text}</var>
+<arg>${H1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:32.170429" elapsed="0.049298"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${h1_text}</arg>
+<arg>shop all bladder</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-11T11:35:32.220024" elapsed="0.000363"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:35:30.865144" elapsed="1.355445"/>
+</kw>
+<kw name="Validate Teens Nav Directs to Right Page" owner="Meganav_TC002_Steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:32.221891" level="INFO">Clicking element '//span[.='teens']'.</msg>
+<arg>${TeensNav}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:32.221352" elapsed="0.087396"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${TeensURL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2025-02-11T11:35:32.308958" elapsed="2.314198"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:34.625851" level="INFO">Current location is 'https://www.thinx.com/collections/teens-shop-all'.</msg>
+<arg>${TeensURL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-02-11T11:35:34.623273" elapsed="0.002765"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${H1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T11:35:34.626271" elapsed="0.013313"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:34.648930" level="INFO">${h1_text} = shop all Thinx Teens</msg>
+<var>${h1_text}</var>
+<arg>${H1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:34.639813" elapsed="0.009143"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${h1_text}</arg>
+<arg>shop all Thinx Teens</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-11T11:35:34.649057" elapsed="0.000353"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:35:32.220908" elapsed="2.428633"/>
+</kw>
+<kw name="Validate Sets Nav Directs to Right Page" owner="Meganav_TC002_Steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:34.650235" level="INFO">Clicking element '//span[.='saver sets']'.</msg>
+<arg>${SetsNav}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:34.650095" elapsed="0.049257"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${SetsURL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2025-02-11T11:35:34.699780" elapsed="1.867977"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:36.570888" level="INFO">Current location is 'https://www.thinx.com/collections/sets'.</msg>
+<arg>${SetsURL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-02-11T11:35:36.567877" elapsed="0.003124"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${H1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T11:35:36.571185" elapsed="0.043644"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:36.628308" level="INFO">${h1_text} = shop sets</msg>
+<var>${h1_text}</var>
+<arg>${H1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:36.615090" elapsed="0.013274"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${h1_text}</arg>
+<arg>shop sets</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-11T11:35:36.628561" elapsed="0.000271"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:35:34.649805" elapsed="1.979126"/>
+</kw>
+<kw name="Validate Last Call Nav Directs to Right Page" owner="Meganav_TC002_Steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:36.629659" level="INFO">Clicking element '//span[.='last call']'.</msg>
+<arg>${LastCallNav}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:36.629440" elapsed="0.081468"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${LastCallURL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2025-02-11T11:35:36.711170" elapsed="1.831284"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:38.547038" level="INFO">Current location is 'https://www.thinx.com/collections/last-call-sale'.</msg>
+<arg>${LastCallURL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-02-11T11:35:38.542924" elapsed="0.004202"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${H1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T11:35:38.547258" elapsed="0.022173"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:38.618356" level="INFO">${h1_text} = shop last call</msg>
+<var>${h1_text}</var>
+<arg>${H1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:38.569712" elapsed="0.048688"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${h1_text}</arg>
+<arg>shop last call</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-11T11:35:38.618512" elapsed="0.000146"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:35:36.629119" elapsed="1.989755"/>
+</kw>
+<kw name="Validate Take Quiz Nav Directs to Right Page" owner="Meganav_TC002_Steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:38.620266" level="INFO">Clicking element '//span[.='take the quiz']'.</msg>
+<arg>${TakeTheQuizCTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:38.619221" elapsed="0.064561"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${QuizURL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2025-02-11T11:35:38.684005" elapsed="3.594987"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:42.280865" level="INFO">Current location is 'https://www.thinx.com/pages/find-your-perfect-pair'.</msg>
+<arg>${QuizURL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-02-11T11:35:42.279116" elapsed="0.001812"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:35:38.619019" elapsed="3.661998"/>
+</kw>
+<kw name="Validate Learn Nav Directs to Right Page" owner="Meganav_TC002_Steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:42.281899" level="INFO">Clicking element '//span[.='learn']'.</msg>
+<arg>${LearnNav}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:42.281771" elapsed="0.033972"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${HowWorksURL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2025-02-11T11:35:42.315866" elapsed="1.432105"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:43.750014" level="INFO">Current location is 'https://www.thinx.com/pages/how-they-work'.</msg>
+<arg>${HowWorksURL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-02-11T11:35:43.748089" elapsed="0.002045"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LearnH1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T11:35:43.750333" elapsed="0.009889"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:43.772548" level="INFO">${h1_text} = how our period underwear works</msg>
+<var>${h1_text}</var>
+<arg>${LearnH1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:43.760329" elapsed="0.012246"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${h1_text}</arg>
+<arg>how our period underwear works</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-11T11:35:43.772667" elapsed="0.000105"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:35:42.281448" elapsed="1.491629"/>
+</kw>
+<kw name="Validate Sign In Nav Directs to Right Page" owner="Meganav_TC002_Steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:43.773394" level="INFO">Clicking element '//header[@class='flex justify-between items-center px-3 h-[3.25rem] lg:h-14.5 lg:px-8 bg-white border-b border-b-brand-tangerine']//a[contains(.,'Sign in')]'.</msg>
+<arg>${SignInNav}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:43.773301" elapsed="0.055721"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${SignInURL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2025-02-11T11:35:43.829143" elapsed="1.873204"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:45.729922" level="INFO">Current location is 'https://www.thinx.com/account/login'.</msg>
+<arg>${SignInURL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-02-11T11:35:45.702522" elapsed="0.027540"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SignInH1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T11:35:45.730202" elapsed="0.045091"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:45.791124" level="INFO">${h1_text} = Login</msg>
+<var>${h1_text}</var>
+<arg>${SignInH1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:45.775453" elapsed="0.015754"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${h1_text}</arg>
+<arg>Login</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-11T11:35:45.791540" elapsed="0.000319"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:35:43.773178" elapsed="2.018818"/>
+</kw>
+<kw name="Validate Cart Nav Directs to Right Page" owner="Meganav_TC002_Steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:45.792427" level="INFO">Clicking element '//button[@class='relative mr-4 lg:mr-0 lg:ml-5 group']'.</msg>
+<arg>${Cart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:45.792296" elapsed="0.083106"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CartSlideOut}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T11:35:45.875671" elapsed="0.028054"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:35:45.792110" elapsed="0.111831"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:45.976098" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-1.png"&gt;&lt;img src="selenium-element-screenshot-1.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>locator=${Cart}</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2025-02-11T11:35:45.904204" elapsed="0.072399"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-11T11:35:45.976975" elapsed="0.277472"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:35:13.271760" elapsed="32.982804"/>
+</test>
+<status status="PASS" start="2025-02-11T11:35:12.981261" elapsed="33.273874"/>
+</suite>
+<status status="PASS" start="2025-02-11T11:35:12.978011" elapsed="33.277527"/>
+</suite>
+<status status="PASS" start="2025-02-11T11:35:12.958253" elapsed="33.297553"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Meganav">Tests.Meganav</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Meganav TC002 Tests">Tests.Meganav.Meganav TC002 Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

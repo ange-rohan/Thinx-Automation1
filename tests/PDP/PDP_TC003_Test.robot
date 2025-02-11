@@ -7,8 +7,9 @@
 *** Settings ***
 Library             SeleniumLibrary
 Resource          ../../resources.robot
-Resource          ../../pages/Registration/Registration_TC004_Pages.robot
+Resource          ../../pages/CookieSettings/CookieSettings_TC001_Pages.robot
 Resource          ../../steps/PDP/PDP_TC003_Steps.robot
+Resource          ../../steps/PDP/PDP_TC004_Steps.robot
 Test Setup        Open Thinx PDP Using Chrome Browser
 Test Teardown     Close Browser
 
@@ -16,6 +17,8 @@ Test Teardown     Close Browser
 Open Thinx PDP Using Chrome Browser options=${CHROME_OPTIONS}
     Click Accept Cookies Button
 	Sleep         5
+    Accept Cookies and Close Welcome Modal
+    Sleep        5
 	Validate You Can Increase Quantity on PDP 
     Validate Cart Count on Add to Cart
     Go Back

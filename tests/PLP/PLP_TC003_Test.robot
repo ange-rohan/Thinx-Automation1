@@ -11,10 +11,9 @@
 *** Settings ***
 Library             SeleniumLibrary
 Resource          ../../resources.robot
-Resource          ../../pages/Registration/Registration_TC004_Pages.robot
 Resource          ../../steps/PLP/PLP_TC001_Steps.robot
 Resource          ../../steps/PLP/PLP_TC003_Steps.robot
-Resource          ../../pages/CookieSettings/CookieSettings_TC10_Pages.robot
+Resource          ../../pages/CookieSettings/CookieSettings_TC001_Pages.robot
 Test Setup        Open Thinx Collections Page Using Chrome Browser
 Test Teardown     Close Browser
 
@@ -23,6 +22,7 @@ Open Thinx Collections
     Click Accept Cookies Button
 	Sleep   10
 	Close Email Modal
+	Sleep   3
 	Validate Color Filter Displays Correct Absorbencies On Click
 	Validate You Can Apply Multi Color Filter
 	Validate PLP Results When Multi Color Is Applied

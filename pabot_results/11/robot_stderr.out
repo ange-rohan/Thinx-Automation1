@@ -1,0 +1,1 @@
+[ ERROR ] Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/ForgotPassword/ForgotPassword_TC001_Test.robot' on line 11: Resource file '../../pages/Registration/Registration_TC004_Pages.robot' does not exist.

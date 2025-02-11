@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-11T11:35:46.689461" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
+<suite id="s1-s1" name="PDP" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/PDP">
+<suite id="s1-s1-s1" name="PDP TC004 Test" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/PDP/PDP_TC004_Test.robot">
+<test id="s1-s1-s1-t1" name="Open Thinx PDP Using Chrome Browser" line="20">
+<kw name="Open Thinx PDP Using Chrome Browser" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:46.831293" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/products/period-all-night-ultra-soft-sleep-shorts?variant=40174028750920'.</msg>
+<arg>${ThinxPDP}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-11T11:35:46.831156" elapsed="2.422712"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-11T11:35:49.254909" elapsed="0.378873"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-11T11:35:54.635095" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-11T11:35:49.634034" elapsed="5.001155"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:35:46.830789" elapsed="7.804532"/>
+</kw>
+<kw name="Click Accept Cookies Button" owner="CookieSettings_TC001_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${AcceptCookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T11:35:54.635887" elapsed="0.014758"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:35:54.650944" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<arg>${AcceptCookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:35:54.650774" elapsed="0.047918"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-11T11:35:57.700894" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-11T11:35:54.698834" elapsed="3.002188"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:35:54.635588" elapsed="3.065806"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-11T11:36:02.702922" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-11T11:35:57.701651" elapsed="5.001348"/>
+</kw>
+<kw name="Accept Cookies and Close Welcome Modal" owner="PDP_TC004_Steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-11T11:36:07.704031" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-11T11:36:02.703303" elapsed="5.000865"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${CloseModal}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-11T11:36:07.704302" elapsed="0.015368"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:36:07.719935" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
+<arg>${CloseModal}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:36:07.719790" elapsed="0.050833"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:36:02.703133" elapsed="5.067681"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-11T11:36:12.771635" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-11T11:36:07.770970" elapsed="5.000747"/>
+</kw>
+<kw name="Validate You Can Select Different Color Swatch" owner="PDP_TC004_Steps">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ColorSwatch}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-11T11:36:12.772069" elapsed="0.006680"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:36:12.787307" level="INFO">Element '//input[@id='product-option-Color-plum']' is displayed.</msg>
+<arg>${ColorSwatch}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T11:36:12.778883" elapsed="0.008482"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T11:36:12.787683" level="INFO">Clicking element '[for="product-option-Color-plum"] &gt; .swatch__outline''.</msg>
+<msg time="2025-02-11T11:36:13.102419" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-11T11:36:13.102631" level="FAIL">Element with locator '[for="product-option-Color-plum"] &gt; .swatch__outline'' not found.</msg>
+<arg>${ColorSelector}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-02-11T11:36:12.787487" elapsed="0.337738">Element with locator '[for="product-option-Color-plum"] &gt; .swatch__outline'' not found.</status>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2025-02-11T11:36:13.125528" elapsed="0.000055"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${ColorSelectedText}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-02-11T11:36:13.125652" elapsed="0.000020"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${ColorSelected}</arg>
+<arg>${ColorSelectedText}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2025-02-11T11:36:13.125739" elapsed="0.000037"/>
+</kw>
+<status status="FAIL" start="2025-02-11T11:36:12.771865" elapsed="0.354012">Element with locator '[for="product-option-Color-plum"] &gt; .swatch__outline'' not found.</status>
+</kw>
+<kw name="Validate You Can Add Different Colors to Cart" owner="PDP_TC004_Steps">
+<status status="NOT RUN" start="2025-02-11T11:36:13.126022" elapsed="0.000039"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-11T11:36:13.126202" elapsed="0.223431"/>
+</kw>
+<status status="FAIL" start="2025-02-11T11:35:46.830372" elapsed="26.519376">Element with locator '[for="product-option-Color-plum"] &gt; .swatch__outline'' not found.</status>
+</test>
+<status status="FAIL" start="2025-02-11T11:35:46.717004" elapsed="26.633173"/>
+</suite>
+<status status="FAIL" start="2025-02-11T11:35:46.716145" elapsed="26.634346"/>
+</suite>
+<status status="FAIL" start="2025-02-11T11:35:46.706427" elapsed="26.644256"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="PDP">Tests.PDP</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="PDP TC004 Test">Tests.PDP.PDP TC004 Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-02-11T11:35:46.828267" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC004_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.</msg>
+</errors>
+</robot>

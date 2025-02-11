@@ -15,7 +15,7 @@ ${AcceptCookies}    //button[@id='onetrust-accept-btn-handler']
 
 *** Keywords ***
 Click Accept Cookies Button
-    Wait Until Element Is Visible ${AcceptCookies}
+    Wait Until Element Is Visible     ${AcceptCookies}
 	Click Element    ${AcceptCookies}
 	Sleep    3
 

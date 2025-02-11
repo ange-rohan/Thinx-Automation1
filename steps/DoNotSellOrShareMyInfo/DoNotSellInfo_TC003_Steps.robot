@@ -1,6 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource          ../../tests/DoNotSellOrShareMyInfo/DoNotSellInfo_TC003_Test.robot
+Resource          ../../pages/CookieSettings/CookieSettings_TC001_Pages.robot
+Resource          ../../pages/DoNotSellOrShareMyInfo/DoNotSellInfo_TC003_Pages.robot
 
 *** Keywords ***
 Open Thinx

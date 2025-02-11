@@ -1,0 +1,33 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.PLP                                                                     
+==============================================================================
+Tests.PLP.PLP TC003 Test                                                      
+==============================================================================
+Open Thinx Collections                                                  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/PLP/PLP_TC003_Test.robot:21
+    T:  Open Thinx Collections    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/PLP/PLP_TC003_Test.robot:30
+      Validate You Can Quick Add Multi Color to Cart & Color Displays    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PLP/PLP_TC003_Steps.robot:54
+      Wait Until Element Is Visible    ${CartColor}
+      |  ${CartColor} = //div[@class='mb-3 flex flex-col gap-y-8 p-8']//div[.='Lucky Stars'] (str)
+______________________________________________________________________________
+| FAIL |
+Element '//div[@class='mb-3 flex flex-col gap-y-8 p-8']//div[.='Lucky Stars']' not visible after 5 seconds.
+------------------------------------------------------------------------------
+Tests.PLP.PLP TC003 Test                                              | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.PLP                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/pabot_results/28/output.xml

@@ -11,10 +11,9 @@
 *** Settings ***
 Library             SeleniumLibrary
 Resource          ../../resources.robot
-Resource          ../../pages/Registration/Registration_TC004_Pages.robot
+Resource          ../../pages/CookieSettings/CookieSettings_TC001_Pages.robot
 Resource          ../../steps/PLP/PLP_TC001_Steps.robot
 Resource          ../../steps/PLP/PLP_TC002_Steps.robot
-Resource          ../../pages/CookieSettings/CookieSettings_TC10_Pages.robot
 Test Setup        Open Thinx Collections Page Using Chrome Browser
 Test Teardown     Close Browser
 

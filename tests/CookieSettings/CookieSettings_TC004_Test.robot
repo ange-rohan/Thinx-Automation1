@@ -8,7 +8,6 @@
 Library             SeleniumLibrary
 Library             Dialogs
 Resource          ../../resources.robot
-Resource          ../../pages/Registration/Registration_TC004_Pages.robot
 Resource          ../../pages/CookieSettings/CookieSettings_TC004_Pages.robot
 Resource          ../../steps/CookieSettings/CookieSettings_TC004_Steps.robot
 Resource          ../../steps/PDP/PDP_TC004_Steps.robot

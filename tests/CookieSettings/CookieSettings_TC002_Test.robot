@@ -10,7 +10,6 @@
 *** Settings ***
 Library             SeleniumLibrary
 Resource          ../../resources.robot
-Resource          ../../pages/Registration/Registration_TC004_Pages.robot
 Resource          ../../pages/CookieSettings/CookieSettings_TC001_Pages.robot
 Resource          ../../pages/CookieSettings/CookieSettings_TC002_Pages.robot
 Resource          ../../steps/PDP/PDP_TC004_Steps.robot

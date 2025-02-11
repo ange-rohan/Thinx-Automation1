@@ -1,0 +1,29 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Footer                                                                  
+==============================================================================
+Tests.Footer.Footer TC002 Test                                                
+==============================================================================
+Open Thinx                                                              
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Footer/Footer_TC002_Test.robot:18
+    T:  Open Thinx    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Footer/Footer_TC002_Test.robot:23
+      Validate Footer Headings Are Visible    
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'Validate Footer Headings Are Visible' found.
+------------------------------------------------------------------------------
+Tests.Footer.Footer TC002 Test                                        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.Footer                                                          | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/pabot_results/9/output.xml

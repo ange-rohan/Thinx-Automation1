@@ -1,0 +1,49 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.PDP                                                                     
+==============================================================================
+Tests.PDP.PDP TC003 Test                                                      
+==============================================================================
+Open Thinx PDP Using Chrome Browser options=--headless --disable-gpu    
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/PDP/PDP_TC003_Test.robot:17
+    T:  Open Thinx PDP Using Chrome Browser options=--headless --disable-gpu    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/PDP/PDP_TC003_Test.robot:22
+      Validate You Can Increase Quantity on PDP    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC003_Steps.robot:10
+      Wait Until Page Contains Element    ${CloseModal}
+      |  ${CloseModal} = //button[@class='absolute right-3 top-3 [&>svg]:size-6'] (str)
+______________________________________________________________________________
+| FAIL |
+Element '//button[@class='absolute right-3 top-3 [&>svg]:size-6']' did not appear in 5 seconds.
+------------------------------------------------------------------------------
+Open Thinx PDP Using Chrome Browser options=--headless --disable-gpu    
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/PDP/PDP_TC003_Test.robot:25
+    T:  Open Thinx PDP Using Chrome Browser options=--headless --disable-gpu    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/PDP/PDP_TC003_Test.robot:28
+      Validate You Can Type In Quantity Selector to Add to Cart    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC003_Steps.robot:41
+      Wait Until Page Contains Element    ${CartTotal2}
+      |  ${CartTotal2} = //div[@class='flex flex-col content-stretch gap-2 border-t border-t-brand-tangerine px-3 py-5 md:px-8']//div[.='$148.50'] (str)
+______________________________________________________________________________
+| FAIL |
+Element '//div[@class='flex flex-col content-stretch gap-2 border-t border-t-brand-tangerine px-3 py-5 md:px-8']//div[.='$148.50']' did not appear in 5 seconds.
+------------------------------------------------------------------------------
+Tests.PDP.PDP TC003 Test                                              | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Tests.PDP                                                             | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Tests                                                                 | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Output:  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/pabot_results/24/output.xml

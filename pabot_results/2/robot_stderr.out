@@ -1,2 +1,1 @@
-[ ERROR ] Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/cookiesettings/CookieSettings_TC003_Test.robot' on line 14: Resource file '../../pages/Registration/Registration_TC004_Pages.robot' does not exist.
 [ ERROR ] Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC004_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.

@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 Resource          ../../pages/DoNotSellOrShareMyInfo/DoNotSellInfo_TC001_Pages.robot
 Resource          ../../pages/CookieSettings/CookieSettings_TC002_Pages.robot
-Resource          ../../steps/CookieSettings/CookieSettings_TC002_Steps.robot
+
 
 *** Variables ***
 ${MarketingCookieButton}        //div[@class='ot-desc-cntr']//input[@class='category-switch-handler']

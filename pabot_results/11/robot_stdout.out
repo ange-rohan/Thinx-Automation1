@@ -1,0 +1,19 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.ForgotPassword                                                          
+==============================================================================
+Tests.ForgotPassword.ForgotPassword TC001 Test                                
+==============================================================================
+Login to Thinx                                                        | PASS |
+------------------------------------------------------------------------------
+Tests.ForgotPassword.ForgotPassword TC001 Test                        | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Tests.ForgotPassword                                                  | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/pabot_results/11/output.xml

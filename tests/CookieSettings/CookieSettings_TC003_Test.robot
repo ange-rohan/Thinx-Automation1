@@ -11,7 +11,6 @@
 Library             SeleniumLibrary
 Library             Dialogs
 Resource          ../../resources.robot
-Resource          ../../pages/Registration/Registration_TC004_Pages.robot
 Resource          ../../pages/CookieSettings/CookieSettings_TC003_Pages.robot
 Resource          ../../steps/PDP/PDP_TC004_Steps.robot
 Test Setup        Open Thinx Homepage Using Chrome Browser
