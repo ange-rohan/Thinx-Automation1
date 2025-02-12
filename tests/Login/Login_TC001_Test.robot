@@ -7,7 +7,7 @@
 
 # Importing the Libraries
 *** Settings ***
-Library             SeleniumLibrary
+Library             SeleniumLibrary     screenshot_root_directory=/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/results
 Resource          ../../resources.robot
 Resource          ../../pages/Login/Login_TC001_Pages.robot
 Resource          ../../pages/Registration/Registration_TC004_Pages.robot
