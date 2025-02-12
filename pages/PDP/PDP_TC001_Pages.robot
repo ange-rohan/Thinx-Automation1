@@ -4,7 +4,7 @@ Library    SeleniumLibrary
 *** Variables ***
 ${Breadcrumbs}                //ol[@class='flex flex-wrap']
 ${BrandEyebrow}               //div[@class='relative flex justify-between ']
-${Expected_Text}              Period
+${Expected_Text}              Period buy more, save more'.
 ${PDPH1}                      //h1[@class='h4 flex-1']
 ${Expected_Text2}            Ultra Soft Sleep Shorts
 ${PDPPrice}                   //div[@class='h5 flex flex-none gap-1']/span[.='$55']

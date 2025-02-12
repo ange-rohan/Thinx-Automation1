@@ -12,9 +12,6 @@ Validate Add to Cart From PDP
     Wait Until Page Contains Element    ${ColorSwatch}
     Element Should Be Visible            ${ColorSwatch}
     Sleep    5
-    Wait Until Page Contains Element    ${CloseModal}
-    Click Element                        ${CloseModal}
-
     Wait Until Page Contains Element        ${AddtoBagCTA}
     Element Should Be Visible            ${AddtoBagCTA}
     Click Element                        ${AddtoBagCTA}

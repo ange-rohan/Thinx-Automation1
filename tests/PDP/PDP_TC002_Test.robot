@@ -23,7 +23,6 @@ Open Thinx PDP Using Chrome Browser
     Click Accept Cookies Button
 	Sleep         5
     Accept Cookies and Close Welcome Modal
-    Sleep       2
 	Validate Add to Cart From PDP
     Validate Cart Count on Add to Cart
 

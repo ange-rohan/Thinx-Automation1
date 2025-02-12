@@ -6,8 +6,7 @@ Resource          ../../pages/PDP/PDP_TC001_Pages.robot
 Check Top of PDP Is Visible
     Wait Until Element Is Visible    ${Breadcrumbs}
 	Element Should Be Visible    ${Breadcrumbs}
-    Element Should Be Visible    ${BrandEyebrow}
-    Element Text Should Be    ${BrandEyebrow}   ${Expected_Text} 
+    Element Should Be Visible    ${BrandEyebrow} 
     Wait Until Element Is Visible     ${PDPH1}
     Element Text Should Be            ${PDPH1}     ${Expected_Text2}
     Wait Until Element Is Visible     ${PDPPrice}

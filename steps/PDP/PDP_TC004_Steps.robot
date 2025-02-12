@@ -12,9 +12,9 @@ Accept Cookies and Close Welcome Modal
 
 
 Validate You Can Select Different Color Swatch
+    Scroll Element Into View    ${ColorSwatch}
     Wait Until Page Contains Element     ${ColorSwatch} 
-    Element Should Be Visible            ${ColorSwatch} 
-    Click Element                        ${ColorSelector}  
+    Click Element    ${ColorSwatch}
     Capture Page Screenshot
     Element Should Be Visible          ${ColorSelectedText} 
     Element Text Should Be      ${ColorSelected}   ${ColorSelectedText} 

@@ -7,8 +7,6 @@ Suite Setup      Set Selenium Timeout  10s
 *** Keywords ***
 Validate You Can Increase Quantity on PDP 
     Sleep    5
-    Wait Until Page Contains Element    ${CloseModal}
-    Click Element                        ${CloseModal}
     Wait Until Page Contains Element       ${QuantitySelector}      
     Element Should Be Visible        ${QuantitySelector}  
     Element Should Be Visible        ${AddQuantity} 
@@ -27,9 +25,6 @@ Validate Cart Count on Add to Cart
     Go Back
 
 Validate You Can Type In Quantity Selector to Add to Cart
-    Sleep    5      
-    Wait Until Page Contains Element    ${CloseModal}
-    Click Element                        ${CloseModal}
     Wait Until Page Contains Element    ${PDPH1}
     Capture Page Screenshot
     Wait Until Page Contains Element       ${QuantitySelector}      

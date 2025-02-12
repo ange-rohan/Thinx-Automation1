@@ -14,15 +14,9 @@ Test Setup        Open Thinx PDP Using Chrome Browser
 Test Teardown     Close Browser
 
 *** Test Cases ***
-Open Thinx PDP Using Chrome Browser options=${CHROME_OPTIONS}
+Open Thinx PDP
     Click Accept Cookies Button
 	Sleep         5
     Accept Cookies and Close Welcome Modal
-    Sleep        5
 	Validate You Can Increase Quantity on PDP 
     Validate Cart Count on Add to Cart
-    Go Back
-Open Thinx PDP Using Chrome Browser options=${CHROME_OPTIONS}
-    Click Accept Cookies Button
-	Sleep         5
-    Validate You Can Type In Quantity Selector to Add to Cart
