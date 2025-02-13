@@ -1,8 +1,9 @@
-datasources:38d6e062947a96ce75eed93990750f4901cf57e3
+datasources:5c5f6937380f9a86d3d79b5e937bf92aebd7168f
 commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
 suitesfrom:no-suites-from-option
-file:60028face6c739b4ec47cfff91e56e5b56fb6c01
---suite Pdp.PDP TC001 Test
---suite Pdp.PDP TC002 Test
---suite Pdp.PDP TC003 Test
---suite Pdp.PDP TC004 Test
+file:486846e8971764715c8b03426f1cc8d2734d08d1
+--suite Cookiesettings.CookieSettings TC001 Test
+--suite Cookiesettings.CookieSettings TC002 Test
+--suite Cookiesettings.CookieSettings TC003 Test
+--suite Cookiesettings.CookieSettings TC004 Test
+--suite Cookiesettings.CookieSettings TC005 Test
