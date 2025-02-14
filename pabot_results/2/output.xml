@@ -1,307 +1,373 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-11T11:44:54.529956" rpa="false" schemaversion="5">
-<suite id="s1" name="Pdp" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/pdp">
-<suite id="s1-s1" name="PDP TC003 Test" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/pdp/PDP_TC003_Test.robot">
-<test id="s1-s1-t1" name="Open Thinx PDP Using Chrome Browser options=--headless --disable-gpu" line="17">
-<kw name="Open Thinx PDP Using Chrome Browser" owner="resources" type="SETUP">
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-12T13:40:19.222918" rpa="false" schemaversion="5">
+<suite id="s1" name="Cookiesettings" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/cookiesettings">
+<suite id="s1-s1" name="CookieSettings TC003 Test" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/cookiesettings/CookieSettings_TC003_Test.robot">
+<test id="s1-s1-t1" name="Open Thinx" line="21">
+<kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-11T11:44:54.674592" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/products/period-all-night-ultra-soft-sleep-shorts?variant=40174028750920'.</msg>
-<arg>${ThinxPDP}</arg>
+<msg time="2025-02-12T13:40:19.353564" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<arg>${ThinxHomepage}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-11T11:44:54.674475" elapsed="8.101908"/>
+<status status="PASS" start="2025-02-12T13:40:19.353446" elapsed="6.400060"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-11T11:45:02.777650" elapsed="0.398017"/>
+<status status="PASS" start="2025-02-12T13:40:25.754711" elapsed="0.390212"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-11T11:45:08.177347" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-11T11:45:03.176268" elapsed="5.001170"/>
-</kw>
-<status status="PASS" start="2025-02-11T11:44:54.674149" elapsed="13.503451"/>
+<status status="PASS" start="2025-02-12T13:40:19.353127" elapsed="6.791985"/>
 </kw>
 <kw name="Click Accept Cookies Button" owner="CookieSettings_TC001_Pages">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${AcceptCookies}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-11T11:45:08.178156" elapsed="0.013773"/>
+<status status="PASS" start="2025-02-12T13:40:26.146018" elapsed="0.318818"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-11T11:45:08.192280" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<msg time="2025-02-12T13:40:26.465861" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
 <arg>${AcceptCookies}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-11T11:45:08.192101" elapsed="0.059119"/>
+<status status="PASS" start="2025-02-12T13:40:26.465212" elapsed="0.098563"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-11T11:45:11.251998" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-02-12T13:40:29.566895" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-11T11:45:08.251361" elapsed="3.000793"/>
+<status status="PASS" start="2025-02-12T13:40:26.564416" elapsed="3.002622"/>
 </kw>
-<status status="PASS" start="2025-02-11T11:45:08.177872" elapsed="3.074465"/>
+<status status="PASS" start="2025-02-12T13:40:26.145445" elapsed="3.421787"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-11T11:45:16.253573" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
+<msg time="2025-02-12T13:40:39.568207" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-11T11:45:11.252609" elapsed="5.001059"/>
+<status status="PASS" start="2025-02-12T13:40:29.567390" elapsed="10.001402"/>
 </kw>
 <kw name="Accept Cookies and Close Welcome Modal" owner="PDP_TC004_Steps">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-11T11:45:21.256686" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-12T13:40:44.573202" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-11T11:45:16.254756" elapsed="5.002151"/>
+<status status="PASS" start="2025-02-12T13:40:39.570747" elapsed="5.002724"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${CloseModal}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-11T11:45:21.257151" elapsed="0.012364"/>
+<status status="PASS" start="2025-02-12T13:40:44.573835" elapsed="0.019577"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-11T11:45:21.269783" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
+<msg time="2025-02-12T13:40:44.594086" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
 <arg>${CloseModal}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-11T11:45:21.269631" elapsed="0.035696"/>
+<status status="PASS" start="2025-02-12T13:40:44.593688" elapsed="0.060061"/>
 </kw>
-<status status="PASS" start="2025-02-11T11:45:16.253853" elapsed="5.051585"/>
+<status status="PASS" start="2025-02-12T13:40:39.570039" elapsed="5.083951"/>
+</kw>
+<kw name="Click on Cookie Settings" owner="CookieSettings_TC001_Pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-12T13:40:44.656851" level="INFO">Executing JavaScript:
+window.scrollTo(0,2000)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,2000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-12T13:40:44.655986" elapsed="0.017404"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-11T11:45:26.306851" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
+<msg time="2025-02-12T13:40:47.676289" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-11T11:45:21.305525" elapsed="5.001561"/>
+<status status="PASS" start="2025-02-12T13:40:44.673642" elapsed="3.002795"/>
 </kw>
-<kw name="Validate You Can Increase Quantity on PDP" owner="PDP_TC003_Steps">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-12T13:40:47.676940" level="INFO">Executing JavaScript:
+window.scrollTo(0,3000)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,3000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-12T13:40:47.676619" elapsed="0.003038"/>
+</kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-11T11:45:31.309348" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-12T13:40:52.680351" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-11T11:45:26.307970" elapsed="5.001454"/>
+<status status="PASS" start="2025-02-12T13:40:47.679756" elapsed="5.000686"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-12T13:40:52.680882" level="INFO">Executing JavaScript:
+window.scrollTo(0,4500)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,4500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-12T13:40:52.680585" elapsed="0.003013"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-12T13:40:57.685205" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-12T13:40:52.683705" elapsed="5.001620"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<msg time="2025-02-11T11:45:36.665137" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-02-11T11:45:36.665272" level="FAIL">Element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']' did not appear in 5 seconds.</msg>
-<arg>${CloseModal}</arg>
+<arg>${CookieSettings}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="FAIL" start="2025-02-11T11:45:31.309572" elapsed="5.356650">Element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']' did not appear in 5 seconds.</status>
+<status status="PASS" start="2025-02-12T13:40:57.685486" elapsed="0.008283"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<arg>${CloseModal}</arg>
+<msg time="2025-02-12T13:40:57.694362" level="INFO">Clicking element '//button[@class='body-3-bold no-underline text-default']'.</msg>
+<arg>${CookieSettings}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-02-11T11:45:36.666362" elapsed="0.000026"/>
+<status status="PASS" start="2025-02-12T13:40:57.694129" elapsed="0.051733"/>
 </kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${QuantitySelector}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" start="2025-02-11T11:45:36.666435" elapsed="0.000016"/>
+<status status="PASS" start="2025-02-12T13:40:44.655203" elapsed="13.090747"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<arg>${QuantitySelector}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-02-11T11:45:36.666494" elapsed="0.000014"/>
+<kw name="Turn Off Performance cookie" owner="CookieSettings_TC003_Pages">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${PerformanceCookies}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-12T13:40:57.746377" elapsed="0.270797"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<arg>${AddQuantity}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-02-11T11:45:36.666543" elapsed="0.000012"/>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${TargetingCookies}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-12T13:40:58.017307" elapsed="0.266161"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${AddQuantity}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-02-11T11:45:36.666590" elapsed="0.000014"/>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${MarketingCookies}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-12T13:40:58.283591" elapsed="0.267757"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-12T13:41:03.554122" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-02-11T11:45:36.666640" elapsed="0.000014"/>
+<status status="PASS" start="2025-02-12T13:40:58.551461" elapsed="5.002768"/>
 </kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${AddtoBagCTA}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" start="2025-02-11T11:45:36.666692" elapsed="0.000014"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<arg>${AddtoBagCTA}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-02-11T11:45:36.666740" elapsed="0.000012"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${AddtoBagCTA}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-02-11T11:45:36.666786" elapsed="0.000012"/>
-</kw>
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="NOT RUN" start="2025-02-11T11:45:36.666840" elapsed="0.000013"/>
-</kw>
-<status status="FAIL" start="2025-02-11T11:45:26.307532" elapsed="10.359394">Element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']' did not appear in 5 seconds.</status>
-</kw>
-<kw name="Validate Cart Count on Add to Cart" owner="PDP_TC003_Steps">
-<status status="NOT RUN" start="2025-02-11T11:45:36.667007" elapsed="0.000026"/>
-</kw>
-<kw name="Go Back" owner="SeleniumLibrary">
-<doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="NOT RUN" start="2025-02-11T11:45:36.667073" elapsed="0.000019"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-11T11:45:36.667264" elapsed="0.183175"/>
-</kw>
-<status status="FAIL" start="2025-02-11T11:44:54.673802" elapsed="42.176710">Element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']' did not appear in 5 seconds.</status>
-</test>
-<test id="s1-s1-t2" name="Open Thinx PDP Using Chrome Browser options=--headless --disable-gpu" line="25">
-<kw name="Open Thinx PDP Using Chrome Browser" owner="resources" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-11T11:45:36.851900" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/products/period-all-night-ultra-soft-sleep-shorts?variant=40174028750920'.</msg>
-<arg>${ThinxPDP}</arg>
-<arg>Chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-11T11:45:36.851793" elapsed="2.972502"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-11T11:45:39.824524" elapsed="0.376520"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-11T11:45:45.201693" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-11T11:45:40.201161" elapsed="5.000817"/>
-</kw>
-<status status="PASS" start="2025-02-11T11:45:36.851607" elapsed="8.350621"/>
-</kw>
-<kw name="Click Accept Cookies Button" owner="CookieSettings_TC001_Pages">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${AcceptCookies}</arg>
+<arg>${PerformanceCookies}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-11T11:45:45.203355" elapsed="0.023298"/>
+<status status="PASS" start="2025-02-12T13:41:03.554389" elapsed="0.009491"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-11T11:45:45.227070" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
-<arg>${AcceptCookies}</arg>
+<msg time="2025-02-12T13:41:03.564175" level="INFO">Clicking element '//div[.='Performance Cookies']'.</msg>
+<arg>${PerformanceCookies}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-11T11:45:45.226833" elapsed="0.044569"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-11T11:45:48.273242" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-11T11:45:45.271940" elapsed="3.001626"/>
-</kw>
-<status status="PASS" start="2025-02-11T11:45:45.202680" elapsed="3.071103"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-11T11:45:53.275664" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-11T11:45:48.274254" elapsed="5.001846"/>
-</kw>
-<kw name="Validate You Can Type In Quantity Selector to Add to Cart" owner="PDP_TC003_Steps">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-11T11:45:58.280302" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-11T11:45:53.278068" elapsed="5.002627"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${CloseModal}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-11T11:45:58.281329" elapsed="0.028372"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-11T11:45:58.310233" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
-<arg>${CloseModal}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-11T11:45:58.309947" elapsed="0.043152"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${PDPH1}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-11T11:45:58.353224" elapsed="0.006085"/>
+<status status="PASS" start="2025-02-12T13:41:03.564009" elapsed="0.034782"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-02-11T11:45:58.614464" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-12T13:41:03.742546" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../results/selenium-screenshot-194.png"&gt;&lt;img src="../../results/selenium-screenshot-194.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-02-11T11:45:58.359429" elapsed="0.255094"/>
+<status status="PASS" start="2025-02-12T13:41:03.598971" elapsed="0.143725"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${QuantitySelector}</arg>
+<arg>${PerformanceCookieToggleBtn}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-11T11:45:58.614611" elapsed="0.005155"/>
+<status status="PASS" start="2025-02-12T13:41:03.742811" elapsed="0.007041"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PerformanceCookieToggleBtn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-12T13:41:03.750039" elapsed="0.006318"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-02-11T11:45:58.626234" level="INFO">Element '//div[@class='w-[6.875rem] flex-none w-[6.875rem] flex-none']/div[@class='qty-input body-3 relative flex h-10 content-center justify-between rounded-3xl border px-5']' is displayed.</msg>
-<arg>${QuantitySelector}</arg>
+<msg time="2025-02-12T13:41:03.769535" level="INFO">Element '//div[@class='ot-desc-cntr']//div[@class='ot-tgl']' is displayed.</msg>
+<arg>${PerformanceCookieToggleBtn}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-11T11:45:58.619840" elapsed="0.006426"/>
+<status status="PASS" start="2025-02-12T13:41:03.756480" elapsed="0.013130"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-11T11:45:58.626403" level="INFO">Typing text '3' into text field 'id:quantity'.</msg>
-<arg>id:quantity</arg>
-<arg>3</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-11T11:45:58.626327" elapsed="0.093208"/>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-02-12T13:41:03.769722" elapsed="0.001032"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-12T13:41:03.771648" level="INFO">Executing JavaScript:
+document.querySelector("input[id='ot-group-id-C0002']").click()
+Without any arguments.</msg>
+<arg>document.querySelector("input[id='ot-group-id-C0002']").click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-12T13:41:03.771066" elapsed="0.005725"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-12T13:41:08.777870" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-12T13:41:03.776912" elapsed="5.001026"/>
+</kw>
+<status status="PASS" start="2025-02-12T13:40:57.746097" elapsed="11.031908"/>
+</kw>
+<kw name="Turn Off Functional cookie" owner="CookieSettings_TC003_Pages">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FunctionalCookieToggleBtn}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-12T13:41:08.778321" elapsed="0.003894"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FunctionalCookieToggleBtn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-12T13:41:08.782327" elapsed="0.006481"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-02-11T11:45:58.728113" level="INFO">Element '//button[@class='button button--primary flex-1 whitespace-nowrap']' is displayed.</msg>
-<arg>${AddtoBagCTA}</arg>
+<msg time="2025-02-12T13:41:08.794637" level="INFO">Element '//div[@class='ot-desc-cntr']//div[@class='ot-tgl']' is displayed.</msg>
+<arg>${FunctionalCookieToggleBtn}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-11T11:45:58.719641" elapsed="0.008541"/>
+<status status="PASS" start="2025-02-12T13:41:08.788925" elapsed="0.005765"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-02-12T13:41:08.794799" elapsed="0.000507"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-12T13:41:08.795619" level="INFO">Executing JavaScript:
+document.querySelector("input[id='ot-group-id-C0003']").click()
+Without any arguments.</msg>
+<arg>document.querySelector("input[id='ot-group-id-C0003']").click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-12T13:41:08.795393" elapsed="0.004517"/>
+</kw>
+<status status="PASS" start="2025-02-12T13:41:08.778125" elapsed="0.021853"/>
+</kw>
+<kw name="Click on Save Settings CTA on cookie settings dialog box" owner="CookieSettings_TC003_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SaveSettingsCTA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-12T13:41:08.800256" elapsed="0.006908"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${SaveSettingsCTA}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-12T13:41:08.807255" elapsed="0.008723"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-11T11:45:58.728420" level="INFO">Clicking element '//button[@class='button button--primary flex-1 whitespace-nowrap']'.</msg>
-<arg>${AddtoBagCTA}</arg>
+<msg time="2025-02-12T13:41:08.816217" level="INFO">Clicking element 'css: .ot-pc-footer .save-preference-btn-handler'.</msg>
+<arg>${SaveSettingsCTA}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-11T11:45:58.728283" elapsed="0.071692"/>
+<status status="PASS" start="2025-02-12T13:41:08.816083" elapsed="0.042189"/>
 </kw>
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-02-11T11:45:59.064217" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-02-11T11:45:58.800177" elapsed="0.264107"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-12T13:41:18.859949" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-12T13:41:08.858499" elapsed="10.001527"/>
+</kw>
+<status status="PASS" start="2025-02-12T13:41:08.800096" elapsed="10.059994"/>
+</kw>
+<kw name="Click on Cookie Settings" owner="CookieSettings_TC001_Pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-12T13:41:18.860610" level="INFO">Executing JavaScript:
+window.scrollTo(0,2000)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,2000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-12T13:41:18.860402" elapsed="0.005143"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-12T13:41:21.866182" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-12T13:41:18.865645" elapsed="3.000641"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-12T13:41:21.866651" level="INFO">Executing JavaScript:
+window.scrollTo(0,3000)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,3000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-12T13:41:21.866400" elapsed="0.002472"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-12T13:41:26.869721" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-12T13:41:21.868974" elapsed="5.000825"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-12T13:41:26.870186" level="INFO">Executing JavaScript:
+window.scrollTo(0,4500)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,4500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-12T13:41:26.869918" elapsed="0.002544"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-12T13:41:31.874193" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-12T13:41:26.872577" elapsed="5.001696"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<msg time="2025-02-11T11:46:04.581480" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-02-11T11:46:04.581582" level="FAIL">Element '//div[@class='flex flex-col content-stretch gap-2 border-t border-t-brand-tangerine px-3 py-5 md:px-8']//div[.='$148.50']' did not appear in 5 seconds.</msg>
-<arg>${CartTotal2}</arg>
+<arg>${CookieSettings}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="FAIL" start="2025-02-11T11:45:59.064392" elapsed="5.517658">Element '//div[@class='flex flex-col content-stretch gap-2 border-t border-t-brand-tangerine px-3 py-5 md:px-8']//div[.='$148.50']' did not appear in 5 seconds.</status>
+<status status="PASS" start="2025-02-12T13:41:31.874389" elapsed="0.004039"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<arg>${CartTotal2}</arg>
-<arg>${Expected_Text_Cart_Total_2}</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="NOT RUN" start="2025-02-11T11:46:04.582168" elapsed="0.000031"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-12T13:41:31.878624" level="INFO">Clicking element '//button[@class='body-3-bold no-underline text-default']'.</msg>
+<arg>${CookieSettings}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-12T13:41:31.878518" elapsed="0.038629"/>
 </kw>
-<status status="FAIL" start="2025-02-11T11:45:53.277132" elapsed="11.305119">Element '//div[@class='flex flex-col content-stretch gap-2 border-t border-t-brand-tangerine px-3 py-5 md:px-8']//div[.='$148.50']' did not appear in 5 seconds.</status>
+<status status="PASS" start="2025-02-12T13:41:18.860213" elapsed="13.057044"/>
+</kw>
+<kw name="Validate all the toggle buttons are OFF" owner="CookieSettings_TC003_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${AllowAllCTA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-12T13:41:31.917717" elapsed="0.009466"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-12T13:41:31.932511" level="INFO">Element 'css: #onetrust-consent-sdk #accept-recommended-btn-handler' is displayed.</msg>
+<arg>${AllowAllCTA}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-12T13:41:31.927299" elapsed="0.005272"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-02-12T13:41:31.932680" elapsed="0.000460"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${PerformanceCookies}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-12T13:41:31.933223" elapsed="0.265430"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${TargetingCookies}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-12T13:41:32.198769" elapsed="0.264208"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${MarketingCookies}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-12T13:41:32.463092" elapsed="0.265325"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-12T13:41:32.864223" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../results/selenium-screenshot-195.png"&gt;&lt;img src="../../results/selenium-screenshot-195.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-12T13:41:32.728538" elapsed="0.135759"/>
+</kw>
+<status status="PASS" start="2025-02-12T13:41:31.917405" elapsed="0.946958"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-11T11:46:04.582368" elapsed="0.174534"/>
+<status status="PASS" start="2025-02-12T13:41:32.864516" elapsed="0.186202"/>
 </kw>
-<status status="FAIL" start="2025-02-11T11:45:36.851354" elapsed="27.905625">Element '//div[@class='flex flex-col content-stretch gap-2 border-t border-t-brand-tangerine px-3 py-5 md:px-8']//div[.='$148.50']' did not appear in 5 seconds.</status>
+<status status="PASS" start="2025-02-12T13:40:19.352812" elapsed="73.697969"/>
 </test>
-<status status="FAIL" start="2025-02-11T11:44:54.547705" elapsed="70.209547"/>
+<status status="PASS" start="2025-02-12T13:40:19.241054" elapsed="73.810222"/>
 </suite>
-<status status="FAIL" start="2025-02-11T11:44:54.542420" elapsed="70.215065"/>
+<status status="PASS" start="2025-02-12T13:40:19.235317" elapsed="73.816237"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="2" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="2" skip="0" id="s1" name="Pdp">Pdp</stat>
-<stat pass="0" fail="2" skip="0" id="s1-s1" name="PDP TC003 Test">Pdp.PDP TC003 Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Cookiesettings">Cookiesettings</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="CookieSettings TC003 Test">Cookiesettings.CookieSettings TC003 Test</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-02-11T11:44:54.671275" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC003_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.</msg>
-<msg time="2025-02-11T11:44:54.672633" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC004_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.</msg>
-<msg time="2025-02-11T11:45:36.851060" level="WARN">Multiple tests with name 'Open Thinx PDP Using Chrome Browser options=${CHROME_OPTIONS}' executed in suite 'Pdp.PDP TC003 Test'.</msg>
+<msg time="2025-02-12T13:40:19.351656" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC004_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.</msg>
 </errors>
 </robot>

@@ -1,28 +1,14 @@
 ==============================================================================
-Pdp                                                                           
+Cookiesettings                                                                
 ==============================================================================
-Pdp.PDP TC004 Test                                                            
+Cookiesettings.CookieSettings TC004 Test                                      
 ==============================================================================
-Open Thinx PDP Using Chrome Browser                                     
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/pdp/PDP_TC004_Test.robot:20
-    T:  Open Thinx PDP Using Chrome Browser    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/pdp/PDP_TC004_Test.robot:25
-      Validate You Can Select Different Color Swatch    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC004_Steps.robot:17
-      Click Element    ${ColorSelector}
-      |  ${ColorSelector} = [for="product-option-Color-plum"] > .swatch__outline' (str)
-______________________________________________________________________________
-| FAIL |
-Element with locator '[for="product-option-Color-plum"] > .swatch__outline'' not found.
+Open Thinx                                                            | PASS |
 ------------------------------------------------------------------------------
-Pdp.PDP TC004 Test                                                    | FAIL |
-1 test, 0 passed, 1 failed
+Cookiesettings.CookieSettings TC004 Test                              | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Pdp                                                                   | FAIL |
-1 test, 0 passed, 1 failed
+Cookiesettings                                                        | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
 Output:  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/pabot_results/3/output.xml
