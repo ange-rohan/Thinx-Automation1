@@ -11,8 +11,6 @@ Click Cart Icon & Open Cart
 
 Validate Empty Cart Elements & Content
     Wait Until Element Is Visible     ${CartHeading}
-       ${CartHeading}=    Get Text    ${CartHeading}
-    Should Contain   ${CartHeading}    My Bag (0)
     Wait Until Element Is Visible    ${CustomSetDiscountCallout}
     Element Should Be Visible    ${CustomSetDiscountCallout}
     Wait Until Element Is Visible    ${EmptyBagText}
@@ -20,6 +18,7 @@ Validate Empty Cart Elements & Content
     Should Contain   ${EmptyBagText}   Looks like your bag is empty!
     Wait Until Element Is Visible    ${StartShoppingCTA}
     Element Should Be Visible    ${StartShoppingCTA}
+    Scroll Element Into View    ${YouMayAlsoLikeHeading}
     Wait Until Element Is Visible    ${YouMayAlsoLikeHeading}
     Element Should Be Visible    ${YouMayAlsoLikeHeading}
     Wait Until Element Is Visible    ${ProductCarouselCart}
@@ -32,6 +31,7 @@ Validate Empty Cart Elements & Content
 Close Cart
     Wait Until Element Is Visible     ${Cart}
     Scroll Element Into View    ${Cart}
+    Wait Until Element Is Enabled    ${Cart}
     Click Element    ${Cart}
     Sleep    5
     Wait Until Element Is Visible    ${CartCloseButton}

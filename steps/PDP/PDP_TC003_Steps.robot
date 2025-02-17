@@ -29,7 +29,7 @@ Validate You Can Type In Quantity Selector to Add to Cart
     Capture Page Screenshot
     Wait Until Page Contains Element       ${QuantitySelector}      
     Element Should Be Visible        ${QuantitySelector}
-    Input Text  id:quantity  3
+    Input Text  id:quantity  8
     Element Should Be Visible            ${AddtoBagCTA}
     Click Element                        ${AddtoBagCTA}
     Capture Page Screenshot

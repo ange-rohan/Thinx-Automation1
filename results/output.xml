@@ -1,266 +1,338 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-13T09:28:55.335656" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-17T14:42:08.594603" rpa="false" schemaversion="5">
 <suite id="s1" name="Thinx-Automation1" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1">
 <suite id="s1-s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
 <suite id="s1-s1-s1" name="Cart" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Cart">
-<suite id="s1-s1-s1-s1" name="Cart TC002 Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Cart/Cart_TC002_Tests.robot">
-<test id="s1-s1-s1-s1-t1" name="Open Thinx PDP" line="19">
+<suite id="s1-s1-s1-s1" name="Cart TC004 Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Cart/Cart_TC004_Tests.robot">
+<test id="s1-s1-s1-s1-t1" name="Open Thinx PDP" line="20">
 <kw name="Open Thinx PDP Using Chrome Browser" owner="resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-13T09:28:55.734513" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/products/period-all-night-ultra-soft-sleep-shorts?variant=40174028750920'.</msg>
+<msg time="2025-02-17T14:42:09.195922" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/products/period-all-night-ultra-soft-sleep-shorts?variant=40174028750920'.</msg>
 <arg>${ThinxPDP}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-13T09:28:55.734368" elapsed="8.232499"/>
+<status status="PASS" start="2025-02-17T14:42:09.195722" elapsed="4.164152"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-13T09:29:03.967473" elapsed="0.388051"/>
+<status status="PASS" start="2025-02-17T14:42:13.360279" elapsed="0.384950"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-13T09:29:09.357121" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-17T14:42:18.747404" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-13T09:29:04.355697" elapsed="5.001727"/>
+<status status="PASS" start="2025-02-17T14:42:13.745785" elapsed="5.001896"/>
 </kw>
-<status status="PASS" start="2025-02-13T09:28:55.734007" elapsed="13.623548"/>
+<status status="PASS" start="2025-02-17T14:42:09.195255" elapsed="9.552561"/>
 </kw>
 <kw name="Click Accept Cookies Button" owner="CookieSettings_TC001_Pages">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${AcceptCookies}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-13T09:29:09.358306" elapsed="0.049809"/>
+<status status="PASS" start="2025-02-17T14:42:18.748515" elapsed="0.035058"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-13T09:29:09.408503" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<msg time="2025-02-17T14:42:18.783979" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
 <arg>${AcceptCookies}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-13T09:29:09.408287" elapsed="0.046934"/>
+<status status="PASS" start="2025-02-17T14:42:18.783752" elapsed="0.042039"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-13T09:29:12.456221" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-02-17T14:42:21.827561" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-13T09:29:09.455393" elapsed="3.000991"/>
+<status status="PASS" start="2025-02-17T14:42:18.825989" elapsed="3.001738"/>
 </kw>
-<status status="PASS" start="2025-02-13T09:29:09.357939" elapsed="3.098564"/>
+<status status="PASS" start="2025-02-17T14:42:18.748203" elapsed="3.079643"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-13T09:29:17.459117" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-17T14:42:26.829306" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-13T09:29:12.456754" elapsed="5.002516"/>
+<status status="PASS" start="2025-02-17T14:42:21.828060" elapsed="5.001403"/>
 </kw>
 <kw name="Accept Cookies and Close Welcome Modal" owner="PDP_TC004_Steps">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-13T09:29:22.461463" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-17T14:42:31.830543" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-13T09:29:17.459816" elapsed="5.001816"/>
+<status status="PASS" start="2025-02-17T14:42:26.830070" elapsed="5.000632"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${CloseModal}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-13T09:29:22.461785" elapsed="0.011286"/>
+<status status="PASS" start="2025-02-17T14:42:31.830857" elapsed="0.011286"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-13T09:29:22.473463" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
+<msg time="2025-02-17T14:42:31.842493" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
 <arg>${CloseModal}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-13T09:29:22.473236" elapsed="0.033119"/>
+<status status="PASS" start="2025-02-17T14:42:31.842300" elapsed="0.032784"/>
 </kw>
-<status status="PASS" start="2025-02-13T09:29:17.459548" elapsed="5.046965"/>
-</kw>
-<kw name="Validate Add to Cart From PDP" owner="PDP_TC002_Steps">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${FirstSize}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-13T09:29:22.506991" elapsed="0.008935"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-02-13T09:29:22.524214" level="INFO">Element '//div[@id='product-option-Size']//div[.='XS']' is displayed.</msg>
-<arg>${FirstSize}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-13T09:29:22.516089" elapsed="0.008254"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-13T09:29:22.524702" level="INFO">Clicking element '//div[@id='product-option-Size']//div[.='XS']'.</msg>
-<msg time="2025-02-13T09:29:23.852740" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-198.png"&gt;&lt;img src="selenium-screenshot-198.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-02-13T09:29:23.852966" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="duration-250 flex size-7.5 cursor-pointer items-center justify-center rounded-full border border-grey-lighter bg-grey-lighter text-12 transition-colors peer-checked:border-black  text-grey-dark" tabindex="0" role="radio" aria-checked="true"&gt;...&lt;/div&gt; is not clickable at point (960, 502). Other element would receive the click: &lt;div class="absolute left-4 top-0 -ml-px h-full w-px rotate-45 bg-grey-dark"&gt;&lt;/div&gt;
-  (Session info: chrome=133.0.6943.54)
-Stacktrace:
-0   chromedriver                        0x0000000102ff6bac cxxbridge1$str$ptr + 2724820
-1   chromedriver                        0x0000000102fef20c cxxbridge1$str$ptr + 2693684
-2   chromedriver                        0x0000000102b55afc cxxbridge1$string$len + 93348
-3   chromedriver                        0x0000000102ba2398 cxxbridge1$string$len + 406848
-4   chromedriver                        0x0000000102ba0928 cxxbridge1$string$len + 400080
-5   chromedriver                        0x0000000102b9e73c cxxbridge1$string$len + 391396
-6   chromedriver                        0x0000000102b9db38 cxxbridge1$string$len + 388320
-7   chromedriver                        0x0000000102b92630 cxxbridge1$string$len + 341976
-8   chromedriver                        0x0000000102b920bc cxxbridge1$string$len + 340580
-9   chromedriver                        0x0000000102bddb94 cxxbridge1$string$len + 650556
-10  chromedriver                        0x0000000102b90ba0 cxxbridge1$string$len + 335176
-11  chromedriver                        0x0000000102fbf664 cxxbridge1$str$ptr + 2498188
-12  chromedriver                        0x0000000102fc2978 cxxbridge1$str$ptr + 2511264
-13  chromedriver                        0x0000000102fa4d04 cxxbridge1$str$ptr + 2389292
-14  chromedriver                        0x0000000102fc3220 cxxbridge1$str$ptr + 2513480
-15  chromedriver                        0x0000000102f95cec cxxbridge1$str$ptr + 2327828
-16  chromedriver                        0x0000000102fdf8d4 cxxbridge1$str$ptr + 2629884
-17  chromedriver                        0x0000000102fdfa5c cxxbridge1$str$ptr + 2630276
-18  chromedriver                        0x0000000102feee80 cxxbridge1$str$ptr + 2692776
-19  libsystem_pthread.dylib             0x0000000186b39f94 _pthread_start + 136
-20  libsystem_pthread.dylib             0x0000000186b34d34 thread_start + 8
-</msg>
-<arg>${FirstSize}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-02-13T09:29:22.524481" elapsed="1.373330">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="duration-250 flex size-7.5 cursor-pointer items-center justify-center rounded-full border border-grey-lighter bg-grey-lighter text-12 transition-colors peer-checked:border-black  text-grey-dark" tabindex="0" role="radio" aria-checked="true"&gt;...&lt;/div&gt; is not clickable at point (960, 502). Other element would receive the click: &lt;div class="absolute left-4 top-0 -ml-px h-full w-px rotate-45 bg-grey-dark"&gt;&lt;/div&gt;
-  (Session info: chrome=133.0.6943.54)
-Stacktrace:
-0   chromedriver                        0x0000000102ff6bac cxxbridge1$str$ptr + 2724820
-1   chromedriver                        0x0000000102fef20c cxxbridge1$str$ptr + 2693684
-2   chromedriver                        0x0000000102b55afc cxxbridge1$string$len + 93348
-3   chromedriver                        0x0000000102ba2398 cxxbridge1$string$len + 406848
-4   chromedriver                        0x0000000102ba0928 cxxbridge1$string$len + 400080
-5   chromedriver                        0x0000000102b9e73c cxxbridge1$strin...
-    [ Message content over the limit has been removed. ]
-...er                        0x0000000102b90ba0 cxxbridge1$string$len + 335176
-11  chromedriver                        0x0000000102fbf664 cxxbridge1$str$ptr + 2498188
-12  chromedriver                        0x0000000102fc2978 cxxbridge1$str$ptr + 2511264
-13  chromedriver                        0x0000000102fa4d04 cxxbridge1$str$ptr + 2389292
-14  chromedriver                        0x0000000102fc3220 cxxbridge1$str$ptr + 2513480
-15  chromedriver                        0x0000000102f95cec cxxbridge1$str$ptr + 2327828
-16  chromedriver                        0x0000000102fdf8d4 cxxbridge1$str$ptr + 2629884
-17  chromedriver                        0x0000000102fdfa5c cxxbridge1$str$ptr + 2630276
-18  chromedriver                        0x0000000102feee80 cxxbridge1$str$ptr + 2692776
-19  libsystem_pthread.dylib             0x0000000186b39f94 _pthread_start + 136
-20  libsystem_pthread.dylib             0x0000000186b34d34 thread_start + 8</status>
+<status status="PASS" start="2025-02-17T14:42:26.829816" elapsed="5.045389"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-17T14:42:33.877173" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-02-13T09:29:23.898055" elapsed="0.000085"/>
+<status status="PASS" start="2025-02-17T14:42:31.875380" elapsed="2.001944"/>
+</kw>
+<kw name="Validate You Can Type In Quantity Selector to Add to Cart" owner="Cart_TC004_Steps">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${QuantityInput}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-17T14:42:33.877842" elapsed="0.271685"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${ColorSwatch}</arg>
+<arg>${QuantityInput}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" start="2025-02-13T09:29:23.898228" elapsed="0.000048"/>
+<status status="PASS" start="2025-02-17T14:42:34.149693" elapsed="0.003527"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<arg>${ColorSwatch}</arg>
+<msg time="2025-02-17T14:42:34.160612" level="INFO">Element '//input[@id='quantity']' is displayed.</msg>
+<arg>${QuantityInput}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-02-13T09:29:23.898347" elapsed="0.000043"/>
+<status status="PASS" start="2025-02-17T14:42:34.153355" elapsed="0.007368"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-02-13T09:29:23.898447" elapsed="0.000043"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-17T14:42:34.161062" level="INFO">Typing text '7' into text field 'id:quantity'.</msg>
+<arg>id:quantity</arg>
+<arg>7</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T14:42:34.160860" elapsed="0.087376"/>
 </kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${AddtoBagCTA}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" start="2025-02-13T09:29:23.898555" elapsed="0.000040"/>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>locator=${AddtoBagCTA}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-17T14:42:34.248394" elapsed="0.270088"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-17T14:42:34.524640" level="INFO">Element '//button[@class='button button--primary flex-1 whitespace-nowrap']' is displayed.</msg>
 <arg>${AddtoBagCTA}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-02-13T09:29:23.898653" elapsed="0.000041"/>
+<status status="PASS" start="2025-02-17T14:42:34.518645" elapsed="0.006107"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-17T14:42:34.525124" level="INFO">Clicking element '//button[@class='button button--primary flex-1 whitespace-nowrap']'.</msg>
 <arg>${AddtoBagCTA}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-02-13T09:29:23.898759" elapsed="0.000038"/>
+<status status="PASS" start="2025-02-17T14:42:34.524876" elapsed="0.080585"/>
 </kw>
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="NOT RUN" start="2025-02-13T09:29:23.898851" elapsed="0.000039"/>
+<status status="PASS" start="2025-02-17T14:42:33.877612" elapsed="0.728365"/>
 </kw>
-<status status="FAIL" start="2025-02-13T09:29:22.506718" elapsed="1.392277">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="duration-250 flex size-7.5 cursor-pointer items-center justify-center rounded-full border border-grey-lighter bg-grey-lighter text-12 transition-colors peer-checked:border-black  text-grey-dark" tabindex="0" role="radio" aria-checked="true"&gt;...&lt;/div&gt; is not clickable at point (960, 502). Other element would receive the click: &lt;div class="absolute left-4 top-0 -ml-px h-full w-px rotate-45 bg-grey-dark"&gt;&lt;/div&gt;
-  (Session info: chrome=133.0.6943.54)
-Stacktrace:
-0   chromedriver                        0x0000000102ff6bac cxxbridge1$str$ptr + 2724820
-1   chromedriver                        0x0000000102fef20c cxxbridge1$str$ptr + 2693684
-2   chromedriver                        0x0000000102b55afc cxxbridge1$string$len + 93348
-3   chromedriver                        0x0000000102ba2398 cxxbridge1$string$len + 406848
-4   chromedriver                        0x0000000102ba0928 cxxbridge1$string$len + 400080
-5   chromedriver                        0x0000000102b9e73c cxxbridge1$strin...
-    [ Message content over the limit has been removed. ]
-...er                        0x0000000102b90ba0 cxxbridge1$string$len + 335176
-11  chromedriver                        0x0000000102fbf664 cxxbridge1$str$ptr + 2498188
-12  chromedriver                        0x0000000102fc2978 cxxbridge1$str$ptr + 2511264
-13  chromedriver                        0x0000000102fa4d04 cxxbridge1$str$ptr + 2389292
-14  chromedriver                        0x0000000102fc3220 cxxbridge1$str$ptr + 2513480
-15  chromedriver                        0x0000000102f95cec cxxbridge1$str$ptr + 2327828
-16  chromedriver                        0x0000000102fdf8d4 cxxbridge1$str$ptr + 2629884
-17  chromedriver                        0x0000000102fdfa5c cxxbridge1$str$ptr + 2630276
-18  chromedriver                        0x0000000102feee80 cxxbridge1$str$ptr + 2692776
-19  libsystem_pthread.dylib             0x0000000186b39f94 _pthread_start + 136
-20  libsystem_pthread.dylib             0x0000000186b34d34 thread_start + 8</status>
-</kw>
+<kw name="Validate Cart Custom Set Discount Messaging on Add" owner="Cart_TC004_Steps">
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-17T14:42:39.609953" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-02-13T09:29:23.899135" elapsed="0.000049"/>
+<status status="PASS" start="2025-02-17T14:42:34.607028" elapsed="5.003074"/>
 </kw>
-<kw name="Add 3 of Item to Activate Custom Set Discount" owner="Cart_TC002_Steps">
-<status status="NOT RUN" start="2025-02-13T09:29:23.899317" elapsed="0.000050"/>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${CustomSetDiscountText}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-17T14:42:39.610251" elapsed="0.267794"/>
 </kw>
-<kw name="Remove All Items From Cart" owner="Cart_TC002_Steps">
-<status status="NOT RUN" start="2025-02-13T09:29:23.899456" elapsed="0.000043"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CustomSetDiscountText}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-17T14:42:39.878206" elapsed="0.007007"/>
 </kw>
-<kw name="Validate Empty Cart Elements &amp; Content" owner="Cart_TC001_Steps">
-<status status="NOT RUN" start="2025-02-13T09:29:23.899636" elapsed="0.000075"/>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-17T14:42:39.894706" level="INFO">${CustomSetDiscountText} = Congratulations! You’ve unlocked 20% off!</msg>
+<var>${CustomSetDiscountText}</var>
+<arg>${CustomSetDiscountText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T14:42:39.885358" elapsed="0.009462"/>
 </kw>
-<kw name="Close Cart" owner="Cart_TC001_Steps">
-<status status="NOT RUN" start="2025-02-13T09:29:23.899866" elapsed="0.000057"/>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${CustomSetDiscountText}</arg>
+<arg>Congratulations! You’ve unlocked 20% off!</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-17T14:42:39.894974" elapsed="0.000238"/>
+</kw>
+<status status="PASS" start="2025-02-17T14:42:34.606641" elapsed="5.288719"/>
+</kw>
+<kw name="Decrease Quantity In Cart" owner="Cart_TC003_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${RemoveQuantitycart}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-17T14:42:39.895767" elapsed="0.007087"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${RemoveQuantitycart}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-17T14:42:39.902983" elapsed="0.257971"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-17T14:42:40.161326" level="INFO">Clicking element '//div[@class='flex items-end justify-between']//button[1]'.</msg>
+<arg>${RemoveQuantitycart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T14:42:40.161124" elapsed="0.035150"/>
+</kw>
+<status status="PASS" start="2025-02-17T14:42:39.895542" elapsed="0.300847"/>
+</kw>
+<kw name="Validate Custom Set Discount Messaging Updates" owner="Cart_TC004_Steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-17T14:42:45.197712" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-17T14:42:40.196766" elapsed="5.001097"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${CustomSetDiscountText}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-17T14:42:45.198012" elapsed="0.268657"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CustomSetDiscountText}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-17T14:42:45.466827" elapsed="0.006769"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-17T14:42:45.480096" level="INFO">${CustomSetDiscountText} = Add 1 more eligible product to get 20% off!</msg>
+<var>${CustomSetDiscountText}</var>
+<arg>${CustomSetDiscountText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T14:42:45.473748" elapsed="0.006430"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${CustomSetDiscountText}</arg>
+<arg>Add 1 more eligible product to get 20% off!</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-17T14:42:45.480302" elapsed="0.000221"/>
+</kw>
+<status status="PASS" start="2025-02-17T14:42:40.196565" elapsed="5.284035"/>
+</kw>
+<kw name="Decrease Quantity In Cart" owner="Cart_TC003_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${RemoveQuantitycart}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-17T14:42:45.481096" elapsed="0.005732"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${RemoveQuantitycart}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-17T14:42:45.486949" elapsed="0.266821"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-17T14:42:45.754106" level="INFO">Clicking element '//div[@class='flex items-end justify-between']//button[1]'.</msg>
+<arg>${RemoveQuantitycart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T14:42:45.753921" elapsed="0.034740"/>
+</kw>
+<status status="PASS" start="2025-02-17T14:42:45.480891" elapsed="0.309325"/>
+</kw>
+<kw name="Validate Custom Set Discount Messaging Updates to 20% off" owner="Cart_TC004_Steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-17T14:42:50.793975" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-17T14:42:45.791175" elapsed="5.002955"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${CustomSetDiscountText}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-17T14:42:50.794281" elapsed="0.269284"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CustomSetDiscountText}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-17T14:42:51.063736" elapsed="0.006754"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-17T14:42:51.085104" level="INFO">${CustomSetDiscountText} = Add 2 more eligible products to get 20% off!</msg>
+<var>${CustomSetDiscountText}</var>
+<arg>${CustomSetDiscountText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T14:42:51.070633" elapsed="0.014667"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${CustomSetDiscountText}</arg>
+<arg>Add 2 more eligible products to get 20% off!</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-17T14:42:51.085629" elapsed="0.000388"/>
+</kw>
+<status status="PASS" start="2025-02-17T14:42:45.790647" elapsed="5.295468"/>
+</kw>
+<kw name="Decrease Quantity In Cart" owner="Cart_TC003_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${RemoveQuantitycart}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-17T14:42:51.086679" elapsed="0.007023"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${RemoveQuantitycart}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-17T14:42:51.093844" elapsed="0.263262"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-17T14:42:51.357449" level="INFO">Clicking element '//div[@class='flex items-end justify-between']//button[1]'.</msg>
+<arg>${RemoveQuantitycart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T14:42:51.357263" elapsed="0.033200"/>
+</kw>
+<status status="PASS" start="2025-02-17T14:42:51.086322" elapsed="0.304261"/>
+</kw>
+<kw name="Validate Custom Set Discount Messaging Updates to 15% off" owner="Cart_TC004_Steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-17T14:42:56.392273" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-17T14:42:51.390972" elapsed="5.001461"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${CustomSetDiscountText}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-17T14:42:56.392604" elapsed="0.268024"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CustomSetDiscountText}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-17T14:42:56.660779" elapsed="0.006385"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-17T14:42:56.673616" level="INFO">${CustomSetDiscountText} = Add 1 more eligible product to get 15% off!</msg>
+<var>${CustomSetDiscountText}</var>
+<arg>${CustomSetDiscountText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T14:42:56.667299" elapsed="0.006401"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${CustomSetDiscountText}</arg>
+<arg>Add 1 more eligible product to get 15% off!</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-17T14:42:56.673823" elapsed="0.000203"/>
+</kw>
+<status status="PASS" start="2025-02-17T14:42:51.390764" elapsed="5.283343"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-13T09:29:23.900099" elapsed="0.166759"/>
+<status status="PASS" start="2025-02-17T14:42:56.674367" elapsed="0.183053"/>
 </kw>
-<status status="FAIL" start="2025-02-13T09:28:55.733528" elapsed="28.333524">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="duration-250 flex size-7.5 cursor-pointer items-center justify-center rounded-full border border-grey-lighter bg-grey-lighter text-12 transition-colors peer-checked:border-black  text-grey-dark" tabindex="0" role="radio" aria-checked="true"&gt;...&lt;/div&gt; is not clickable at point (960, 502). Other element would receive the click: &lt;div class="absolute left-4 top-0 -ml-px h-full w-px rotate-45 bg-grey-dark"&gt;&lt;/div&gt;
-  (Session info: chrome=133.0.6943.54)
-Stacktrace:
-0   chromedriver                        0x0000000102ff6bac cxxbridge1$str$ptr + 2724820
-1   chromedriver                        0x0000000102fef20c cxxbridge1$str$ptr + 2693684
-2   chromedriver                        0x0000000102b55afc cxxbridge1$string$len + 93348
-3   chromedriver                        0x0000000102ba2398 cxxbridge1$string$len + 406848
-4   chromedriver                        0x0000000102ba0928 cxxbridge1$string$len + 400080
-5   chromedriver                        0x0000000102b9e73c cxxbridge1$strin...
-    [ Message content over the limit has been removed. ]
-...er                        0x0000000102b90ba0 cxxbridge1$string$len + 335176
-11  chromedriver                        0x0000000102fbf664 cxxbridge1$str$ptr + 2498188
-12  chromedriver                        0x0000000102fc2978 cxxbridge1$str$ptr + 2511264
-13  chromedriver                        0x0000000102fa4d04 cxxbridge1$str$ptr + 2389292
-14  chromedriver                        0x0000000102fc3220 cxxbridge1$str$ptr + 2513480
-15  chromedriver                        0x0000000102f95cec cxxbridge1$str$ptr + 2327828
-16  chromedriver                        0x0000000102fdf8d4 cxxbridge1$str$ptr + 2629884
-17  chromedriver                        0x0000000102fdfa5c cxxbridge1$str$ptr + 2630276
-18  chromedriver                        0x0000000102feee80 cxxbridge1$str$ptr + 2692776
-19  libsystem_pthread.dylib             0x0000000186b39f94 _pthread_start + 136
-20  libsystem_pthread.dylib             0x0000000186b34d34 thread_start + 8</status>
+<status status="PASS" start="2025-02-17T14:42:09.194643" elapsed="47.662978"/>
 </test>
-<status status="FAIL" start="2025-02-13T09:28:55.359305" elapsed="28.708361"/>
+<status status="PASS" start="2025-02-17T14:42:08.648527" elapsed="48.209664"/>
 </suite>
-<status status="FAIL" start="2025-02-13T09:28:55.358720" elapsed="28.709514"/>
+<status status="PASS" start="2025-02-17T14:42:08.647517" elapsed="48.211350"/>
 </suite>
-<status status="FAIL" start="2025-02-13T09:28:55.358095" elapsed="28.710583"/>
+<status status="PASS" start="2025-02-17T14:42:08.646659" elapsed="48.212713"/>
 </suite>
-<status status="FAIL" start="2025-02-13T09:28:55.340548" elapsed="28.728556"/>
+<status status="PASS" start="2025-02-17T14:42:08.604598" elapsed="48.255158"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Thinx-Automation1">Thinx-Automation1</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">Thinx-Automation1.Tests</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Cart">Thinx-Automation1.Tests.Cart</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Cart TC002 Tests">Thinx-Automation1.Tests.Cart.Cart TC002 Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Thinx-Automation1">Thinx-Automation1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">Thinx-Automation1.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Cart">Thinx-Automation1.Tests.Cart</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Cart TC004 Tests">Thinx-Automation1.Tests.Cart.Cart TC004 Tests</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-02-13T09:28:55.716370" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC004_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.</msg>
+<msg time="2025-02-17T14:42:09.180191" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC004_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.</msg>
 </errors>
 </robot>

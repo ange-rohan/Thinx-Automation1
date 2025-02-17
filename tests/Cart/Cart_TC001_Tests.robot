@@ -1,7 +1,6 @@
 
-
+# Description: validate display of empty cart, open & close cart.
 # Run Command: robot. \QA-Automation\tests\CookieSettings\CookieSettings_TC001_Test.robot
-
 # Importing the Libraries
 *** Settings ***
 Library             SeleniumLibrary
