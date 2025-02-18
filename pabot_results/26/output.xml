@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-18T13:17:05.329432" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
+<suite id="s1-s1" name="Meganav" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Meganav">
+<suite id="s1-s1-s1" name="Meganav TC001 Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Meganav/Meganav_TC001_Tests.robot">
+<test id="s1-s1-s1-t1" name="Open Thinx Homepage Using Chrome Browser" line="14">
+<kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:05.444711" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<arg>${ThinxHomepage}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-18T13:17:05.444589" elapsed="5.230458"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-18T13:17:10.675479" elapsed="0.413746"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:17:05.444245" elapsed="5.646003"/>
+</kw>
+<kw name="Validate Meganav Displays" owner="Meganav_TC001_Steps">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${Meganav}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-18T13:17:11.097307" elapsed="0.059181"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:11.350175" level="INFO">Element '//div[@id='shopify-section-header']' is displayed.</msg>
+<arg>${Meganav}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:17:11.156866" elapsed="0.193503"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:11.639911" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-1.png"&gt;&lt;img src="selenium-element-screenshot-1.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>${Meganav}</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2025-02-18T13:17:11.350659" elapsed="0.289389"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:17:11.095716" elapsed="0.544476"/>
+</kw>
+<kw name="Validate Scrolling Promo Banner Displays" owner="Meganav_TC001_Steps">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PromoBanner}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-18T13:17:11.641092" elapsed="0.016116"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:11.667990" level="INFO">Element '//div[@id='shopify-section-dynamic-banner']' is displayed.</msg>
+<arg>${PromoBanner}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:17:11.657326" elapsed="0.010785"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:17:11.640463" elapsed="0.027769"/>
+</kw>
+<kw name="Validate Menu Items Display" owner="Meganav_TC001_Steps">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ShopAllNav}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-18T13:17:11.668909" elapsed="0.010519"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:11.690774" level="INFO">Element '//span[.='shop all']' is displayed.</msg>
+<arg>${ShopAllNav}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:17:11.679550" elapsed="0.011305"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PeriodNav}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-18T13:17:11.691049" elapsed="0.029534"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:11.733769" level="INFO">Element '//span[.='period']' is displayed.</msg>
+<arg>${PeriodNav}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:17:11.721262" elapsed="0.012568"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${BladderNav}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-18T13:17:11.733947" elapsed="0.007361"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:11.752904" level="INFO">Element '//span[.='bladder']' is displayed.</msg>
+<arg>${BladderNav}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:17:11.741589" elapsed="0.011510"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${TeensNav}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-18T13:17:11.753304" elapsed="0.009243"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:11.774309" level="INFO">Element '//span[.='teens']' is displayed.</msg>
+<arg>${TeensNav}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:17:11.762771" elapsed="0.011607"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${SetsNav}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-18T13:17:11.774489" elapsed="0.013553"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:12.156968" level="INFO">Element '//span[.='saver sets']' is displayed.</msg>
+<arg>${SetsNav}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:17:11.788275" elapsed="0.368874"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${LastCallNav}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-18T13:17:12.158084" elapsed="0.010507"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:12.178752" level="INFO">Element '//span[.='last call']' is displayed.</msg>
+<arg>${LastCallNav}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:17:12.168830" elapsed="0.010002"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:17:11.668467" elapsed="0.510434"/>
+</kw>
+<kw name="Validate Utility Nav Items Display" owner="Meganav_TC001_Steps">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${TakeTheQuizCTA}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-18T13:17:12.179234" elapsed="0.009253"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:12.214336" level="INFO">Element '//span[.='take the quiz']' is displayed.</msg>
+<arg>${TakeTheQuizCTA}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:17:12.188845" elapsed="0.025565"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${LearnNav}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-18T13:17:12.214579" elapsed="0.027560"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:12.255854" level="INFO">Element '//span[.='learn']' is displayed.</msg>
+<arg>${LearnNav}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:17:12.243270" elapsed="0.012657"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${SignInNav}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-18T13:17:12.256039" elapsed="0.008462"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:12.275272" level="INFO">Element '//header[@class='flex justify-between items-center px-3 h-[3.25rem] lg:h-14.5 lg:px-8 bg-white border-b border-b-brand-tangerine']//a[contains(.,'Sign in')]' is displayed.</msg>
+<arg>${SignInNav}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:17:12.264661" elapsed="0.010819"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${Cart}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-18T13:17:12.275689" elapsed="0.013422"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:12.306588" level="INFO">Element '//button[@class='relative mr-4 lg:mr-0 lg:ml-5 group']' is displayed.</msg>
+<arg>${Cart}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:17:12.289497" elapsed="0.017206"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:17:12.179026" elapsed="0.128203"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-18T13:17:12.307408" elapsed="1.493274"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:17:05.443895" elapsed="8.356881"/>
+</test>
+<status status="PASS" start="2025-02-18T13:17:05.353385" elapsed="8.448098"/>
+</suite>
+<status status="PASS" start="2025-02-18T13:17:05.352538" elapsed="8.449279"/>
+</suite>
+<status status="PASS" start="2025-02-18T13:17:05.343857" elapsed="8.458169"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Meganav">Tests.Meganav</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Meganav TC001 Tests">Tests.Meganav.Meganav TC001 Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

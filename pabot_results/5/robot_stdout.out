@@ -1,0 +1,53 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Checkout                                                                
+==============================================================================
+Tests.Checkout.Checkout TC002 Tests                                           
+==============================================================================
+Open Thinx PDP                                                          
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Checkout/Checkout_TC002_Tests.robot:30
+    T:  Open Thinx PDP    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Checkout/Checkout_TC002_Tests.robot:41
+      Enter City on Checkout    ${City}
+      |  ${City} = Coeymans Hollow (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/Checkout/Checkout_TC002_Steps.robot:54
+      Wait Until Element Is Visible    ${CityLine2} timeout=10s
+      |  ${CityLine2} timeout=10s = //div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='city'] timeout=10s (str)
+______________________________________________________________________________
+| FAIL |
+InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='city'] timeout=10s because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='city'] timeout=10s' is not a valid XPath expression.
+  (Session info: chrome=133.0.6943.99); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+0   chromedriver                        0x0000000104796bac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x000000010478f20c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x00000001042f5afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x00000001042fb808 cxxbridge1$string$len + 117168
+    [ Message content over the limit has been removed. ]
+...er                        0x0000000104330ba0 cxxbridge1$string$len + 335176
+9   chromedriver                        0x000000010475f664 cxxbridge1$str$ptr + 2498188
+10  chromedriver                        0x0000000104762978 cxxbridge1$str$ptr + 2511264
+11  chromedriver                        0x0000000104744d04 cxxbridge1$str$ptr + 2389292
+12  chromedriver                        0x0000000104763220 cxxbridge1$str$ptr + 2513480
+13  chromedriver                        0x0000000104735cec cxxbridge1$str$ptr + 2327828
+14  chromedriver                        0x000000010477f8d4 cxxbridge1$str$ptr + 2629884
+15  chromedriver                        0x000000010477fa5c cxxbridge1$str$ptr + 2630276
+16  chromedriver                        0x000000010478ee80 cxxbridge1$str$ptr + 2692776
+17  libsystem_pthread.dylib             0x00000001893b5f94 _pthread_start + 136
+18  libsystem_pthread.dylib             0x00000001893b0d34 thread_start + 8
+------------------------------------------------------------------------------
+Tests.Checkout.Checkout TC002 Tests                                   | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.Checkout                                                        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/pabot_results/5/output.xml

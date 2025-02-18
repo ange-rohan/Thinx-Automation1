@@ -1,5 +1,5 @@
 
-# Description: Increase & decrease quantity of items in cart once added
+# Description: Validate custom set discount on add and removal of quantity items
 # Run Command: robot. \QA-Automation\tests\CookieSettings\CookieSettings_TC001_Test.robot
 # Importing the Libraries
 *** Settings ***

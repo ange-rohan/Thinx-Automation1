@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-18T13:14:48.000394" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
+<suite id="s1-s1" name="CookieSettings" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/CookieSettings">
+<suite id="s1-s1-s1" name="CookieSettings TC002 Test" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/CookieSettings/CookieSettings_TC002_Test.robot">
+<test id="s1-s1-s1-t1" name="Open Thinx" line="21">
+<kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:14:48.168371" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<arg>${ThinxHomepage}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-18T13:14:48.168250" elapsed="4.913025"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-18T13:14:53.082868" elapsed="7.698575"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:14:48.167929" elapsed="12.614870"/>
+</kw>
+<kw name="Click Accept Cookies Button" owner="CookieSettings_TC001_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${AcceptCookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:15:00.788321" elapsed="0.210732"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:00.999972" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<arg>${AcceptCookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:15:00.999509" elapsed="0.078503"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:15:04.079002" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:15:01.078271" elapsed="3.001087"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:15:00.785828" elapsed="3.294071"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:15:09.088276" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:15:04.084954" elapsed="5.005211"/>
+</kw>
+<kw name="Accept Cookies and Close Welcome Modal" owner="PDP_TC004_Steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:15:14.096709" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:15:09.093670" elapsed="5.003748"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${CloseModal}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-18T13:15:14.098234" elapsed="0.017188"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:14.115805" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
+<arg>${CloseModal}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:15:14.115594" elapsed="0.061539"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:15:09.091803" elapsed="5.085638"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:15:19.178136" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:15:14.177728" elapsed="5.000497"/>
+</kw>
+<kw name="Click on Cookie Settings" owner="CookieSettings_TC001_Pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:19.179386" level="INFO">Executing JavaScript:
+window.scrollTo(0,2000)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,2000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-18T13:15:19.178901" elapsed="0.003659"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:15:22.183809" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:15:19.182837" elapsed="3.001073"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:22.184354" level="INFO">Executing JavaScript:
+window.scrollTo(0,3000)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,3000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-18T13:15:22.184044" elapsed="0.003005"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:15:27.187678" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:15:22.187146" elapsed="5.001210"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:27.190170" level="INFO">Executing JavaScript:
+window.scrollTo(0,4500)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,4500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-18T13:15:27.188863" elapsed="0.008572"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:15:32.200318" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:15:27.197977" elapsed="5.002434"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${CookieSettings}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-18T13:15:32.200554" elapsed="0.006757"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:32.207614" level="INFO">Clicking element '//button[@class='body-3-bold no-underline text-default']'.</msg>
+<arg>${CookieSettings}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:15:32.207444" elapsed="0.058301"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:15:19.178535" elapsed="13.087533"/>
+</kw>
+<kw name="Validate all the Consent Preferences" owner="CookieSettings_TC002_Pages">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${PerformanceCookies}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-18T13:15:32.266975" elapsed="0.814255"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${TargetingCookies}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-18T13:15:33.081524" elapsed="0.271319"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${MarketingCookies}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-18T13:15:33.352966" elapsed="0.263425"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:15:38.618194" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:15:33.616499" elapsed="5.001826"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PerformanceCookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:15:38.618586" elapsed="0.017042"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:38.648239" level="INFO">Element '//div[.='Performance Cookies']' is displayed.</msg>
+<arg>${PerformanceCookies}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:15:38.635865" elapsed="0.012443"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FunctionalCookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:15:38.648560" elapsed="0.015889"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:38.677504" level="INFO">Element '//div[.='Functional Cookies']' is displayed.</msg>
+<arg>${FunctionalCookies}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:15:38.664601" elapsed="0.012968"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TargetingCookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:15:38.677685" elapsed="0.011780"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:38.717699" level="INFO">Element '//div[.='Targeting Cookies']' is displayed.</msg>
+<arg>${TargetingCookies}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:15:38.689736" elapsed="0.028137"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MarketingCookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:15:38.718094" elapsed="0.015743"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:38.766719" level="INFO">Element '//div[.='Marketing Cookies']' is displayed.</msg>
+<arg>${MarketingCookies}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:15:38.734115" elapsed="0.032743"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:39.907451" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../results/selenium-screenshot-287.png"&gt;&lt;img src="../../results/selenium-screenshot-287.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-18T13:15:38.767110" elapsed="1.140669"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:15:41.909513" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:15:39.908267" elapsed="2.001391"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:15:32.266568" elapsed="9.643240"/>
+</kw>
+<kw name="Validate save settings button" owner="CookieSettings_TC001_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SaveCTA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:15:41.910366" elapsed="0.012927"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:41.954045" level="INFO">Element 'css: #onetrust-consent-sdk .ot-pc-footer .save-preference-btn-handler' is displayed.</msg>
+<arg>${SaveCTA}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:15:41.923429" elapsed="0.030743"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:15:41.910071" elapsed="0.044222"/>
+</kw>
+<kw name="Validate + icon and expand and view all the descriptions" owner="CookieSettings_TC002_Pages">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:41.955493" level="INFO">Clicking element '//div[.='Strictly Necessary Cookies']'.</msg>
+<arg>${StrictlyNecCookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:15:41.955179" elapsed="0.043523"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:42.017967" level="INFO">${StrictlyNecCookiesDescription} = These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, ...</msg>
+<var>${StrictlyNecCookiesDescription}</var>
+<arg>${StrNecCookiesText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:15:41.998907" elapsed="0.019097"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-18T13:15:42.018622" level="INFO">The Strictly necessary cookies description after expanding + icon: These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.</msg>
+<arg>The Strictly necessary cookies description after expanding + icon: ${StrictlyNecCookiesDescription}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-18T13:15:42.018213" elapsed="0.000487"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:42.242119" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../results/selenium-element-screenshot-16.png"&gt;&lt;img src="../../results/selenium-element-screenshot-16.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>${StrNecCookiesText}</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2025-02-18T13:15:42.018886" elapsed="0.223458"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:15:44.243913" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:15:42.242505" elapsed="2.001505"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${AlwaysActive}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:15:44.244310" elapsed="0.016299"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:44.268712" level="INFO">Element '//div[@class='ot-always-active']' is displayed.</msg>
+<arg>${AlwaysActive}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:15:44.260872" elapsed="0.007918"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:44.269089" level="INFO">Clicking element '//div[.='Performance Cookies']'.</msg>
+<arg>${PerformanceCookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:15:44.268920" elapsed="0.047157"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:44.335747" level="INFO">${PerformanceCookiesDescription} = These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visito...</msg>
+<var>${PerformanceCookiesDescription}</var>
+<arg>${PerformanceCookiesText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:15:44.316198" elapsed="0.019638"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-18T13:15:44.336784" level="INFO">The Performance cookies description after expanding + icon: These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site.    All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.</msg>
+<arg>The Performance cookies description after expanding + icon: ${PerformanceCookiesDescription}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-18T13:15:44.336118" elapsed="0.000952"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:44.748205" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../results/selenium-element-screenshot-17.png"&gt;&lt;img src="../../results/selenium-element-screenshot-17.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>${PerformanceCookiesText}</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2025-02-18T13:15:44.337343" elapsed="0.410936"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:15:46.749845" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:15:44.748399" elapsed="2.001686"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:46.750667" level="INFO">Clicking element '//div[.='Functional Cookies']'.</msg>
+<arg>${FunctionalCookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:15:46.750450" elapsed="0.065706"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:46.835164" level="INFO">${FunctionalCookiesDescription} = These cookies enable the website to provide enhanced functionality and personalization. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow...</msg>
+<var>${FunctionalCookiesDescription}</var>
+<arg>${FunctionalCookiesText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:15:46.816433" elapsed="0.018759"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-18T13:15:46.835633" level="INFO">The Functional cookies description after expanding + icon: These cookies enable the website to provide enhanced functionality and personalization. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.</msg>
+<arg>The Functional cookies description after expanding + icon: ${FunctionalCookiesDescription}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-18T13:15:46.835335" elapsed="0.000375"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:47.022669" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../results/selenium-element-screenshot-18.png"&gt;&lt;img src="../../results/selenium-element-screenshot-18.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>${FunctionalCookiesText}</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2025-02-18T13:15:46.835963" elapsed="0.186783"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:15:49.023457" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:15:47.022858" elapsed="2.000700"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:49.024703" level="INFO">Clicking element '//div[.='Targeting Cookies']'.</msg>
+<arg>${TargetingCookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:15:49.023687" elapsed="0.047265"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:49.087314" level="INFO">${TargetingCookiesDescription} = These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do no...</msg>
+<var>${TargetingCookiesDescription}</var>
+<arg>${TargetingCookiesText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:15:49.071199" elapsed="0.016190"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-18T13:15:49.087895" level="INFO">The Targeting cookies description after expanding + icon: These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.</msg>
+<arg>The Targeting cookies description after expanding + icon: ${TargetingCookiesDescription}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-18T13:15:49.087614" elapsed="0.000319"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:49.406911" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../results/selenium-element-screenshot-19.png"&gt;&lt;img src="../../results/selenium-element-screenshot-19.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>${TargetingCookiesText}</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2025-02-18T13:15:49.088017" elapsed="0.318984"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:15:51.408002" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:15:49.407136" elapsed="2.001015"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:51.408738" level="INFO">Clicking element '//div[.='Marketing Cookies']'.</msg>
+<arg>${MarketingCookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:15:51.408395" elapsed="0.074325"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:51.498702" level="INFO">${MarketingCookiesDescription} = These cookies enable the website to provide enhanced functionality and personalization. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow...</msg>
+<var>${MarketingCookiesDescription}</var>
+<arg>${MarketingCookiesText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:15:51.482974" elapsed="0.015926"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-18T13:15:51.499396" level="INFO">The Marketing cookies description after expanding + icon: These cookies enable the website to provide enhanced functionality and personalization. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.</msg>
+<arg>The Marketing cookies description after expanding + icon: ${MarketingCookiesDescription}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-18T13:15:51.499096" elapsed="0.000373"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:15:51.655311" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../results/selenium-element-screenshot-20.png"&gt;&lt;img src="../../results/selenium-element-screenshot-20.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>${MarketingCookiesText}</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2025-02-18T13:15:51.499630" elapsed="0.156294"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:15:41.954627" elapsed="9.701493"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-18T13:15:51.657270" elapsed="9.757602"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:14:48.167586" elapsed="73.248453"/>
+</test>
+<status status="PASS" start="2025-02-18T13:14:48.018446" elapsed="73.399695"/>
+</suite>
+<status status="PASS" start="2025-02-18T13:14:48.017970" elapsed="73.400932"/>
+</suite>
+<status status="PASS" start="2025-02-18T13:14:48.012540" elapsed="73.406580"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="CookieSettings">Tests.CookieSettings</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="CookieSettings TC002 Test">Tests.CookieSettings.CookieSettings TC002 Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-02-18T13:14:48.166286" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC004_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.</msg>
+</errors>
+</robot>

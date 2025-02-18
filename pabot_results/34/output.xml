@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-18T13:17:41.818391" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
+<suite id="s1-s1" name="PLP" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/PLP">
+<suite id="s1-s1-s1" name="PLP TC003 Test" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/PLP/PLP_TC003_Test.robot">
+<test id="s1-s1-s1-t1" name="Open Thinx Collections" line="21">
+<kw name="Open Thinx Collections Page Using Chrome Browser" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:42.127331" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/collections/shop-all'.</msg>
+<arg>${CollectionsPage}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-18T13:17:42.126980" elapsed="11.125751"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-18T13:17:53.253945" elapsed="0.389282"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:17:42.125999" elapsed="11.517446"/>
+</kw>
+<kw name="Click Accept Cookies Button" owner="CookieSettings_TC001_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${AcceptCookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:17:53.644705" elapsed="0.052869"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:53.699087" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<arg>${AcceptCookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:17:53.698614" elapsed="0.085587"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:17:56.788056" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:17:53.784466" elapsed="3.004614"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:17:53.643898" elapsed="3.145271"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:18:06.791174" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:17:56.789279" elapsed="10.002004"/>
+</kw>
+<kw name="Close Email Modal" owner="PLP_TC001_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CloseModal}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:06.791658" elapsed="0.015819"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:06.813564" level="INFO">Element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']' is displayed.</msg>
+<arg>${CloseModal}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:06.807620" elapsed="0.006018"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:06.813927" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
+<arg>${CloseModal}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:18:06.813742" elapsed="0.034856"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:18:06.791459" elapsed="0.057402"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:18:09.850067" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:18:06.848970" elapsed="3.001169"/>
+</kw>
+<kw name="Validate Color Filter Displays Correct Absorbencies On Click" owner="PLP_TC003_Steps">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:09.858657" level="INFO">Element '//button[@class='body-1-bold flex items-center gap-2']' is displayed.</msg>
+<arg>${FilterButton}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:09.850489" elapsed="0.008221"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:09.858936" level="INFO">Clicking element '//button[@class='body-1-bold flex items-center gap-2']'.</msg>
+<arg>${FilterButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:18:09.858806" elapsed="0.033597"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ColorFilter}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:09.892526" elapsed="0.219744"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:10.117748" level="INFO">Element '//summary[.='Color']' is displayed.</msg>
+<arg>${ColorFilter}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.112390" elapsed="0.005409"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:10.118050" level="INFO">Clicking element '//summary[.='Color']'.</msg>
+<arg>locator=${ColorFilter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.117887" elapsed="0.026036"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MultiFilter}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.144076" elapsed="0.009599"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BeigeFilter}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.153797" elapsed="0.007831"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${RedFilter}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.161745" elapsed="0.007420"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BlueFilter}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.169266" elapsed="0.008109"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PinkFilter}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.177537" elapsed="0.007568"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${GreyFilter}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.185212" elapsed="0.007571"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BlackFilter}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.192890" elapsed="0.007954"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:10.205918" level="INFO">Element '//span[.='Multi']' is displayed.</msg>
+<arg>${MultiFilter}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.200945" elapsed="0.005031"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:10.211282" level="INFO">Element '//span[.='Beige']' is displayed.</msg>
+<arg>${BeigeFilter}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.206053" elapsed="0.005272"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:10.216669" level="INFO">Element '//span[.='Red']' is displayed.</msg>
+<arg>${RedFilter}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.211524" elapsed="0.005186"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:10.221807" level="INFO">Element '//span[.='Blue']' is displayed.</msg>
+<arg>${BlueFilter}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.216792" elapsed="0.005059"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:10.226941" level="INFO">Element '//span[.='Pink']' is displayed.</msg>
+<arg>${PinkFilter}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.221926" elapsed="0.005050"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:10.232032" level="INFO">Element '//span[.='Grey']' is displayed.</msg>
+<arg>${GreyFilter}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.227046" elapsed="0.005024"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:10.238062" level="INFO">Element '//span[.='Black']' is displayed.</msg>
+<arg>${BlackFilter}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.232148" elapsed="0.005957"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:18:09.850304" elapsed="0.387855"/>
+</kw>
+<kw name="Validate You Can Apply Multi Color Filter" owner="PLP_TC003_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MultiButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.238417" elapsed="0.007098"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:10.250787" level="INFO">Element '//input[@value='Multi']' is displayed.</msg>
+<arg>${MultiButton}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.245604" elapsed="0.005232"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:10.333951" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../results/selenium-element-screenshot-25.png"&gt;&lt;img src="../../results/selenium-element-screenshot-25.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>${MultiButton}</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.250918" elapsed="0.083093"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:10.334214" level="INFO">Clicking element '//input[@value='Multi']'.</msg>
+<arg>${MultiButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.334106" elapsed="0.095294"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${ApplyFiltersCTA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.429538" elapsed="0.010721"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:18:10.238272" elapsed="0.202225"/>
+</kw>
+<kw name="Validate PLP Results When Multi Color Is Applied" owner="PLP_TC003_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FilterClose}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.441104" elapsed="0.009336"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:10.456898" level="INFO">Element '//button[@class='size-6']' is displayed.</msg>
+<arg>${FilterClose}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.450555" elapsed="0.006409"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:10.457212" level="INFO">Clicking element '//button[@class='size-6']'.</msg>
+<arg>${FilterClose}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.457074" elapsed="0.031245"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${AppliedFilterURL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2025-02-18T13:18:10.488468" elapsed="0.619999"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:11.110864" level="INFO">Current location is 'https://www.thinx.com/collections/shop-all?filter.v.option.color=Multi'.</msg>
+<arg>${AppliedFilterURL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-02-18T13:18:11.108592" elapsed="0.002327"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:11.342047" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../results/selenium-screenshot-300.png"&gt;&lt;img src="../../results/selenium-screenshot-300.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-18T13:18:11.111018" elapsed="0.231099"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:18:10.440739" elapsed="0.901443"/>
+</kw>
+<kw name="Validate Product Display When Multi Color Filter Is Applied" owner="PLP_TC003_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:18:16.663409" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../results/selenium-screenshot-302.png"&gt;&lt;img src="../../results/selenium-screenshot-302.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-18T13:18:16.663587" level="FAIL">Element '//article[.='9-1011-1213-1415-16TeensAll-Day Bikini$16Lucky StarsBlack']' not visible after 5 seconds.</msg>
+<arg>${FirstProduct}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-02-18T13:18:11.342467" elapsed="5.322079">Element '//article[.='9-1011-1213-1415-16TeensAll-Day Bikini$16Lucky StarsBlack']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>locator=${FirstProduct}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-02-18T13:18:16.664704" elapsed="0.000026"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SecondProduct}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-02-18T13:18:16.664775" elapsed="0.000015"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>locator=${SecondProduct}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-02-18T13:18:16.664828" elapsed="0.000012"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2025-02-18T13:18:16.664879" elapsed="0.000014"/>
+</kw>
+<status status="FAIL" start="2025-02-18T13:18:11.342301" elapsed="5.322646">Element '//article[.='9-1011-1213-1415-16TeensAll-Day Bikini$16Lucky StarsBlack']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Validate You Can Quick Add Multi Color to Cart &amp; Color Displays" owner="PLP_TC003_Steps">
+<status status="NOT RUN" start="2025-02-18T13:18:16.665026" elapsed="0.000021"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-18T13:18:16.665156" elapsed="0.159542"/>
+</kw>
+<status status="FAIL" start="2025-02-18T13:17:42.124869" elapsed="34.699919">Element '//article[.='9-1011-1213-1415-16TeensAll-Day Bikini$16Lucky StarsBlack']' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" start="2025-02-18T13:17:41.848059" elapsed="34.977164"/>
+</suite>
+<status status="FAIL" start="2025-02-18T13:17:41.846973" elapsed="34.978548"/>
+</suite>
+<status status="FAIL" start="2025-02-18T13:17:41.833395" elapsed="34.992305"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="PLP">Tests.PLP</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="PLP TC003 Test">Tests.PLP.PLP TC003 Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

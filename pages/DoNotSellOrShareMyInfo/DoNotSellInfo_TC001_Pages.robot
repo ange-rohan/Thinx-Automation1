@@ -11,12 +11,8 @@ ${CancelCTA}        //a[@id='cancel-button']
 
 *** Keywords ***
 Click on Do Not Sell Info Link from footer section
-    Execute Javascript    window.scrollTo(0,2000)
-    Sleep    3
-    Execute Javascript    window.scrollTo(0,3000)
-    Sleep    5
-    Execute Javascript    window.scrollTo(0,4500)
-    Sleep    5
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    Sleep    2
 	Wait Until Page Contains Element          ${DoNotSellInfo}
 	Element Should Be Visible       ${DoNotSellInfo}
 	Click Element       ${DoNotSellInfo}

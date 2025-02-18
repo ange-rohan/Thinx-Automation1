@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-18T13:16:50.538300" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
+<suite id="s1-s1" name="HomePage" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/HomePage">
+<suite id="s1-s1-s1" name="HomePage TC003 Test" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/HomePage/HomePage_TC003_Test.robot">
+<test id="s1-s1-s1-t1" name="Open Thinx Homepage Using Chrome Browser" line="13">
+<kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:16:50.729568" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<arg>${ThinxHomepage}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-18T13:16:50.729405" elapsed="9.815157"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-18T13:17:00.545324" elapsed="0.456118"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:16:50.728847" elapsed="10.273040"/>
+</kw>
+<kw name="Validate Homepage Carousel Section" owner="HomePage_TC003_Steps">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:01.004863" level="INFO">Executing JavaScript:
+window.scrollTo(0,2700)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,2700)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-18T13:17:01.003142" elapsed="0.018880"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:17:06.023655" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:17:01.022253" elapsed="5.001546"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:17:11.564059" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-18T13:17:11.564434" level="FAIL">Element '//section[contains(.,'best sellersstaff pickssleepbuttery softXSSMLXL1X2X3X4XPeriodUltra Soft Sleep Sh')]' did not appear in 5 seconds.</msg>
+<arg>${CarouselSection}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="FAIL" start="2025-02-18T13:17:06.024021" elapsed="5.646207">Element '//section[contains(.,'best sellersstaff pickssleepbuttery softXSSMLXL1X2X3X4XPeriodUltra Soft Sleep Sh')]' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${CarouselSection}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-02-18T13:17:11.670758" elapsed="0.000119"/>
+</kw>
+<status status="FAIL" start="2025-02-18T13:17:01.002413" elapsed="10.668665">Element '//section[contains(.,'best sellersstaff pickssleepbuttery softXSSMLXL1X2X3X4XPeriodUltra Soft Sleep Sh')]' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Validate Navigation to PDP on Click" owner="HomePage_TC003_Steps">
+<status status="NOT RUN" start="2025-02-18T13:17:11.671324" elapsed="0.000069"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-18T13:17:11.671704" elapsed="2.132360"/>
+</kw>
+<status status="FAIL" start="2025-02-18T13:16:50.728330" elapsed="23.075817">Element '//section[contains(.,'best sellersstaff pickssleepbuttery softXSSMLXL1X2X3X4XPeriodUltra Soft Sleep Sh')]' did not appear in 5 seconds.</status>
+</test>
+<status status="FAIL" start="2025-02-18T13:16:50.593586" elapsed="23.211039"/>
+</suite>
+<status status="FAIL" start="2025-02-18T13:16:50.592290" elapsed="23.213435"/>
+</suite>
+<status status="FAIL" start="2025-02-18T13:16:50.580248" elapsed="23.226026"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="HomePage">Tests.HomePage</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="HomePage TC003 Test">Tests.HomePage.HomePage TC003 Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

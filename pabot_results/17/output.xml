@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-18T13:16:27.924873" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
+<suite id="s1-s1" name="ForgotPassword" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/ForgotPassword">
+<suite id="s1-s1-s1" name="ForgotPassword TC001 Test" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/ForgotPassword/ForgotPassword_TC001_Test.robot">
+<test id="s1-s1-s1-t1" name="Login to Thinx" line="15">
+<kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:16:28.057251" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<arg>${ThinxHomepage}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-18T13:16:28.057106" elapsed="1.608262"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-18T13:16:29.666831" elapsed="2.061675"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:16:28.056742" elapsed="3.671952"/>
+</kw>
+<kw name="Login Page Opened" owner="Login_TC001_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SignIn_Nav}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:16:31.730092" elapsed="0.013577"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:16:31.753027" level="INFO">Element '//header[@class='flex justify-between items-center px-3 h-[3.25rem] lg:h-14.5 lg:px-8 bg-white border-b border-b-brand-tangerine']//a[contains(.,'Sign in')]' is displayed.</msg>
+<arg>${SignIn_Nav}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:16:31.743853" elapsed="0.009258"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:16:31.753369" level="INFO">Clicking element '//header[@class='flex justify-between items-center px-3 h-[3.25rem] lg:h-14.5 lg:px-8 bg-white border-b border-b-brand-tangerine']//a[contains(.,'Sign in')]'.</msg>
+<arg>${SignIn_Nav}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:16:31.753220" elapsed="0.042650"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:16:31.729339" elapsed="0.066750"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:16:41.796866" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:16:31.796384" elapsed="10.000800"/>
+</kw>
+<kw name="Click on forgot password link" owner="ForgotPassword_TC001_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ForgotPwdLink}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:16:41.797825" elapsed="0.024106"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:16:41.831692" level="INFO">Element '//a[contains(.,'Forgot your password?')]' is displayed.</msg>
+<arg>${ForgotPwdLink}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:16:41.822069" elapsed="0.009704"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:16:41.832099" level="INFO">Clicking element '//a[contains(.,'Forgot your password?')]'.</msg>
+<arg>${ForgotPwdLink}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:16:41.831892" elapsed="0.073206"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:16:41.797550" elapsed="0.107641"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:16:41.906354" level="INFO">Executing JavaScript:
+window.scrollTo(0, 0)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, 0)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-18T13:16:41.905291" elapsed="0.004832"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-18T13:16:51.913192" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-18T13:16:41.910382" elapsed="10.003742"/>
+</kw>
+<kw name="Validate all the mandatory data on forgot password page" owner="ForgotPassword_TC001_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ResetPasswordh1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:16:51.917043" elapsed="0.018184"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:16:51.947850" level="INFO">Element '//h1[@class='heading-3']' is displayed.</msg>
+<arg>${ResetPasswordh1}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:16:51.935512" elapsed="0.012556"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:16:51.961460" level="INFO">${ResetPasswordh1} = Reset your password</msg>
+<var>${ResetPasswordh1}</var>
+<arg>${ResetPasswordh1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:16:51.948446" elapsed="0.013068"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${ResetPasswordh1}</arg>
+<arg>Reset your password</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-18T13:16:51.961730" elapsed="0.000320"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ResetPasswordPar}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:16:51.962185" elapsed="0.015131"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:16:51.986250" level="INFO">Element '//p[@class='body-2']' is displayed.</msg>
+<arg>${ResetPasswordPar}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:16:51.977584" elapsed="0.008729"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:16:51.997232" level="INFO">${ResetPasswordPar} = We will send you an email to reset your password</msg>
+<var>${ResetPasswordPar}</var>
+<arg>${ResetPasswordPar}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-18T13:16:51.986433" elapsed="0.010830"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${ResetPasswordPar}</arg>
+<arg>We will send you an email to reset your password</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-18T13:16:51.997364" elapsed="0.000126"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${RecoverPasswordField}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:16:51.997548" elapsed="0.009797"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:16:52.016780" level="INFO">Element '//input[@id='RecoverEmail']' is displayed.</msg>
+<arg>${RecoverPasswordField}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:16:52.007459" elapsed="0.009463"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CancelLink}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:16:52.017125" elapsed="0.013458"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:16:52.040761" level="INFO">Element '//a[.='Cancel']' is displayed.</msg>
+<arg>${CancelLink}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:16:52.031074" elapsed="0.009812"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SendEmailCTA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:16:52.041089" elapsed="0.012982"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-18T13:16:52.063821" level="INFO">Element '//button[.='Submit']' is displayed.</msg>
+<arg>${SendEmailCTA}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T13:16:52.054303" elapsed="0.009586"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:16:51.916119" elapsed="0.147877"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-18T13:16:52.064391" elapsed="5.154598"/>
+</kw>
+<status status="PASS" start="2025-02-18T13:16:28.056381" elapsed="29.162724"/>
+</test>
+<status status="PASS" start="2025-02-18T13:16:27.943161" elapsed="29.276430"/>
+</suite>
+<status status="PASS" start="2025-02-18T13:16:27.942713" elapsed="29.277425"/>
+</suite>
+<status status="PASS" start="2025-02-18T13:16:27.936492" elapsed="29.284565"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="ForgotPassword">Tests.ForgotPassword</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="ForgotPassword TC001 Test">Tests.ForgotPassword.ForgotPassword TC001 Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
