@@ -1,367 +1,367 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-18T13:14:48.079166" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-18T15:58:45.633975" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
 <suite id="s1-s1" name="Checkout" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Checkout">
 <suite id="s1-s1-s1" name="Checkout TC002 Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Checkout/Checkout_TC002_Tests.robot">
 <test id="s1-s1-s1-t1" name="Open Thinx PDP" line="30">
 <kw name="Open Thinx PDP Using Chrome Browser" owner="resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:14:48.177507" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/products/period-all-night-ultra-soft-sleep-shorts?variant=40174028750920'.</msg>
+<msg time="2025-02-18T15:58:45.814562" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/products/period-all-night-ultra-soft-sleep-shorts?variant=40174028750920'.</msg>
 <arg>${ThinxPDP}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-18T13:14:48.177389" elapsed="4.319707"/>
+<status status="PASS" start="2025-02-18T15:58:45.814429" elapsed="6.184226"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-18T13:14:52.499644" elapsed="7.164153"/>
+<status status="PASS" start="2025-02-18T15:58:51.999665" elapsed="11.979357"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:15:04.670395" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-18T15:59:08.987020" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:14:59.665566" elapsed="5.006169"/>
+<status status="PASS" start="2025-02-18T15:59:03.985220" elapsed="5.002496"/>
 </kw>
-<status status="PASS" start="2025-02-18T13:14:48.177091" elapsed="16.495596"/>
+<status status="PASS" start="2025-02-18T15:58:45.814075" elapsed="23.174389"/>
 </kw>
 <kw name="Click Accept Cookies Button" owner="CookieSettings_TC001_Pages">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${AcceptCookies}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-18T13:15:04.674750" elapsed="0.047857"/>
+<status status="PASS" start="2025-02-18T15:59:08.990773" elapsed="0.027092"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:15:04.723995" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<msg time="2025-02-18T15:59:09.018966" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
 <arg>${AcceptCookies}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T13:15:04.723185" elapsed="0.103084"/>
+<status status="PASS" start="2025-02-18T15:59:09.018231" elapsed="0.096784"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:15:07.829266" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-02-18T15:59:12.115990" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:15:04.826496" elapsed="3.002900"/>
+<status status="PASS" start="2025-02-18T15:59:09.115246" elapsed="3.000934"/>
 </kw>
-<status status="PASS" start="2025-02-18T13:15:04.673933" elapsed="3.155602"/>
+<status status="PASS" start="2025-02-18T15:59:08.989491" elapsed="3.126905"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:15:12.830533" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-18T15:59:17.118865" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:15:07.829662" elapsed="5.002970"/>
+<status status="PASS" start="2025-02-18T15:59:12.116622" elapsed="5.003011"/>
 </kw>
 <kw name="Accept Cookies and Close Welcome Modal" owner="PDP_TC004_Steps">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:15:17.841036" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-18T15:59:22.122659" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:15:12.840455" elapsed="5.000677"/>
+<status status="PASS" start="2025-02-18T15:59:17.121556" elapsed="5.002208"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${CloseModal}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-18T13:15:17.841340" elapsed="0.015137"/>
+<status status="PASS" start="2025-02-18T15:59:22.125875" elapsed="0.038588"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:15:17.856783" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
+<msg time="2025-02-18T15:59:22.164987" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
 <arg>${CloseModal}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T13:15:17.856623" elapsed="0.048074"/>
+<status status="PASS" start="2025-02-18T15:59:22.164655" elapsed="0.089037"/>
 </kw>
-<status status="PASS" start="2025-02-18T13:15:12.839044" elapsed="5.066260"/>
+<status status="PASS" start="2025-02-18T15:59:17.120826" elapsed="5.134450"/>
 </kw>
 <kw name="Validate Add to Cart From PDP" owner="PDP_TC002_Steps">
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${FirstSize}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-18T13:15:17.905998" elapsed="0.006518"/>
+<status status="PASS" start="2025-02-18T15:59:22.260261" elapsed="0.011035"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:15:17.922901" level="INFO">Element '//div[@id='product-option-Size']//div[.='XS']' is displayed.</msg>
+<msg time="2025-02-18T15:59:22.282613" level="INFO">Element '//div[@id='product-option-Size']//div[.='XS']' is displayed.</msg>
 <arg>${FirstSize}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-18T13:15:17.912722" elapsed="0.010250"/>
+<status status="PASS" start="2025-02-18T15:59:22.271531" elapsed="0.011163"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:15:17.923294" level="INFO">Clicking element '//div[@id='product-option-Size']//div[.='XS']'.</msg>
+<msg time="2025-02-18T15:59:22.283181" level="INFO">Clicking element '//div[@id='product-option-Size']//div[.='XS']'.</msg>
 <arg>${FirstSize}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T13:15:17.923095" elapsed="0.036438"/>
+<status status="PASS" start="2025-02-18T15:59:22.282819" elapsed="0.048811"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:15:19.961417" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-02-18T15:59:24.334713" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:15:17.959664" elapsed="2.001831"/>
+<status status="PASS" start="2025-02-18T15:59:22.332113" elapsed="2.002676"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${ColorSwatch}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-18T13:15:19.961736" elapsed="0.007090"/>
+<status status="PASS" start="2025-02-18T15:59:24.334941" elapsed="0.018097"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:15:19.977659" level="INFO">Element 'product-option-Color-plum' is displayed.</msg>
+<msg time="2025-02-18T15:59:24.369266" level="INFO">Element 'product-option-Color-plum' is displayed.</msg>
 <arg>${ColorSwatch}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-18T13:15:19.968958" elapsed="0.008770"/>
+<status status="PASS" start="2025-02-18T15:59:24.353450" elapsed="0.015938"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:15:24.978815" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-18T15:59:29.372808" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:15:19.977854" elapsed="5.001194"/>
+<status status="PASS" start="2025-02-18T15:59:24.370329" elapsed="5.003251"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${AddtoBagCTA}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-18T13:15:24.979328" elapsed="0.006947"/>
+<status status="PASS" start="2025-02-18T15:59:29.374387" elapsed="0.010585"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:15:24.993462" level="INFO">Element '//button[@class='button button--primary flex-1 whitespace-nowrap']' is displayed.</msg>
+<msg time="2025-02-18T15:59:29.393022" level="INFO">Element '//button[@class='button button--primary flex-1 whitespace-nowrap']' is displayed.</msg>
 <arg>${AddtoBagCTA}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-18T13:15:24.986452" elapsed="0.007077"/>
+<status status="PASS" start="2025-02-18T15:59:29.385163" elapsed="0.007916"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:15:24.993820" level="INFO">Clicking element '//button[@class='button button--primary flex-1 whitespace-nowrap']'.</msg>
+<msg time="2025-02-18T15:59:29.393452" level="INFO">Clicking element '//button[@class='button button--primary flex-1 whitespace-nowrap']'.</msg>
 <arg>${AddtoBagCTA}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T13:15:24.993661" elapsed="0.173381"/>
+<status status="PASS" start="2025-02-18T15:59:29.393192" elapsed="0.122038"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:15:25.459338" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-18T15:59:29.859125" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-02-18T13:15:25.167354" elapsed="0.292057"/>
+<status status="PASS" start="2025-02-18T15:59:29.515624" elapsed="0.343568"/>
 </kw>
-<status status="PASS" start="2025-02-18T13:15:17.905491" elapsed="7.553988"/>
+<status status="PASS" start="2025-02-18T15:59:22.257716" elapsed="7.601562"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:15:30.460149" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-18T15:59:34.860976" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:15:25.459621" elapsed="5.000621"/>
+<status status="PASS" start="2025-02-18T15:59:29.859422" elapsed="5.001634"/>
 </kw>
 <kw name="Navigate From Cart to Checkout" owner="Checkout_TC001_Steps">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:15:35.462425" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-18T15:59:39.864038" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:15:30.461208" elapsed="5.001483"/>
+<status status="PASS" start="2025-02-18T15:59:34.861586" elapsed="5.003860"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:15:35.463338" level="INFO">Executing JavaScript:
+<msg time="2025-02-18T15:59:39.868150" level="INFO">Executing JavaScript:
 window.scrollTo(0, document.body.scrollHeight)
 Without any arguments.</msg>
 <arg>window.scrollTo(0, document.body.scrollHeight)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-02-18T13:15:35.462845" elapsed="0.010699"/>
+<status status="PASS" start="2025-02-18T15:59:39.866818" elapsed="0.025983"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>${CheckoutCTA}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-02-18T13:15:35.473783" elapsed="0.273990"/>
+<status status="PASS" start="2025-02-18T15:59:39.892997" elapsed="0.311428"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${CheckoutCTA}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-18T13:15:35.747925" elapsed="0.007053"/>
+<status status="PASS" start="2025-02-18T15:59:40.204707" elapsed="0.009947"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:15:35.755293" level="INFO">Clicking element '//a[@id='cart-checkout-button']'.</msg>
+<msg time="2025-02-18T15:59:40.215417" level="INFO">Clicking element '//a[@id='cart-checkout-button']'.</msg>
 <arg>${CheckoutCTA}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T13:15:35.755108" elapsed="0.028566"/>
+<status status="PASS" start="2025-02-18T15:59:40.214950" elapsed="0.052051"/>
 </kw>
-<status status="PASS" start="2025-02-18T13:15:30.460784" elapsed="5.322984"/>
+<status status="PASS" start="2025-02-18T15:59:34.861297" elapsed="5.405947"/>
 </kw>
 <kw name="Enter New Account Email on Checkout" owner="Checkout_TC002_Steps">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:15:40.785708" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-18T15:59:45.269178" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:15:35.784397" elapsed="5.002265"/>
+<status status="PASS" start="2025-02-18T15:59:40.268158" elapsed="5.003648"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>locator=${ContactEmail}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-02-18T13:15:40.788529" elapsed="1.839104"/>
+<status status="PASS" start="2025-02-18T15:59:45.272355" elapsed="1.495361"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${ContactEmail}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-18T13:15:42.627875" elapsed="0.013010"/>
+<status status="PASS" start="2025-02-18T15:59:46.768009" elapsed="0.014031"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${ContactEmail}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-18T13:15:42.641088" elapsed="0.016703"/>
+<status status="PASS" start="2025-02-18T15:59:46.782483" elapsed="0.017376"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:15:42.658496" level="INFO">Typing text 'testpurchase1@yopmail.com' into text field '//input[@id='email']'.</msg>
+<msg time="2025-02-18T15:59:46.800652" level="INFO">Typing text 'testpurchase1@yopmail.com' into text field '//input[@id='email']'.</msg>
 <arg>${ContactEmail}</arg>
 <arg>${CheckoutEmail}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T13:15:42.658092" elapsed="0.232802"/>
+<status status="PASS" start="2025-02-18T15:59:46.800194" elapsed="0.302007"/>
 </kw>
 <arg>${CheckoutEmail}</arg>
-<status status="PASS" start="2025-02-18T13:15:35.783963" elapsed="7.107026"/>
+<status status="PASS" start="2025-02-18T15:59:40.267679" elapsed="6.834786"/>
 </kw>
 <kw name="Enter First Name on Checkout" owner="Checkout_TC002_Steps">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:15:47.894235" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-18T15:59:52.104991" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:15:42.891864" elapsed="5.002515"/>
+<status status="PASS" start="2025-02-18T15:59:47.103255" elapsed="5.001824"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${FirstName}</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-18T13:15:47.894685" elapsed="0.018077"/>
+<status status="PASS" start="2025-02-18T15:59:52.105249" elapsed="0.015381"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>locator=${Firstname}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-02-18T13:15:47.913028" elapsed="0.265714"/>
+<status status="PASS" start="2025-02-18T15:59:52.120874" elapsed="0.263399"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:15:48.179182" level="INFO">Typing text 'Test' into text field '//div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='firstName']'.</msg>
+<msg time="2025-02-18T15:59:52.384549" level="INFO">Typing text 'Test' into text field '//div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='firstName']'.</msg>
 <arg>${Firstname}</arg>
 <arg>${FName}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T13:15:48.178880" elapsed="0.239456"/>
+<status status="PASS" start="2025-02-18T15:59:52.384392" elapsed="0.116106"/>
 </kw>
 <arg>FName=${FName}</arg>
-<status status="PASS" start="2025-02-18T13:15:42.891152" elapsed="5.527310"/>
+<status status="PASS" start="2025-02-18T15:59:47.102964" elapsed="5.397721"/>
 </kw>
 <kw name="Enter Last Name on Checkout" owner="Checkout_TC002_Steps">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:15:53.420603" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-18T15:59:57.503368" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:15:48.418819" elapsed="5.003267"/>
+<status status="PASS" start="2025-02-18T15:59:52.501248" elapsed="5.002857"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>locator=${Lastname}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-02-18T13:15:53.423226" elapsed="0.277729"/>
+<status status="PASS" start="2025-02-18T15:59:57.505219" elapsed="0.277377"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${Lastname}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-18T13:15:53.701259" elapsed="0.010310"/>
+<status status="PASS" start="2025-02-18T15:59:57.782906" elapsed="0.012153"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${Lastname}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-18T13:15:53.711812" elapsed="0.017041"/>
+<status status="PASS" start="2025-02-18T15:59:57.795330" elapsed="0.015446"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:15:53.729490" level="INFO">Typing text 'Tweet' into text field '//div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='lastName']'.</msg>
+<msg time="2025-02-18T15:59:57.811743" level="INFO">Typing text 'Tweet' into text field '//div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='lastName']'.</msg>
 <arg>${Lastname}</arg>
 <arg>${LName}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T13:15:53.729141" elapsed="0.150612"/>
+<status status="PASS" start="2025-02-18T15:59:57.811252" elapsed="0.146733"/>
 </kw>
 <arg>${LName}</arg>
-<status status="PASS" start="2025-02-18T13:15:48.418592" elapsed="5.461347"/>
+<status status="PASS" start="2025-02-18T15:59:52.500892" elapsed="5.457658"/>
 </kw>
 <kw name="Enter Street Address on Checkout" owner="Checkout_TC002_Steps">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:15:58.885420" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-18T16:00:02.963845" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:15:53.883907" elapsed="5.001675"/>
+<status status="PASS" start="2025-02-18T15:59:57.961436" elapsed="5.003008"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>locator=${AddressLine1}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-02-18T13:15:58.886009" elapsed="0.288231"/>
+<status status="PASS" start="2025-02-18T16:00:02.965934" elapsed="0.283878"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${AddressLine1}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-18T13:15:59.175012" elapsed="0.024990"/>
+<status status="PASS" start="2025-02-18T16:00:03.250151" elapsed="0.013031"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${AddressLine1}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-18T13:15:59.200155" elapsed="0.029772"/>
+<status status="PASS" start="2025-02-18T16:00:03.263389" elapsed="0.014346"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:15:59.230632" level="INFO">Typing text '277 Gedney Hill Road' into text field '//div[@id='shippingAddressForm']//input[@class='_7ozb2uq _7ozb2up _1fragemlj _1fragemsv _1fragemof _1fragems1 _7ozb2ut _7ozb2us _1fragemsh _1fragemsc _1fragemsr _7ozb2uv _7ozb2uu _1fragemoz _1fragemp9 _7ozb2u11 _7ozb2u1h _7ozb2ur']'.</msg>
+<msg time="2025-02-18T16:00:03.278400" level="INFO">Typing text '277 Gedney Hill Road' into text field '//div[@id='shippingAddressForm']//input[@class='_7ozb2uq _7ozb2up _1fragemlj _1fragemsv _1fragemof _1fragems1 _7ozb2ut _7ozb2us _1fragemsh _1fragemsc _1fragemsr _7ozb2uv _7ozb2uu _1fragemoz _1fragemp9 _7ozb2u11 _7ozb2u1h _7ozb2ur']'.</msg>
 <arg>${AddressLine1}</arg>
 <arg>${StreetAddress}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T13:15:59.230187" elapsed="0.178411"/>
+<status status="PASS" start="2025-02-18T16:00:03.277979" elapsed="0.178731"/>
 </kw>
 <arg>${StreetAddress}</arg>
-<status status="PASS" start="2025-02-18T13:15:53.882686" elapsed="5.526129"/>
+<status status="PASS" start="2025-02-18T15:59:57.959353" elapsed="5.497486"/>
 </kw>
 <kw name="Enter City on Checkout" owner="Checkout_TC002_Steps">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:16:04.410273" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-18T16:00:08.473090" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:15:59.409321" elapsed="5.002055"/>
+<status status="PASS" start="2025-02-18T16:00:03.457693" elapsed="5.016205"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>locator=${CityLine2}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-02-18T13:16:04.412430" elapsed="0.276821"/>
+<status status="PASS" start="2025-02-18T16:00:08.475143" elapsed="0.323254"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:16:05.355269" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-02-18T13:16:05.355800" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='city'] timeout=10s because of the following error:
+<msg time="2025-02-18T16:00:08.990562" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-18T16:00:08.991037" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='city'] timeout=10s because of the following error:
 SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='city'] timeout=10s' is not a valid XPath expression.
   (Session info: chrome=133.0.6943.99); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Stacktrace:
-0   chromedriver                        0x0000000104796bac cxxbridge1$str$ptr + 2724820
-1   chromedriver                        0x000000010478f20c cxxbridge1$str$ptr + 2693684
-2   chromedriver                        0x00000001042f5afc cxxbridge1$string$len + 93348
-3   chromedriver                        0x00000001042fb808 cxxbridge1$string$len + 117168
-4   chromedriver                        0x00000001042fd8e0 cxxbridge1$string$len + 125576
-5   chromedriver                        0x00000001042fd988 cxxbridge1$string$len + 125744
-6   chromedriver                        0x000000010433c4f0 cxxbridge1$string$len + 382616
-7   chromedriver                        0x000000010437db94 cxxbridge1$string$len + 650556
-8   chromedriver                        0x0000000104330ba0 cxxbridge1$string$len + 335176
-9   chromedriver                        0x000000010475f664 cxxbridge1$str$ptr + 2498188
-10  chromedriver                        0x0000000104762978 cxxbridge1$str$ptr + 2511264
-11  chromedriver                        0x0000000104744d04 cxxbridge1$str$ptr + 2389292
-12  chromedriver                        0x0000000104763220 cxxbridge1$str$ptr + 2513480
-13  chromedriver                        0x0000000104735cec cxxbridge1$str$ptr + 2327828
-14  chromedriver                        0x000000010477f8d4 cxxbridge1$str$ptr + 2629884
-15  chromedriver                        0x000000010477fa5c cxxbridge1$str$ptr + 2630276
-16  chromedriver                        0x000000010478ee80 cxxbridge1$str$ptr + 2692776
+0   chromedriver                        0x00000001013b6bac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x00000001013af20c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x0000000100f15afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x0000000100f1b808 cxxbridge1$string$len + 117168
+4   chromedriver                        0x0000000100f1d8e0 cxxbridge1$string$len + 125576
+5   chromedriver                        0x0000000100f1d988 cxxbridge1$string$len + 125744
+6   chromedriver                        0x0000000100f5c4f0 cxxbridge1$string$len + 382616
+7   chromedriver                        0x0000000100f9db94 cxxbridge1$string$len + 650556
+8   chromedriver                        0x0000000100f50ba0 cxxbridge1$string$len + 335176
+9   chromedriver                        0x000000010137f664 cxxbridge1$str$ptr + 2498188
+10  chromedriver                        0x0000000101382978 cxxbridge1$str$ptr + 2511264
+11  chromedriver                        0x0000000101364d04 cxxbridge1$str$ptr + 2389292
+12  chromedriver                        0x0000000101383220 cxxbridge1$str$ptr + 2513480
+13  chromedriver                        0x0000000101355cec cxxbridge1$str$ptr + 2327828
+14  chromedriver                        0x000000010139f8d4 cxxbridge1$str$ptr + 2629884
+15  chromedriver                        0x000000010139fa5c cxxbridge1$str$ptr + 2630276
+16  chromedriver                        0x00000001013aee80 cxxbridge1$str$ptr + 2692776
 17  libsystem_pthread.dylib             0x00000001893b5f94 _pthread_start + 136
 18  libsystem_pthread.dylib             0x00000001893b0d34 thread_start + 8
 </msg>
 <arg>${CityLine2} timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-02-18T13:16:04.689606" elapsed="1.604492">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='city'] timeout=10s because of the following error:
+<status status="FAIL" start="2025-02-18T16:00:08.798615" elapsed="0.259665">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='city'] timeout=10s because of the following error:
 SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='city'] timeout=10s' is not a valid XPath expression.
   (Session info: chrome=133.0.6943.99); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Stacktrace:
-0   chromedriver                        0x0000000104796bac cxxbridge1$str$ptr + 2724820
-1   chromedriver                        0x000000010478f20c cxxbridge1$str$ptr + 2693684
-2   chromedriver                        0x00000001042f5afc cxxbridge1$string$len + 93348
-3   chromedriver                        0x00000001042fb808 cxxbridge1$string$len + 117168
+0   chromedriver                        0x00000001013b6bac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x00000001013af20c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x0000000100f15afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x0000000100f1b808 cxxbridge1$string$len + 117168
     [ Message content over the limit has been removed. ]
-...er                        0x0000000104330ba0 cxxbridge1$string$len + 335176
-9   chromedriver                        0x000000010475f664 cxxbridge1$str$ptr + 2498188
-10  chromedriver                        0x0000000104762978 cxxbridge1$str$ptr + 2511264
-11  chromedriver                        0x0000000104744d04 cxxbridge1$str$ptr + 2389292
-12  chromedriver                        0x0000000104763220 cxxbridge1$str$ptr + 2513480
-13  chromedriver                        0x0000000104735cec cxxbridge1$str$ptr + 2327828
-14  chromedriver                        0x000000010477f8d4 cxxbridge1$str$ptr + 2629884
-15  chromedriver                        0x000000010477fa5c cxxbridge1$str$ptr + 2630276
-16  chromedriver                        0x000000010478ee80 cxxbridge1$str$ptr + 2692776
+...er                        0x0000000100f50ba0 cxxbridge1$string$len + 335176
+9   chromedriver                        0x000000010137f664 cxxbridge1$str$ptr + 2498188
+10  chromedriver                        0x0000000101382978 cxxbridge1$str$ptr + 2511264
+11  chromedriver                        0x0000000101364d04 cxxbridge1$str$ptr + 2389292
+12  chromedriver                        0x0000000101383220 cxxbridge1$str$ptr + 2513480
+13  chromedriver                        0x0000000101355cec cxxbridge1$str$ptr + 2327828
+14  chromedriver                        0x000000010139f8d4 cxxbridge1$str$ptr + 2629884
+15  chromedriver                        0x000000010139fa5c cxxbridge1$str$ptr + 2630276
+16  chromedriver                        0x00000001013aee80 cxxbridge1$str$ptr + 2692776
 17  libsystem_pthread.dylib             0x00000001893b5f94 _pthread_start + 136
 18  libsystem_pthread.dylib             0x00000001893b0d34 thread_start + 8</status>
 </kw>
@@ -369,83 +369,83 @@ Stacktrace:
 <arg>${CityLine2}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="NOT RUN" start="2025-02-18T13:16:06.298889" elapsed="0.000235"/>
+<status status="NOT RUN" start="2025-02-18T16:00:09.058791" elapsed="0.000059"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>${CityLine2}</arg>
 <arg>${City}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-02-18T13:16:06.299692" elapsed="0.000127"/>
+<status status="NOT RUN" start="2025-02-18T16:00:09.058944" elapsed="0.000099"/>
 </kw>
 <arg>${City}</arg>
-<status status="FAIL" start="2025-02-18T13:15:59.409052" elapsed="6.891192">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='city'] timeout=10s because of the following error:
+<status status="FAIL" start="2025-02-18T16:00:03.457226" elapsed="5.602182">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='city'] timeout=10s because of the following error:
 SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='city'] timeout=10s' is not a valid XPath expression.
   (Session info: chrome=133.0.6943.99); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Stacktrace:
-0   chromedriver                        0x0000000104796bac cxxbridge1$str$ptr + 2724820
-1   chromedriver                        0x000000010478f20c cxxbridge1$str$ptr + 2693684
-2   chromedriver                        0x00000001042f5afc cxxbridge1$string$len + 93348
-3   chromedriver                        0x00000001042fb808 cxxbridge1$string$len + 117168
+0   chromedriver                        0x00000001013b6bac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x00000001013af20c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x0000000100f15afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x0000000100f1b808 cxxbridge1$string$len + 117168
     [ Message content over the limit has been removed. ]
-...er                        0x0000000104330ba0 cxxbridge1$string$len + 335176
-9   chromedriver                        0x000000010475f664 cxxbridge1$str$ptr + 2498188
-10  chromedriver                        0x0000000104762978 cxxbridge1$str$ptr + 2511264
-11  chromedriver                        0x0000000104744d04 cxxbridge1$str$ptr + 2389292
-12  chromedriver                        0x0000000104763220 cxxbridge1$str$ptr + 2513480
-13  chromedriver                        0x0000000104735cec cxxbridge1$str$ptr + 2327828
-14  chromedriver                        0x000000010477f8d4 cxxbridge1$str$ptr + 2629884
-15  chromedriver                        0x000000010477fa5c cxxbridge1$str$ptr + 2630276
-16  chromedriver                        0x000000010478ee80 cxxbridge1$str$ptr + 2692776
+...er                        0x0000000100f50ba0 cxxbridge1$string$len + 335176
+9   chromedriver                        0x000000010137f664 cxxbridge1$str$ptr + 2498188
+10  chromedriver                        0x0000000101382978 cxxbridge1$str$ptr + 2511264
+11  chromedriver                        0x0000000101364d04 cxxbridge1$str$ptr + 2389292
+12  chromedriver                        0x0000000101383220 cxxbridge1$str$ptr + 2513480
+13  chromedriver                        0x0000000101355cec cxxbridge1$str$ptr + 2327828
+14  chromedriver                        0x000000010139f8d4 cxxbridge1$str$ptr + 2629884
+15  chromedriver                        0x000000010139fa5c cxxbridge1$str$ptr + 2630276
+16  chromedriver                        0x00000001013aee80 cxxbridge1$str$ptr + 2692776
 17  libsystem_pthread.dylib             0x00000001893b5f94 _pthread_start + 136
 18  libsystem_pthread.dylib             0x00000001893b0d34 thread_start + 8</status>
 </kw>
 <kw name="Enter Zip Code on Checkout" owner="Checkout_TC002_Steps">
 <arg>${ZipCode}</arg>
-<status status="NOT RUN" start="2025-02-18T13:16:06.301163" elapsed="0.000174"/>
+<status status="NOT RUN" start="2025-02-18T16:00:09.059619" elapsed="0.000076"/>
 </kw>
 <kw name="Enter Phone Number on Checkout" owner="Checkout_TC002_Steps">
 <arg>${Phone}</arg>
-<status status="NOT RUN" start="2025-02-18T13:16:06.301713" elapsed="0.000051"/>
+<status status="NOT RUN" start="2025-02-18T16:00:09.059957" elapsed="0.000102"/>
 </kw>
 <kw name="Validate Shipping Method" owner="Checkout_TC002_Steps">
-<status status="NOT RUN" start="2025-02-18T13:16:06.302335" elapsed="0.000127"/>
+<status status="NOT RUN" start="2025-02-18T16:00:09.060241" elapsed="0.000027"/>
 </kw>
 <kw name="Validate Payment Information" owner="Checkout_TC002_Steps">
-<status status="NOT RUN" start="2025-02-18T13:16:06.302654" elapsed="0.000074"/>
+<status status="NOT RUN" start="2025-02-18T16:00:09.060362" elapsed="0.000019"/>
 </kw>
 <kw name="Validate Terms &amp; Pay Now Section" owner="Checkout_TC002_Steps">
-<status status="NOT RUN" start="2025-02-18T13:16:06.302904" elapsed="0.000069"/>
+<status status="NOT RUN" start="2025-02-18T16:00:09.060458" elapsed="0.000076"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-18T13:16:06.303513" elapsed="1.196349"/>
+<status status="PASS" start="2025-02-18T16:00:09.060984" elapsed="2.378947"/>
 </kw>
-<status status="FAIL" start="2025-02-18T13:14:48.176752" elapsed="79.323184">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='city'] timeout=10s because of the following error:
+<status status="FAIL" start="2025-02-18T15:58:45.813690" elapsed="85.626452">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='city'] timeout=10s because of the following error:
 SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='city'] timeout=10s' is not a valid XPath expression.
   (Session info: chrome=133.0.6943.99); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Stacktrace:
-0   chromedriver                        0x0000000104796bac cxxbridge1$str$ptr + 2724820
-1   chromedriver                        0x000000010478f20c cxxbridge1$str$ptr + 2693684
-2   chromedriver                        0x00000001042f5afc cxxbridge1$string$len + 93348
-3   chromedriver                        0x00000001042fb808 cxxbridge1$string$len + 117168
+0   chromedriver                        0x00000001013b6bac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x00000001013af20c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x0000000100f15afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x0000000100f1b808 cxxbridge1$string$len + 117168
     [ Message content over the limit has been removed. ]
-...er                        0x0000000104330ba0 cxxbridge1$string$len + 335176
-9   chromedriver                        0x000000010475f664 cxxbridge1$str$ptr + 2498188
-10  chromedriver                        0x0000000104762978 cxxbridge1$str$ptr + 2511264
-11  chromedriver                        0x0000000104744d04 cxxbridge1$str$ptr + 2389292
-12  chromedriver                        0x0000000104763220 cxxbridge1$str$ptr + 2513480
-13  chromedriver                        0x0000000104735cec cxxbridge1$str$ptr + 2327828
-14  chromedriver                        0x000000010477f8d4 cxxbridge1$str$ptr + 2629884
-15  chromedriver                        0x000000010477fa5c cxxbridge1$str$ptr + 2630276
-16  chromedriver                        0x000000010478ee80 cxxbridge1$str$ptr + 2692776
+...er                        0x0000000100f50ba0 cxxbridge1$string$len + 335176
+9   chromedriver                        0x000000010137f664 cxxbridge1$str$ptr + 2498188
+10  chromedriver                        0x0000000101382978 cxxbridge1$str$ptr + 2511264
+11  chromedriver                        0x0000000101364d04 cxxbridge1$str$ptr + 2389292
+12  chromedriver                        0x0000000101383220 cxxbridge1$str$ptr + 2513480
+13  chromedriver                        0x0000000101355cec cxxbridge1$str$ptr + 2327828
+14  chromedriver                        0x000000010139f8d4 cxxbridge1$str$ptr + 2629884
+15  chromedriver                        0x000000010139fa5c cxxbridge1$str$ptr + 2630276
+16  chromedriver                        0x00000001013aee80 cxxbridge1$str$ptr + 2692776
 17  libsystem_pthread.dylib             0x00000001893b5f94 _pthread_start + 136
 18  libsystem_pthread.dylib             0x00000001893b0d34 thread_start + 8</status>
 </test>
-<status status="FAIL" start="2025-02-18T13:14:48.095437" elapsed="79.404916"/>
+<status status="FAIL" start="2025-02-18T15:58:45.659651" elapsed="85.781358"/>
 </suite>
-<status status="FAIL" start="2025-02-18T13:14:48.094798" elapsed="79.405944"/>
+<status status="FAIL" start="2025-02-18T15:58:45.659207" elapsed="85.782250"/>
 </suite>
-<status status="FAIL" start="2025-02-18T13:14:48.088138" elapsed="79.412995"/>
+<status status="FAIL" start="2025-02-18T15:58:45.653304" elapsed="85.788548"/>
 </suite>
 <statistics>
 <total>
@@ -460,6 +460,6 @@ Stacktrace:
 </suite>
 </statistics>
 <errors>
-<msg time="2025-02-18T13:14:48.169075" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC004_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.</msg>
+<msg time="2025-02-18T15:58:45.799829" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC004_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.</msg>
 </errors>
 </robot>

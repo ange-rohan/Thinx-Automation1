@@ -1,138 +1,268 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-18T13:16:08.003627" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-18T15:59:52.392752" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
 <suite id="s1-s1" name="Footer" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Footer">
 <suite id="s1-s1-s1" name="Footer TC002 Test" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Footer/Footer_TC002_Test.robot">
 <test id="s1-s1-s1-t1" name="Open Thinx" line="18">
 <kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:16:08.353870" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<msg time="2025-02-18T15:59:52.649015" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
 <arg>${ThinxHomepage}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-18T13:16:08.353553" elapsed="4.246432"/>
+<status status="PASS" start="2025-02-18T15:59:52.648480" elapsed="11.456423"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-18T13:16:12.601927" elapsed="0.380948"/>
+<status status="PASS" start="2025-02-18T16:00:04.106449" elapsed="0.391014"/>
 </kw>
-<status status="PASS" start="2025-02-18T13:16:08.352825" elapsed="4.630523"/>
+<status status="PASS" start="2025-02-18T15:59:52.647502" elapsed="11.850343"/>
 </kw>
 <kw name="Click Accept Cookies Button" owner="CookieSettings_TC001_Pages">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${AcceptCookies}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-18T13:16:12.984833" elapsed="0.017686"/>
+<status status="PASS" start="2025-02-18T16:00:04.499615" elapsed="0.083647"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:16:13.003275" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<msg time="2025-02-18T16:00:04.585942" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
 <arg>${AcceptCookies}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T13:16:13.002853" elapsed="0.060644"/>
+<status status="PASS" start="2025-02-18T16:00:04.583529" elapsed="0.109262"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:16:16.065219" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-02-18T16:00:07.694977" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:16:13.063628" elapsed="3.001925"/>
+<status status="PASS" start="2025-02-18T16:00:04.693054" elapsed="3.002190"/>
 </kw>
-<status status="PASS" start="2025-02-18T13:16:12.983988" elapsed="3.081837"/>
+<status status="PASS" start="2025-02-18T16:00:04.498657" elapsed="3.196731"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:16:21.067758" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-18T16:00:12.696304" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:16:16.066180" elapsed="5.002415"/>
+<status status="PASS" start="2025-02-18T16:00:07.695621" elapsed="5.001063"/>
 </kw>
 <kw name="Accept Cookies and Close Welcome Modal" owner="PDP_TC004_Steps">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:16:26.072058" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-18T16:00:17.699194" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:16:21.069575" elapsed="5.002604"/>
+<status status="PASS" start="2025-02-18T16:00:12.698115" elapsed="5.001323"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${CloseModal}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-18T13:16:26.072394" elapsed="0.018905"/>
+<status status="PASS" start="2025-02-18T16:00:17.699839" elapsed="0.029446"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:16:26.091845" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
+<msg time="2025-02-18T16:00:17.729935" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
 <arg>${CloseModal}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T13:16:26.091525" elapsed="0.048342"/>
+<status status="PASS" start="2025-02-18T16:00:17.729558" elapsed="0.072280"/>
 </kw>
-<status status="PASS" start="2025-02-18T13:16:21.069224" elapsed="5.070784"/>
+<status status="PASS" start="2025-02-18T16:00:12.697283" elapsed="5.104799"/>
 </kw>
 <kw name="Scroll to the Footer Section" owner="Footer_TC001_Steps">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:16:26.141581" level="INFO">Executing JavaScript:
-window.scrollTo(0,2000)
+<msg time="2025-02-18T16:00:17.803533" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
 Without any arguments.</msg>
-<arg>window.scrollTo(0,2000)</arg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-02-18T13:16:26.140904" elapsed="0.005963"/>
+<status status="PASS" start="2025-02-18T16:00:17.802645" elapsed="0.007388"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:16:29.148233" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:16:26.147236" elapsed="3.001250"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:16:29.149421" level="INFO">Executing JavaScript:
-window.scrollTo(0,3000)
-Without any arguments.</msg>
-<arg>window.scrollTo(0,3000)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-02-18T13:16:29.148977" elapsed="0.003505"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:16:34.155116" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-18T16:00:22.812507" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:16:29.152601" elapsed="5.002869"/>
+<status status="PASS" start="2025-02-18T16:00:17.811369" elapsed="5.001402"/>
 </kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-02-18T13:16:34.156246" level="INFO">Executing JavaScript:
-window.scrollTo(0,4500)
-Without any arguments.</msg>
-<arg>window.scrollTo(0,4500)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-02-18T13:16:34.155826" elapsed="0.003678"/>
+<status status="PASS" start="2025-02-18T16:00:17.802303" elapsed="5.010654"/>
+</kw>
+<kw name="Click 1st Set of Footer Links &amp; Ensure They Direct to Correct Pages" owner="Footer_TC002_Steps">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${FAQs}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-18T16:00:22.813499" elapsed="0.276198"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FAQs}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-18T16:00:23.089858" elapsed="0.035620"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-18T16:00:23.127240" level="INFO">Clicking element '//div[@class='lg:flex lg:justify-between lg:gap-x-[144px] lg:gap-y-4 lg:flex-wrap']/div[@class='lg:w-[150px] hidden lg:block']//a[.='faqs']'.</msg>
+<msg time="2025-02-18T16:00:24.335555" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-18T16:00:24.335951" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="body-3 no-underline text-default" href="/pages/faq"&gt;...&lt;/a&gt; is not clickable at point (596, 59). Other element would receive the click: &lt;header class="flex justify-between items-center px-3 h-[3.25rem] lg:h-14.5 lg:px-8 bg-white border-b border-b-brand-tangerine"&gt;...&lt;/header&gt;
+  (Session info: chrome=133.0.6943.99)
+Stacktrace:
+0   chromedriver                        0x00000001047a6bac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x000000010479f20c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x0000000104305afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x0000000104352398 cxxbridge1$string$len + 406848
+4   chromedriver                        0x0000000104350928 cxxbridge1$string$len + 400080
+5   chromedriver                        0x000000010434e73c cxxbridge1$string$len + 391396
+6   chromedriver                        0x000000010434db38 cxxbridge1$string$len + 388320
+7   chromedriver                        0x0000000104342630 cxxbridge1$string$len + 341976
+8   chromedriver                        0x00000001043420bc cxxbridge1$string$len + 340580
+9   chromedriver                        0x000000010438db94 cxxbridge1$string$len + 650556
+10  chromedriver                        0x0000000104340ba0 cxxbridge1$string$len + 335176
+11  chromedriver                        0x000000010476f664 cxxbridge1$str$ptr + 2498188
+12  chromedriver                        0x0000000104772978 cxxbridge1$str$ptr + 2511264
+13  chromedriver                        0x0000000104754d04 cxxbridge1$str$ptr + 2389292
+14  chromedriver                        0x0000000104773220 cxxbridge1$str$ptr + 2513480
+15  chromedriver                        0x0000000104745cec cxxbridge1$str$ptr + 2327828
+16  chromedriver                        0x000000010478f8d4 cxxbridge1$str$ptr + 2629884
+17  chromedriver                        0x000000010478fa5c cxxbridge1$str$ptr + 2630276
+18  chromedriver                        0x000000010479ee80 cxxbridge1$str$ptr + 2692776
+19  libsystem_pthread.dylib             0x00000001893b5f94 _pthread_start + 136
+20  libsystem_pthread.dylib             0x00000001893b0d34 thread_start + 8
+</msg>
+<arg>${FAQs}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-02-18T16:00:23.126612" elapsed="1.222866">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="body-3 no-underline text-default" href="/pages/faq"&gt;...&lt;/a&gt; is not clickable at point (596, 59). Other element would receive the click: &lt;header class="flex justify-between items-center px-3 h-[3.25rem] lg:h-14.5 lg:px-8 bg-white border-b border-b-brand-tangerine"&gt;...&lt;/header&gt;
+  (Session info: chrome=133.0.6943.99)
+Stacktrace:
+0   chromedriver                        0x00000001047a6bac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x000000010479f20c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x0000000104305afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x0000000104352398 cxxbridge1$string$len + 406848
+4   chromedriver                        0x0000000104350928 cxxbridge1$string$len + 400080
+5   chromedriver                        0x000000010434e73c cxxbridge1$string$len + 391396
+6   chromedriver                        0x000000010434db38 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x0000000104340ba0 cxxbridge1$string$len + 335176
+11  chromedriver                        0x000000010476f664 cxxbridge1$str$ptr + 2498188
+12  chromedriver                        0x0000000104772978 cxxbridge1$str$ptr + 2511264
+13  chromedriver                        0x0000000104754d04 cxxbridge1$str$ptr + 2389292
+14  chromedriver                        0x0000000104773220 cxxbridge1$str$ptr + 2513480
+15  chromedriver                        0x0000000104745cec cxxbridge1$str$ptr + 2327828
+16  chromedriver                        0x000000010478f8d4 cxxbridge1$str$ptr + 2629884
+17  chromedriver                        0x000000010478fa5c cxxbridge1$str$ptr + 2630276
+18  chromedriver                        0x000000010479ee80 cxxbridge1$str$ptr + 2692776
+19  libsystem_pthread.dylib             0x00000001893b5f94 _pthread_start + 136
+20  libsystem_pthread.dylib             0x00000001893b0d34 thread_start + 8</status>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T13:16:39.160581" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T13:16:34.159615" elapsed="5.001291"/>
+<status status="NOT RUN" start="2025-02-18T16:00:24.349841" elapsed="0.000125"/>
 </kw>
-<status status="PASS" start="2025-02-18T13:16:26.140311" elapsed="13.021447"/>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<arg>${FAQsURL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="NOT RUN" start="2025-02-18T16:00:24.350185" elapsed="0.000060"/>
 </kw>
-<kw name="Validate Footer Headings Are Visible">
-<msg time="2025-02-18T13:16:39.166795" level="FAIL">No keyword with name 'Validate Footer Headings Are Visible' found.</msg>
-<status status="FAIL" start="2025-02-18T13:16:39.166338" elapsed="0.000784">No keyword with name 'Validate Footer Headings Are Visible' found.</status>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${H1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-02-18T16:00:24.350393" elapsed="0.000035"/>
 </kw>
-<kw name="Click 1st Set of Footer Links &amp; Ensure They Direct to Correct Pages">
-<status status="NOT RUN" start="2025-02-18T13:16:39.168029" elapsed="0.000055"/>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${H1}</var>
+<arg>${H1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-18T16:00:24.350501" elapsed="0.000019"/>
 </kw>
-<kw name="Validate Currency Selector Is Visible">
-<status status="NOT RUN" start="2025-02-18T13:16:39.168342" elapsed="0.000086"/>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${H1}</arg>
+<arg>frequently asked questions</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" start="2025-02-18T16:00:24.350580" elapsed="0.000019"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2025-02-18T16:00:24.350648" elapsed="0.000015"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${Reviews}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2025-02-18T16:00:24.350705" elapsed="0.000013"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Reviews}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-02-18T16:00:24.350759" elapsed="0.000014"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${Reviews}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-18T16:00:24.350817" elapsed="0.000015"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-02-18T16:00:24.350870" elapsed="0.000015"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<arg>${ReviewsURL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="NOT RUN" start="2025-02-18T16:00:24.350926" elapsed="0.000017"/>
+</kw>
+<status status="FAIL" start="2025-02-18T16:00:22.813218" elapsed="1.537896">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="body-3 no-underline text-default" href="/pages/faq"&gt;...&lt;/a&gt; is not clickable at point (596, 59). Other element would receive the click: &lt;header class="flex justify-between items-center px-3 h-[3.25rem] lg:h-14.5 lg:px-8 bg-white border-b border-b-brand-tangerine"&gt;...&lt;/header&gt;
+  (Session info: chrome=133.0.6943.99)
+Stacktrace:
+0   chromedriver                        0x00000001047a6bac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x000000010479f20c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x0000000104305afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x0000000104352398 cxxbridge1$string$len + 406848
+4   chromedriver                        0x0000000104350928 cxxbridge1$string$len + 400080
+5   chromedriver                        0x000000010434e73c cxxbridge1$string$len + 391396
+6   chromedriver                        0x000000010434db38 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x0000000104340ba0 cxxbridge1$string$len + 335176
+11  chromedriver                        0x000000010476f664 cxxbridge1$str$ptr + 2498188
+12  chromedriver                        0x0000000104772978 cxxbridge1$str$ptr + 2511264
+13  chromedriver                        0x0000000104754d04 cxxbridge1$str$ptr + 2389292
+14  chromedriver                        0x0000000104773220 cxxbridge1$str$ptr + 2513480
+15  chromedriver                        0x0000000104745cec cxxbridge1$str$ptr + 2327828
+16  chromedriver                        0x000000010478f8d4 cxxbridge1$str$ptr + 2629884
+17  chromedriver                        0x000000010478fa5c cxxbridge1$str$ptr + 2630276
+18  chromedriver                        0x000000010479ee80 cxxbridge1$str$ptr + 2692776
+19  libsystem_pthread.dylib             0x00000001893b5f94 _pthread_start + 136
+20  libsystem_pthread.dylib             0x00000001893b0d34 thread_start + 8</status>
+</kw>
+<kw name="Validate Currency Selector Is Visible" owner="Footer_TC002_Steps">
+<status status="NOT RUN" start="2025-02-18T16:00:24.351231" elapsed="0.000028"/>
 </kw>
 <kw name="Validate Social Link Icons Section Present on Footer Section" owner="Footer_TC002_Steps">
-<status status="NOT RUN" start="2025-02-18T13:16:39.169021" elapsed="0.000169"/>
+<status status="NOT RUN" start="2025-02-18T16:00:24.351316" elapsed="0.000018"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-18T13:16:39.170639" elapsed="1.095367"/>
+<status status="PASS" start="2025-02-18T16:00:24.351478" elapsed="0.324763"/>
 </kw>
-<status status="FAIL" start="2025-02-18T13:16:08.352246" elapsed="31.913951">No keyword with name 'Validate Footer Headings Are Visible' found.</status>
+<status status="FAIL" start="2025-02-18T15:59:52.646821" elapsed="32.029503">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="body-3 no-underline text-default" href="/pages/faq"&gt;...&lt;/a&gt; is not clickable at point (596, 59). Other element would receive the click: &lt;header class="flex justify-between items-center px-3 h-[3.25rem] lg:h-14.5 lg:px-8 bg-white border-b border-b-brand-tangerine"&gt;...&lt;/header&gt;
+  (Session info: chrome=133.0.6943.99)
+Stacktrace:
+0   chromedriver                        0x00000001047a6bac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x000000010479f20c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x0000000104305afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x0000000104352398 cxxbridge1$string$len + 406848
+4   chromedriver                        0x0000000104350928 cxxbridge1$string$len + 400080
+5   chromedriver                        0x000000010434e73c cxxbridge1$string$len + 391396
+6   chromedriver                        0x000000010434db38 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x0000000104340ba0 cxxbridge1$string$len + 335176
+11  chromedriver                        0x000000010476f664 cxxbridge1$str$ptr + 2498188
+12  chromedriver                        0x0000000104772978 cxxbridge1$str$ptr + 2511264
+13  chromedriver                        0x0000000104754d04 cxxbridge1$str$ptr + 2389292
+14  chromedriver                        0x0000000104773220 cxxbridge1$str$ptr + 2513480
+15  chromedriver                        0x0000000104745cec cxxbridge1$str$ptr + 2327828
+16  chromedriver                        0x000000010478f8d4 cxxbridge1$str$ptr + 2629884
+17  chromedriver                        0x000000010478fa5c cxxbridge1$str$ptr + 2630276
+18  chromedriver                        0x000000010479ee80 cxxbridge1$str$ptr + 2692776
+19  libsystem_pthread.dylib             0x00000001893b5f94 _pthread_start + 136
+20  libsystem_pthread.dylib             0x00000001893b0d34 thread_start + 8</status>
 </test>
-<status status="FAIL" start="2025-02-18T13:16:08.044007" elapsed="32.223065"/>
+<status status="FAIL" start="2025-02-18T15:59:52.433440" elapsed="32.243305"/>
 </suite>
-<status status="FAIL" start="2025-02-18T13:16:08.043065" elapsed="32.224682"/>
+<status status="FAIL" start="2025-02-18T15:59:52.432282" elapsed="32.244828"/>
 </suite>
-<status status="FAIL" start="2025-02-18T13:16:08.031057" elapsed="32.237065"/>
+<status status="FAIL" start="2025-02-18T15:59:52.417546" elapsed="32.259828"/>
 </suite>
 <statistics>
 <total>
@@ -147,6 +277,6 @@ Without any arguments.</msg>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-02-18T13:16:08.348651" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC004_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.</msg>
+<msg time="2025-02-18T15:59:52.642850" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC004_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.</msg>
 </errors>
 </robot>

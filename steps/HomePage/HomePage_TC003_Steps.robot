@@ -12,6 +12,7 @@ Validate Homepage Carousel Section
 
 
 Validate Navigation to PDP on Click
+   Scroll Element Into View    ${PDP Link}
     Wait Until Element Is Visible     ${PDP Link}  10s
     Click Element    ${PDP Link}
     Sleep    5

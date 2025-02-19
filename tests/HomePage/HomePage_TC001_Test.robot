@@ -6,11 +6,16 @@
 Library             SeleniumLibrary
 Resource          ../../resources.robot
 Resource          ../../steps/HomePage/HomePage_TC001_Steps.robot
+Resource          ../../pages/CookieSettings/CookieSettings_TC001_Pages.robot
+Resource          ../../steps/PDP/PDP_TC004_Steps.robot
 Test Setup        Open Thinx Homepage Using Chrome Browser
 Test Teardown     Close Browser
 
 *** Test Cases ***
 Open Thinx Homepage Using Chrome Browser
+    Click Accept Cookies Button
+	Sleep         5
+    Accept Cookies and Close Welcome Modal
 	Validate Hero Section Displays
 	Validate Remaining Homepage Sections Visible
     Validate Homepage Carousel Section

@@ -5,50 +5,15 @@ Tests.Registration
 ==============================================================================
 Tests.Registration.Registration TC002 Test                                    
 ==============================================================================
-Registration of Thinx                                                   
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Registration/Registration_TC002_Test.robot:21
-    T:  Registration of Thinx    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Registration/Registration_TC002_Test.robot:22
-      Registration Page Opened    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/pages/Registration/Registration_TC001_Pages.robot:28
-      Click Element    ${CreateAccountLink}
-      |  ${CreateAccountLink} = //a[contains(.,'Create account')] (str)
-______________________________________________________________________________
-| FAIL |
-ElementClickInterceptedException: Message: element click intercepted: Element <a class="block mx-auto text-link w-fit link" href="/account/register">...</a> is not clickable at point (748, 642). Other element would receive the click: <div id="onetrust-group-container" class="ot-sdk-eight ot-sdk-columns">...</div>
-  (Session info: chrome=133.0.6943.99)
-Stacktrace:
-0   chromedriver                        0x0000000104d16bac cxxbridge1$str$ptr + 2724820
-1   chromedriver                        0x0000000104d0f20c cxxbridge1$str$ptr + 2693684
-2   chromedriver                        0x0000000104875afc cxxbridge1$string$len + 93348
-3   chromedriver                        0x00000001048c2398 cxxbridge1$string$len + 406848
-4   chromedriver                        0x00000001048c0928 cxxbridge1$string$len + 400080
-5   chromedriver                        0x00000001048be73c cxxbridge1$string$len + 391396
-6   chromedriver                        0x00000001048bdb38 cxxbridge1$strin...
-    [ Message content over the limit has been removed. ]
-...er                        0x00000001048b0ba0 cxxbridge1$string$len + 335176
-11  chromedriver                        0x0000000104cdf664 cxxbridge1$str$ptr + 2498188
-12  chromedriver                        0x0000000104ce2978 cxxbridge1$str$ptr + 2511264
-13  chromedriver                        0x0000000104cc4d04 cxxbridge1$str$ptr + 2389292
-14  chromedriver                        0x0000000104ce3220 cxxbridge1$str$ptr + 2513480
-15  chromedriver                        0x0000000104cb5cec cxxbridge1$str$ptr + 2327828
-16  chromedriver                        0x0000000104cff8d4 cxxbridge1$str$ptr + 2629884
-17  chromedriver                        0x0000000104cffa5c cxxbridge1$str$ptr + 2630276
-18  chromedriver                        0x0000000104d0ee80 cxxbridge1$str$ptr + 2692776
-19  libsystem_pthread.dylib             0x00000001893b5f94 _pthread_start + 136
-20  libsystem_pthread.dylib             0x00000001893b0d34 thread_start + 8
+Registration of Thinx                                                 | PASS |
 ------------------------------------------------------------------------------
-Tests.Registration.Registration TC002 Test                            | FAIL |
-1 test, 0 passed, 1 failed
+Tests.Registration.Registration TC002 Test                            | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Tests.Registration                                                    | FAIL |
-1 test, 0 passed, 1 failed
+Tests.Registration                                                    | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Tests                                                                 | FAIL |
-1 test, 0 passed, 1 failed
+Tests                                                                 | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
 Output:  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/pabot_results/36/output.xml

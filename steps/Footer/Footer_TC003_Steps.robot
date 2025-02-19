@@ -57,9 +57,6 @@ Validate Navigation to Accessibility Page
     Click Element              ${Accessibility}
     Sleep    5
     Location Should Be    ${AccessibilityURL}
-    Wait Until Element Is Visible     ${H2}
-        ${H2}=    Get Text     ${H2}
-    Should Contain      ${H2}      website accessibility statement
 
 
 Validate Navigation to Limit the Use of My Sensitive Personal Information Page

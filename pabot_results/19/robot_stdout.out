@@ -5,29 +5,15 @@ Tests.HomePage
 ==============================================================================
 Tests.HomePage.HomePage TC001 Test                                            
 ==============================================================================
-Open Thinx Homepage Using Chrome Browser                                
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/HomePage/HomePage_TC001_Test.robot:13
-    T:  Open Thinx Homepage Using Chrome Browser    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/HomePage/HomePage_TC001_Test.robot:16
-      Validate Homepage Carousel Section    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/HomePage/HomePage_TC001_Steps.robot:24
-      Wait Until Page Contains Element    ${CarouselSection}
-      |  ${CarouselSection} = //section[contains(.,'best sellersstaff pickssleepbuttery softXSSMLXL1X2X3X4XPeriodUltra Soft Sleep Sh')] (str)
-______________________________________________________________________________
-| FAIL |
-Element '//section[contains(.,'best sellersstaff pickssleepbuttery softXSSMLXL1X2X3X4XPeriodUltra Soft Sleep Sh')]' did not appear in 5 seconds.
+Open Thinx Homepage Using Chrome Browser                              | PASS |
 ------------------------------------------------------------------------------
-Tests.HomePage.HomePage TC001 Test                                    | FAIL |
-1 test, 0 passed, 1 failed
+Tests.HomePage.HomePage TC001 Test                                    | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Tests.HomePage                                                        | FAIL |
-1 test, 0 passed, 1 failed
+Tests.HomePage                                                        | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Tests                                                                 | FAIL |
-1 test, 0 passed, 1 failed
+Tests                                                                 | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
 Output:  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/pabot_results/19/output.xml

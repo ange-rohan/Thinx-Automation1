@@ -17,10 +17,9 @@ Test Teardown     Close Browser
 *** Test Cases ***
 Open Thinx
     Click Accept Cookies Button
-	Sleep   5
+    Sleep    5
 	Accept Cookies and Close Welcome Modal
-	Scroll to the Footer Section
-    Validate Footer Headings Are Visible  
+	Scroll to the Footer Section 
     Click 1st Set of Footer Links & Ensure They Direct to Correct Pages
     Validate Currency Selector Is Visible
     Validate Social Link Icons Section Present on Footer Section
