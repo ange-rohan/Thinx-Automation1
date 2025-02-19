@@ -38,9 +38,7 @@ Open Thinx PDP
     Enter First Name on Checkout    FName=${FName}
 	Enter Last Name on Checkout    ${LName}
 	Enter Street Address on Checkout     ${StreetAddress}
-	Enter City on Checkout     ${City} 
-    Enter Zip Code on Checkout    ${ZipCode} 
-	Enter Phone Number on Checkout    ${Phone}  
+    Capture Page Screenshot 
 	Validate Shipping Method
     Validate Payment Information
     Validate Terms & Pay Now Section

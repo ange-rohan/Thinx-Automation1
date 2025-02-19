@@ -1,41 +1,6 @@
-datasources:8b2cdc55dcd851a4f0cf852cf4de1a6f03435229
+datasources:8a1f4e9537ab287dc28694f3eb895a9e5ccc2758
 commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
 suitesfrom:no-suites-from-option
-file:c14a41646dc2a76a1fcf5af3844db2a0b281add8
---suite Tests.Cart.Cart TC001 Tests
---suite Tests.Cart.Cart TC002 Tests
---suite Tests.Cart.Cart TC003 Tests
---suite Tests.Cart.Cart TC004 Tests
---suite Tests.Checkout.Checkout TC001 Tests
---suite Tests.Checkout.Checkout TC002 Tests
---suite Tests.CookieSettings.CookieSettings TC001 Test
---suite Tests.CookieSettings.CookieSettings TC002 Test
---suite Tests.CookieSettings.CookieSettings TC003 Test
---suite Tests.CookieSettings.CookieSettings TC004 Test
---suite Tests.CookieSettings.CookieSettings TC005 Test
---suite Tests.DoNotSellOrShareMyInfo.DoNotSellInfo TC001 Test
---suite Tests.DoNotSellOrShareMyInfo.DoNotSellInfo TC002 Test
---suite Tests.DoNotSellOrShareMyInfo.DoNotSellInfo TC003 Test
---suite Tests.Footer.Footer TC001 Test
---suite Tests.Footer.Footer TC002 Test
---suite Tests.Footer.Footer TC003 Test
---suite Tests.ForgotPassword.ForgotPassword TC001 Test
---suite Tests.ForgotPassword.ForgotPassword TC002 Test
---suite Tests.HomePage.HomePage TC001 Test
---suite Tests.HomePage.HomePage TC002 Test
---suite Tests.HomePage.HomePage TC003 Test
---suite Tests.Login.Login TC001 Test
---suite Tests.Login.Login TC002 Test
---suite Tests.Login.Login TC003 Test
---suite Tests.Logout.Logout TC001 Tests
---suite Tests.Meganav.Meganav TC001 Tests
---suite Tests.Meganav.Meganav TC002 Tests
---suite Tests.PDP.PDP TC001 Test
---suite Tests.PDP.PDP TC002 Test
---suite Tests.PDP.PDP TC003 Test
---suite Tests.PDP.PDP TC004 Test
---suite Tests.PLP.PLP TC001 Test
---suite Tests.PLP.PLP TC002 Test
---suite Tests.PLP.PLP TC003 Test
---suite Tests.Registration.Registration TC001 Test
---suite Tests.Registration.Registration TC002 Test
+file:b481e9bc824ff85b955e319be1d4e6413a2310c0
+--suite Checkout.Checkout TC001 Tests
+--suite Checkout.Checkout TC002 Tests

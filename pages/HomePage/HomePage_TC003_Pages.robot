@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${CarouselSection}       //section[contains(.,'best sellersstaff pickssleepbuttery softXSSMLXL1X2X3X4XPeriodbuy more, save more')]
+${CarouselSection}       //section[contains(.,'best sellersstaff pickssleepbuttery softXSSMLXL1X2X3X4XPeriodUltra Soft Sleep Sh')]
 ${PDP Link}              //div[@class='swiper-slide swiper-slide-active !w-[250px] lg:!w-[calc(25%-30px)]']//a[.='Ultra Soft Sleep Shorts']
 ${QuickAdd}              //div[@class='swiper-slide swiper-slide-active !w-[250px] lg:!w-[calc(25%-30px)]']//label[.='XS']
 ${ColorSwatch}         //div[@class='swiper-slide swiper-slide-active !w-[250px] lg:!w-[calc(25%-30px)]']//div[.='Plum']

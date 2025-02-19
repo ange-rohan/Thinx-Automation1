@@ -46,35 +46,14 @@ Enter Street Address on Checkout
     Wait Until Element Is Visible     ${AddressLine1}  timeout=10s
     Wait Until Element Is Enabled     ${AddressLine1}        10
     Input Text                      ${AddressLine1}        ${StreetAddress}
-
-Enter City on Checkout 
-	[Arguments]                      ${City} 
     Sleep    5
-    Scroll Element Into View    locator=${CityLine2}
-    Wait Until Element Is Visible     ${CityLine2} timeout=10s
-    Wait Until Element Is Enabled     ${CityLine2}       10
-    Input Text                      ${CityLine2}       ${City} 
-
-Enter Zip Code on Checkout
-	[Arguments]                      ${ZipCode} 
-    Sleep    5
-    Scroll Element Into View    locator=${ZipLine3}
-    Wait Until Element Is Visible     ${ZipLine3} timeout=10s
-    Wait Until Element Is Enabled     ${ZipLine3}       10
-    Input Text                      $${ZipLine3}      ${ZipCode} 
-
-Enter Phone Number on Checkout
-	[Arguments]                      ${Phone}  
-    Sleep    5
-    Scroll Element Into View    locator=${PhoneLine}
-    Wait Until Element Is Visible     ${PhoneLine} timeout=10s
-    Wait Until Element Is Enabled     ${PhoneLine}      10
-    Input Text                      ${PhoneLine}    ${Phone}  
+    Wait Until Element Is Visible    ${AddressDropdown}
+    Scroll Element Into View    ${AddressDropdown}
+    Click Element    ${AddressDropdown}
 
 
 Validate Shipping Method
-    Scroll Element Into View    ${Shipping Methods}
-    Wait Until Element Is Visible    ${Shipping Methods}
+    Execute Javascript    window.scrollTo(0,7000)
     Wait Until Element Is Visible    ${StandardShipping}
     Element Should Be Visible    ${StandardShipping}
     Wait Until Element Is Visible    ${StandardShippingPrice}
