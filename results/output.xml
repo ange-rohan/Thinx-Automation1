@@ -1,338 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-19T16:39:27.565523" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-20T17:16:23.492402" rpa="false" schemaversion="5">
 <suite id="s1" name="Thinx-Automation1" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1">
 <suite id="s1-s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
-<suite id="s1-s1-s1" name="Checkout" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Checkout">
-<suite id="s1-s1-s1-s1" name="Checkout TC001 Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Checkout/Checkout_TC001_Tests.robot">
-<test id="s1-s1-s1-s1-t1" name="Open Thinx PDP" line="17">
-<kw name="Open Thinx PDP Using Chrome Browser" owner="resources" type="SETUP">
+<suite id="s1-s1-s1" name="Modal" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Modal">
+<suite id="s1-s1-s1-s1" name="Modal TC004 Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Modal/Modal_TC004_Tests.robot">
+<test id="s1-s1-s1-s1-t1" name="Open Thinx Homepage Using Chrome Browser" line="22">
+<kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-19T16:39:27.675402" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/products/period-all-night-ultra-soft-sleep-shorts?variant=40174028750920'.</msg>
-<arg>${ThinxPDP}</arg>
+<msg time="2025-02-20T17:16:23.610977" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<arg>${ThinxHomepage}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-19T16:39:27.675264" elapsed="2.752054"/>
+<status status="PASS" start="2025-02-20T17:16:23.610804" elapsed="3.685228"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-19T16:39:30.427774" elapsed="0.359888"/>
+<status status="PASS" start="2025-02-20T17:16:27.297201" elapsed="0.375889"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-19T16:39:35.789832" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-19T16:39:30.787810" elapsed="5.002585"/>
-</kw>
-<status status="PASS" start="2025-02-19T16:39:27.674942" elapsed="8.115730"/>
+<status status="PASS" start="2025-02-20T17:16:23.610460" elapsed="4.063140"/>
 </kw>
 <kw name="Click Accept Cookies Button" owner="CookieSettings_TC001_Pages">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${AcceptCookies}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-19T16:39:35.792202" elapsed="0.024152"/>
+<status status="PASS" start="2025-02-20T17:16:27.674415" elapsed="0.011614"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T16:39:35.816824" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<msg time="2025-02-20T17:16:27.686415" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
 <arg>${AcceptCookies}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T16:39:35.816557" elapsed="0.045837"/>
+<status status="PASS" start="2025-02-20T17:16:27.686203" elapsed="0.040312"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-19T16:39:38.865021" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-02-20T17:16:30.728192" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-19T16:39:35.862593" elapsed="3.002575"/>
+<status status="PASS" start="2025-02-20T17:16:27.726790" elapsed="3.001581"/>
 </kw>
-<status status="PASS" start="2025-02-19T16:39:35.791453" elapsed="3.073818"/>
+<status status="PASS" start="2025-02-20T17:16:27.674084" elapsed="3.054434"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-19T16:39:43.866049" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-20T17:16:35.730124" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-19T16:39:38.865446" elapsed="5.001109"/>
+<status status="PASS" start="2025-02-20T17:16:30.728756" elapsed="5.001527"/>
 </kw>
-<kw name="Accept Cookies and Close Welcome Modal" owner="CookieSettings_TC001_Pages">
+<kw name="Enter Email Address on Welcome Modal" owner="Modal_TC004_Steps">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-19T16:39:48.870206" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-20T17:16:40.732171" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-19T16:39:43.868949" elapsed="5.001961"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${CloseModal}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-19T16:39:48.871575" elapsed="0.031992"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T16:39:48.904188" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
-<arg>${CloseModal}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T16:39:48.903832" elapsed="0.054699"/>
-</kw>
-<status status="PASS" start="2025-02-19T16:39:43.867766" elapsed="5.090893"/>
-</kw>
-<kw name="Validate Add to Cart From PDP" owner="PDP_TC002_Steps">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${FirstSize}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-19T16:39:48.959117" elapsed="0.006664"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-02-19T16:39:48.975306" level="INFO">Element '//div[@id='product-option-Size']//div[.='XS']' is displayed.</msg>
-<arg>${FirstSize}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-19T16:39:48.965965" elapsed="0.009482"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T16:39:48.975847" level="INFO">Clicking element '//div[@id='product-option-Size']//div[.='XS']'.</msg>
-<arg>${FirstSize}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T16:39:48.975591" elapsed="0.030435"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-19T16:39:51.007133" level="INFO">Slept 2 seconds.</msg>
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-19T16:39:49.006161" elapsed="2.001659"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${ColorSwatch}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-19T16:39:51.008439" elapsed="0.020733"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-02-19T16:39:51.040867" level="INFO">Element '//div[@id='product-option-Color']' is displayed.</msg>
-<arg>${ColorSwatch}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-19T16:39:51.029468" elapsed="0.011555"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-19T16:39:56.041901" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-19T16:39:51.041190" elapsed="5.001262"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${AddtoBagCTA}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-19T16:39:56.043002" elapsed="0.018818"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-02-19T16:39:56.074597" level="INFO">Element '//button[@class='button button--primary flex-1 whitespace-nowrap']' is displayed.</msg>
-<arg>${AddtoBagCTA}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-19T16:39:56.062117" elapsed="0.012690"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T16:39:56.075340" level="INFO">Clicking element '//button[@class='button button--primary flex-1 whitespace-nowrap']'.</msg>
-<arg>${AddtoBagCTA}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T16:39:56.075017" elapsed="0.081833"/>
-</kw>
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-02-19T16:39:56.416709" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-452.png"&gt;&lt;img src="selenium-screenshot-452.png" width="800px"&gt;&lt;/a&gt;</msg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-02-19T16:39:56.157129" elapsed="0.259704"/>
-</kw>
-<status status="PASS" start="2025-02-19T16:39:48.958877" elapsed="7.458048"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-19T16:40:01.418907" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-19T16:39:56.417106" elapsed="5.001940"/>
-</kw>
-<kw name="Navigate From Cart to Checkout" owner="Checkout_TC001_Steps">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-19T16:40:06.420265" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-19T16:40:01.419567" elapsed="5.001128"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-02-19T16:40:06.422251" level="INFO">Executing JavaScript:
-window.scrollTo(0, document.body.scrollHeight)
-Without any arguments.</msg>
-<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-02-19T16:40:06.421135" elapsed="0.004212"/>
+<status status="PASS" start="2025-02-20T17:16:35.731249" elapsed="5.001079"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<msg time="2025-02-19T16:40:06.433162" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=133.0.6943.99)
-Stacktrace:
-0   chromedriver                        0x000000010119eb58 cxxbridge1$str$ptr + 2724820
-1   chromedriver                        0x00000001011971b8 cxxbridge1$str$ptr + 2693684
-2   chromedriver                        0x0000000100cfdafc cxxbridge1$string$len + 93348
-3   chromedriver                        0x0000000100cd74d4 chromedriver + 128212
-4   chromedriver                        0x0000000100d6cb24 cxxbridge1$string$len + 548044
-5   chromedriver                        0x0000000100d85694 cxxbridge1$string$len + 649276
-6   chromedriver                        0x0000000100d38ba0 cxxbridge1$string$len + 335176
-7   chromedriver                        0x0000000101167610 cxxbridge1$str$ptr + 2498188
-8   chromedriver                        0x000000010116a924 cxxbridge1$str$ptr + 2511264
-9   chromedriver                        0x000000010114ccb0 cxxbridge1$str$ptr + 2389292
-10  chromedriver                        0x000000010116b1cc cxxbridge1$str$ptr + 2513480
-11  chromedriver                        0x000000010113dc98 cxxbridge1$str$ptr + 2327828
-12  chromedriver                        0x0000000101187880 cxxbridge1$str$ptr + 2629884
-13  chromedriver                        0x0000000101187a08 cxxbridge1$str$ptr + 2630276
-14  chromedriver                        0x0000000101196e2c cxxbridge1$str$ptr + 2692776
-15  libsystem_pthread.dylib             0x0000000189999f94 _pthread_start + 136
-16  libsystem_pthread.dylib             0x0000000189994d34 thread_start + 8
-</msg>
-<msg time="2025-02-19T16:40:06.434577" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=133.0.6943.99)
-Stacktrace:
-0   chromedriver                        0x000000010119eb58 cxxbridge1$str$ptr + 2724820
-1   chromedriver                        0x00000001011971b8 cxxbridge1$str$ptr + 2693684
-2   chromedriver                        0x0000000100cfdafc cxxbridge1$string$len + 93348
-3   chromedriver                        0x0000000100cd74d4 chromedriver + 128212
-4   chromedriver                        0x0000000100d6cb24 cxxbridge1$string$len + 548044
-5   chromedriver                        0x0000000100d85694 cxxbridge1$string$len + 649276
-6   chromedriver                        0x0000000100d38ba0 cxxbridge1$string$len + 335176
-7   chromedriver                        0x0000000101167610 cxxbridge1$str$ptr + 2498188
-8   chromedriver                        0x000000010116a924 cxxbridge1$str$ptr + 2511264
-9   chromedriver                        0x000000010114ccb0 cxxbridge1$str$ptr + 2389292
-10  chromedriver                        0x000000010116b1cc cxxbridge1$str$ptr + 2513480
-11  chromedriver                        0x000000010113dc98 cxxbridge1$str$ptr + 2327828
-12  chromedriver                        0x0000000101187880 cxxbridge1$str$ptr + 2629884
-13  chromedriver                        0x0000000101187a08 cxxbridge1$str$ptr + 2630276
-14  chromedriver                        0x0000000101196e2c cxxbridge1$str$ptr + 2692776
-15  libsystem_pthread.dylib             0x0000000189999f94 _pthread_start + 136
-16  libsystem_pthread.dylib             0x0000000189994d34 thread_start + 8
-</msg>
-<arg>${CheckoutCTA}</arg>
+<arg>${ModalEmailField}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="FAIL" start="2025-02-19T16:40:06.425642" elapsed="0.036164">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=133.0.6943.99)
-Stacktrace:
-0   chromedriver                        0x000000010119eb58 cxxbridge1$str$ptr + 2724820
-1   chromedriver                        0x00000001011971b8 cxxbridge1$str$ptr + 2693684
-2   chromedriver                        0x0000000100cfdafc cxxbridge1$string$len + 93348
-3   chromedriver                        0x0000000100cd74d4 chromedriver + 128212
-4   chromedriver                        0x0000000100d6cb24 cxxbridge1$string$len + 548044
-5   chromedriver                        0x0000000100d85694 cxxbridge1$string$len + 649276
-6   chromedriver                        0x0000000100d38ba0 cxxbridge1$string$len + 335176
-7   chromedriver                        0x0000000101167610 cxxbridge1$str$ptr + 2498188
-8   chromedriver                        0x000000010116a924 cxxbridge1$str$ptr + 2511264
-9   chromedriver                        0x000000010114ccb0 cxxbridge1$str$ptr + 2389292
-10  chromedriver                        0x000000010116b1cc cxxbridge1$str$ptr + 2513480
-11  chromedriver                        0x000000010113dc98 cxxbridge1$str$ptr + 2327828
-12  chromedriver                        0x0000000101187880 cxxbridge1$str$ptr + 2629884
-13  chromedriver                        0x0000000101187a08 cxxbridge1$str$ptr + 2630276
-14  chromedriver                        0x0000000101196e2c cxxbridge1$str$ptr + 2692776
-15  libsystem_pthread.dylib             0x0000000189999f94 _pthread_start + 136
-16  libsystem_pthread.dylib             0x0000000189994d34 thread_start + 8
-</status>
+<status status="PASS" start="2025-02-20T17:16:40.732486" elapsed="0.272960"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${CheckoutCTA}</arg>
+<arg>${ModalEmailField}</arg>
+<arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-02-19T16:40:06.462077" elapsed="0.000126"/>
+<status status="PASS" start="2025-02-20T17:16:41.005604" elapsed="0.007200"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${ModalEmailField}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-20T17:16:41.012981" elapsed="0.009326"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-20T17:16:41.022640" level="INFO">Typing text 'Test@test.com' into text field '//input[@class='body-2 undefined w-full rounded-[30px] border border-solid border-default px-6 py-3 placeholder:text-default focus:border-default focus:outline-none focus:ring-2 focus:ring-default']'.</msg>
+<arg>${ModalEmailField}</arg>
+<arg>${ModalEmail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-20T17:16:41.022451" elapsed="0.095489"/>
+</kw>
+<arg>ModalEmail=${ModalEmail}</arg>
+<status status="PASS" start="2025-02-20T17:16:35.730630" elapsed="5.387429"/>
+</kw>
+<kw name="Click Continue CTA on Modal" owner="Modal_TC004_Steps">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${ModalCheckbox}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-20T17:16:41.118439" elapsed="0.265848"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ModalCheckbox}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-20T17:16:41.384449" elapsed="0.006154"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<arg>${CheckoutCTA}</arg>
+<msg time="2025-02-20T17:16:41.390931" level="INFO">Clicking element '//input[@id='registration_disclaimer']'.</msg>
+<arg>${ModalCheckbox}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-02-19T16:40:06.462318" elapsed="0.000077"/>
+<status status="PASS" start="2025-02-20T17:16:41.390753" elapsed="0.035775"/>
 </kw>
-<status status="FAIL" start="2025-02-19T16:40:01.419347" elapsed="5.043197">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=133.0.6943.99)
-Stacktrace:
-0   chromedriver                        0x000000010119eb58 cxxbridge1$str$ptr + 2724820
-1   chromedriver                        0x00000001011971b8 cxxbridge1$str$ptr + 2693684
-2   chromedriver                        0x0000000100cfdafc cxxbridge1$string$len + 93348
-3   chromedriver                        0x0000000100cd74d4 chromedriver + 128212
-4   chromedriver                        0x0000000100d6cb24 cxxbridge1$string$len + 548044
-5   chromedriver                        0x0000000100d85694 cxxbridge1$string$len + 649276
-6   chromedriver                        0x0000000100d38ba0 cxxbridge1$string$len + 335176
-7   chromedriver                        0x0000000101167610 cxxbridge1$str$ptr + 2498188
-8   chromedriver                        0x000000010116a924 cxxbridge1$str$ptr + 2511264
-9   chromedriver                        0x000000010114ccb0 cxxbridge1$str$ptr + 2389292
-10  chromedriver                        0x000000010116b1cc cxxbridge1$str$ptr + 2513480
-11  chromedriver                        0x000000010113dc98 cxxbridge1$str$ptr + 2327828
-12  chromedriver                        0x0000000101187880 cxxbridge1$str$ptr + 2629884
-13  chromedriver                        0x0000000101187a08 cxxbridge1$str$ptr + 2630276
-14  chromedriver                        0x0000000101196e2c cxxbridge1$str$ptr + 2692776
-15  libsystem_pthread.dylib             0x0000000189999f94 _pthread_start + 136
-16  libsystem_pthread.dylib             0x0000000189994d34 thread_start + 8
-</status>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${ContinueCTA}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-20T17:16:41.426735" elapsed="0.263258"/>
 </kw>
-<kw name="Validate Checkout Displays Correct Information" owner="Checkout_TC001_Steps">
-<status status="NOT RUN" start="2025-02-19T16:40:06.462896" elapsed="0.000084"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ContinueCTA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-20T17:16:41.690159" elapsed="0.005944"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-20T17:16:41.696422" level="INFO">Clicking element '//button[@class='button button--primary w-full']'.</msg>
+<arg>${ContinueCTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-20T17:16:41.696247" elapsed="0.037069"/>
+</kw>
+<status status="PASS" start="2025-02-20T17:16:41.118229" elapsed="0.615227"/>
+</kw>
+<kw name="Confirm Visibility of All Set Modal" owner="Modal_TC004_Steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-20T17:16:46.734484" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-20T17:16:41.733933" elapsed="5.000718"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ThinxLogo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-20T17:16:46.734808" elapsed="0.008900"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-20T17:16:46.749348" level="INFO">Element '//img[@alt='Thinx Logo']' is displayed.</msg>
+<arg>${ThinxLogo}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-20T17:16:46.743876" elapsed="0.005590"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ModalCloseX}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-20T17:16:46.749595" elapsed="0.007522"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-20T17:16:46.763067" level="INFO">Element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']' is displayed.</msg>
+<arg>${ModalCloseX}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-20T17:16:46.757254" elapsed="0.005925"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-20T17:16:47.253047" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-485.png"&gt;&lt;img src="selenium-screenshot-485.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-20T17:16:46.763313" elapsed="0.490064"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HeadingAllSet}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-20T17:16:47.253580" elapsed="0.008310"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-20T17:16:47.267284" level="INFO">Element '//h2[@class='text-28 text-center']' is displayed.</msg>
+<arg>${HeadingAllSet}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-20T17:16:47.262044" elapsed="0.005346"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-20T17:16:47.276289" level="INFO">${HeadingAllSet} = all set!</msg>
+<var>${HeadingAllSet}</var>
+<arg>${HeadingAllSet}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-20T17:16:47.267513" elapsed="0.008881"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${HeadingAllSet}</arg>
+<arg>all set!</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-20T17:16:47.276550" elapsed="0.000318"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ConfirmationDescription}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-20T17:16:47.277054" elapsed="0.007243"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-20T17:16:47.289694" level="INFO">Element '//p[@class='mt-[15px] text-center']' is displayed.</msg>
+<arg>${ConfirmationDescription}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-20T17:16:47.284428" elapsed="0.005364"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-20T17:16:47.295667" level="INFO">${ConfirmationDescription} = Check your email for your $5 off code, and get those undies you've been eyeing.</msg>
+<var>${ConfirmationDescription}</var>
+<arg>${ConfirmationDescription}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-20T17:16:47.289912" elapsed="0.005836"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${ConfirmationDescription}</arg>
+<arg>Check your email for your $5 off code, and get those undies you've been eyeing.</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-20T17:16:47.295883" elapsed="0.000179"/>
+</kw>
+<status status="PASS" start="2025-02-20T17:16:41.733714" elapsed="5.562410"/>
+</kw>
+<kw name="Confirm Visibility of Keep Shopping CTA &amp; Click" owner="Modal_TC004_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${KeepShoppingCTA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-20T17:16:47.296526" elapsed="0.007045"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-20T17:16:47.312769" level="INFO">Element '//button[@class='button button--primary mt-6 w-full']' is displayed.</msg>
+<arg>${KeepShoppingCTA}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-20T17:16:47.303704" elapsed="0.009276"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${KeepShoppingCTA}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-20T17:16:47.313349" elapsed="0.267269"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-20T17:16:47.580988" level="INFO">Clicking element '//button[@class='button button--primary mt-6 w-full']'.</msg>
+<arg>${KeepShoppingCTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-20T17:16:47.580790" elapsed="0.029057"/>
+</kw>
+<status status="PASS" start="2025-02-20T17:16:47.296319" elapsed="0.313707"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-19T16:40:06.463234" elapsed="0.192690"/>
+<status status="PASS" start="2025-02-20T17:16:47.610304" elapsed="0.179406"/>
 </kw>
-<status status="FAIL" start="2025-02-19T16:39:27.674519" elapsed="38.981567">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=133.0.6943.99)
-Stacktrace:
-0   chromedriver                        0x000000010119eb58 cxxbridge1$str$ptr + 2724820
-1   chromedriver                        0x00000001011971b8 cxxbridge1$str$ptr + 2693684
-2   chromedriver                        0x0000000100cfdafc cxxbridge1$string$len + 93348
-3   chromedriver                        0x0000000100cd74d4 chromedriver + 128212
-4   chromedriver                        0x0000000100d6cb24 cxxbridge1$string$len + 548044
-5   chromedriver                        0x0000000100d85694 cxxbridge1$string$len + 649276
-6   chromedriver                        0x0000000100d38ba0 cxxbridge1$string$len + 335176
-7   chromedriver                        0x0000000101167610 cxxbridge1$str$ptr + 2498188
-8   chromedriver                        0x000000010116a924 cxxbridge1$str$ptr + 2511264
-9   chromedriver                        0x000000010114ccb0 cxxbridge1$str$ptr + 2389292
-10  chromedriver                        0x000000010116b1cc cxxbridge1$str$ptr + 2513480
-11  chromedriver                        0x000000010113dc98 cxxbridge1$str$ptr + 2327828
-12  chromedriver                        0x0000000101187880 cxxbridge1$str$ptr + 2629884
-13  chromedriver                        0x0000000101187a08 cxxbridge1$str$ptr + 2630276
-14  chromedriver                        0x0000000101196e2c cxxbridge1$str$ptr + 2692776
-15  libsystem_pthread.dylib             0x0000000189999f94 _pthread_start + 136
-16  libsystem_pthread.dylib             0x0000000189994d34 thread_start + 8
-</status>
+<status status="PASS" start="2025-02-20T17:16:23.609994" elapsed="24.179904"/>
 </test>
-<status status="FAIL" start="2025-02-19T16:39:27.579437" elapsed="39.077283"/>
+<status status="PASS" start="2025-02-20T17:16:23.508308" elapsed="24.282152"/>
 </suite>
-<status status="FAIL" start="2025-02-19T16:39:27.578782" elapsed="39.078564"/>
+<status status="PASS" start="2025-02-20T17:16:23.507654" elapsed="24.283362"/>
 </suite>
-<status status="FAIL" start="2025-02-19T16:39:27.578013" elapsed="39.079703"/>
+<status status="PASS" start="2025-02-20T17:16:23.506945" elapsed="24.284457"/>
 </suite>
-<status status="FAIL" start="2025-02-19T16:39:27.568851" elapsed="39.089282"/>
+<status status="PASS" start="2025-02-20T17:16:23.496256" elapsed="24.295459"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Thinx-Automation1">Thinx-Automation1</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">Thinx-Automation1.Tests</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Checkout">Thinx-Automation1.Tests.Checkout</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Checkout TC001 Tests">Thinx-Automation1.Tests.Checkout.Checkout TC001 Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Thinx-Automation1">Thinx-Automation1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">Thinx-Automation1.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Modal">Thinx-Automation1.Tests.Modal</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Modal TC004 Tests">Thinx-Automation1.Tests.Modal.Modal TC004 Tests</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-02-19T16:40:06.433162" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=133.0.6943.99)
-Stacktrace:
-0   chromedriver                        0x000000010119eb58 cxxbridge1$str$ptr + 2724820
-1   chromedriver                        0x00000001011971b8 cxxbridge1$str$ptr + 2693684
-2   chromedriver                        0x0000000100cfdafc cxxbridge1$string$len + 93348
-3   chromedriver                        0x0000000100cd74d4 chromedriver + 128212
-4   chromedriver                        0x0000000100d6cb24 cxxbridge1$string$len + 548044
-5   chromedriver                        0x0000000100d85694 cxxbridge1$string$len + 649276
-6   chromedriver                        0x0000000100d38ba0 cxxbridge1$string$len + 335176
-7   chromedriver                        0x0000000101167610 cxxbridge1$str$ptr + 2498188
-8   chromedriver                        0x000000010116a924 cxxbridge1$str$ptr + 2511264
-9   chromedriver                        0x000000010114ccb0 cxxbridge1$str$ptr + 2389292
-10  chromedriver                        0x000000010116b1cc cxxbridge1$str$ptr + 2513480
-11  chromedriver                        0x000000010113dc98 cxxbridge1$str$ptr + 2327828
-12  chromedriver                        0x0000000101187880 cxxbridge1$str$ptr + 2629884
-13  chromedriver                        0x0000000101187a08 cxxbridge1$str$ptr + 2630276
-14  chromedriver                        0x0000000101196e2c cxxbridge1$str$ptr + 2692776
-15  libsystem_pthread.dylib             0x0000000189999f94 _pthread_start + 136
-16  libsystem_pthread.dylib             0x0000000189994d34 thread_start + 8
-</msg>
 </errors>
 </robot>

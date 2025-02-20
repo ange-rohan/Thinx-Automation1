@@ -11,8 +11,8 @@ ${ZipLine3}        //div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0
 ${PhoneLine}        [placeholder='Phone']
 ${Shipping Methods}    //div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem4v _1fragem47 _1fragem6o _1fragem60 _1fragem2s']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem4b _1fragem64 _1fragem2s']/div[contains(.,'Shipping methodChoose a shipping methodStandard Shipping5-7 days$7.00Priority Sh')]
 ${StandardShipping}    //p[.='Standard Shipping']
-${StandardShippingPrice}   //span[.='$7.00']
+${StandardShippingPrice}   //fieldset[@id='shipping_methods']//div[.='$7.00']
 ${PriorityShipping}    //p[.='Priority Shipping']
-${PriorityShippingPrice}    //span[.='$14.00']
+${PriorityShippingPrice}   //div[.='$14.00']
 ${PaymentOptionsCC}    //div[@id='basic-creditCards-collapsible']//div[@class='yyi4ny1b yyi4ny1d yyi4ny1f']
-
+${Shippingheader}    //h3[@class='n8k95w1 n8k95w0 _1fragemlj n8k95w3']

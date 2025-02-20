@@ -53,13 +53,16 @@ Enter Street Address on Checkout
 
 
 Validate Shipping Method
-    Execute Javascript    window.scrollTo(0,7000)
+    Execute JavaScript  document.getElementById ${Shippingheader}.scrollIntoView();
     Wait Until Element Is Visible    ${StandardShipping}
     Element Should Be Visible    ${StandardShipping}
+    Scroll Element Into View    ${StandardShippingPrice}
     Wait Until Element Is Visible    ${StandardShippingPrice}
     Element Should Be Visible    ${StandardShippingPrice}
+    Capture Page Screenshot
     Wait Until Element Is Visible    ${PriorityShipping}
     Element Should Be Visible    ${PriorityShipping}
+    Scroll Element Into View    ${PriorityShippingPrice}
     Wait Until Element Is Visible    ${PriorityShippingPrice}
     Element Should Be Visible    ${PriorityShippingPrice}
 

@@ -9,15 +9,15 @@ Open Thinx PDP
     File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/checkout/Checkout_TC002_Tests.robot:29
     T:  Open Thinx PDP    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/checkout/Checkout_TC002_Tests.robot:35
-      Navigate From Cart to Checkout    
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/checkout/Checkout_TC002_Tests.robot:41
+      Validate Shipping Method    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/Checkout/Checkout_TC001_Steps.robot:13
-      Scroll Element Into View    ${CheckoutCTA}
-      |  ${CheckoutCTA} = //a[@id='cart-checkout-button'] (str)
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/Checkout/Checkout_TC002_Steps.robot:63
+      Wait Until Element Is Visible    ${PriorityShippingPrice}
+      |  ${PriorityShippingPrice} = //span[.='$14.00'] (str)
 ______________________________________________________________________________
 | FAIL |
-Element with locator '//a[@id='cart-checkout-button']' not found.
+Element '//span[.='$14.00']' not visible after 5 seconds.
 ------------------------------------------------------------------------------
 Checkout.Checkout TC002 Tests                                         | FAIL |
 1 test, 0 passed, 1 failed
