@@ -8,7 +8,6 @@
 Library             SeleniumLibrary
 Resource          ../../resources.robot
 Resource          ../../pages/ForgotPassword/ForgotPassword_TC002_Pages.robot
-Resource          ../../pages/Registration/Registration_TC004_Pages.robot
 Test Setup        Open Thinx Homepage Using Chrome Browser
 Test Teardown     Close Browser
 

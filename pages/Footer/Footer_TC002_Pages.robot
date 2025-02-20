@@ -6,7 +6,7 @@ ${CustomerServiceHeader}    //h2[.='customer service']
 ${H1}                       //h1[@class='heading-1']
 ${ContactUs}                //div[@class='lg:flex lg:justify-between lg:gap-x-[144px] lg:gap-y-4 lg:flex-wrap']/div[@class='lg:w-[150px] hidden lg:block']//a[.='contact us']
 ${ContactUsURL}            https://www.thinx.com/pages/contact
-${FAQs}                    //div[@class='lg:flex lg:justify-between lg:gap-x-[144px] lg:gap-y-4 lg:flex-wrap']/div[@class='lg:w-[150px] hidden lg:block']//a[.='faqs']
+${FAQs}                    .body-3[href='/pages/faq']
 ${FAQsURL}                https://www.thinx.com/pages/faq
 ${ReviewsURL}             https://www.thinx.com/pages/reviews
 ${Reviews}                //div[@class='lg:flex lg:justify-between lg:gap-x-[144px] lg:gap-y-4 lg:flex-wrap']/div[@class='lg:w-[150px] hidden lg:block']//a[.='reviews']

@@ -10,7 +10,6 @@ Library             Dialogs
 Resource          ../../resources.robot
 Resource          ../../pages/CookieSettings/CookieSettings_TC004_Pages.robot
 Resource          ../../steps/CookieSettings/CookieSettings_TC004_Steps.robot
-Resource          ../../steps/PDP/PDP_TC004_Steps.robot
 Test Setup        Open Thinx Homepage Using Chrome Browser
 Test Teardown     Close Browser
 

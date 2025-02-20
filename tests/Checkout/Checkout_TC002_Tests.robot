@@ -6,10 +6,9 @@
 Library             SeleniumLibrary
 Resource          ../../resources.robot
 Resource          ../../pages/CookieSettings/CookieSettings_TC001_Pages.robot
-Resource          ../../steps/PDP/PDP_TC004_Steps.robot
+Resource          ../../steps/CookieSettings/CookieSettings_TC001_Steps.robot
 Resource          ../../pages/Cart/Cart_TC001_Pages.robot
 Resource          ../../steps/Cart/Cart_TC001_Steps.robot
-Resource          ../../steps/Cart/Cart_TC002_Steps.robot
 Resource          ../../steps/PDP/PDP_TC002_Steps.robot
 Resource          ../../steps/Checkout/Checkout_TC001_Steps.robot
 Resource          ../../steps/Checkout/Checkout_TC002_Steps.robot

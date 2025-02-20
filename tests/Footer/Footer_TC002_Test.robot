@@ -8,9 +8,9 @@
 Library             SeleniumLibrary
 Resource          ../../resources.robot
 Resource          ../../pages/CookieSettings/CookieSettings_TC001_Pages.robot
+Resource          ../../steps/CookieSettings/CookieSettings_TC001_Steps.robot
 Resource          ../../steps/Footer/Footer_TC001_Steps.robot
 Resource          ../../steps/Footer/Footer_TC002_Steps.robot
-Resource          ../../steps/PDP/PDP_TC004_Steps.robot
 Test Setup        Open Thinx Homepage Using Chrome Browser
 Test Teardown     Close Browser
 
@@ -18,7 +18,7 @@ Test Teardown     Close Browser
 Open Thinx
     Click Accept Cookies Button
     Sleep    5
-	Accept Cookies and Close Welcome Modal
+    Accept Cookies and Close Welcome Modal
 	Scroll to the Footer Section 
     Click 1st Set of Footer Links & Ensure They Direct to Correct Pages
     Validate Currency Selector Is Visible

@@ -12,7 +12,6 @@ Library             SeleniumLibrary     screenshot_root_directory=/Users/angelin
 Library             Dialogs
 Resource          ../../resources.robot
 Resource          ../../pages/CookieSettings/CookieSettings_TC003_Pages.robot
-Resource          ../../steps/PDP/PDP_TC004_Steps.robot
 Test Setup        Open Thinx Homepage Using Chrome Browser
 Test Teardown     Close Browser
 

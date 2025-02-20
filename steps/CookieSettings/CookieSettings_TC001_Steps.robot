@@ -5,6 +5,7 @@ Resource          ../../pages/CookieSettings/CookieSettings_TC001_Pages.robot
 *** Keywords ***
 Open Thinx
     Click Accept Cookies Button
+	Accept Cookies and Close Welcome Modal
 	Click on Cookie Settings
 	Validate brand logo and close icon
 	Validate title and description in cookie settings

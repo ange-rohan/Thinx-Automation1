@@ -3,12 +3,26 @@ Checkout
 ==============================================================================
 Checkout.Checkout TC002 Tests                                                 
 ==============================================================================
-Open Thinx PDP                                                        | PASS |
+Open Thinx PDP                                                          
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/checkout/Checkout_TC002_Tests.robot:29
+    T:  Open Thinx PDP    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/checkout/Checkout_TC002_Tests.robot:35
+      Navigate From Cart to Checkout    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/Checkout/Checkout_TC001_Steps.robot:13
+      Scroll Element Into View    ${CheckoutCTA}
+      |  ${CheckoutCTA} = //a[@id='cart-checkout-button'] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '//a[@id='cart-checkout-button']' not found.
 ------------------------------------------------------------------------------
-Checkout.Checkout TC002 Tests                                         | PASS |
-1 test, 1 passed, 0 failed
+Checkout.Checkout TC002 Tests                                         | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Checkout                                                              | PASS |
-1 test, 1 passed, 0 failed
+Checkout                                                              | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/pabot_results/1/output.xml

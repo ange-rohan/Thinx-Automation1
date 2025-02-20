@@ -12,12 +12,18 @@ ${CloseIcon}        xpath: //button[@class='ot-close-icon']
 ${SaveCTA}          css: #onetrust-consent-sdk .ot-pc-footer .save-preference-btn-handler
 ${ConsentPref}       css: #ot-pc-content .ot-cat-grp
 ${AcceptCookies}    //button[@id='onetrust-accept-btn-handler']
+${CloseModal}                   //button[@class='absolute right-3 top-3 [&>svg]:size-6']
 
 *** Keywords ***
 Click Accept Cookies Button
     Wait Until Element Is Visible     ${AcceptCookies}
 	Click Element    ${AcceptCookies}
 	Sleep    3
+
+Accept Cookies and Close Welcome Modal
+    Sleep    5
+    Wait Until Page Contains Element    ${CloseModal}
+    Click Element                        ${CloseModal}
 
 Click on Cookie Settings
     Execute Javascript    window.scrollTo(0,2000)

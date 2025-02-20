@@ -10,7 +10,6 @@
 Library             SeleniumLibrary     screenshot_root_directory=/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/results
 Resource          ../../resources.robot
 Resource          ../../pages/CookieSettings/CookieSettings_TC001_Pages.robot
-Resource          ../../steps/PDP/PDP_TC004_Steps.robot
 Test Setup        Open Thinx Homepage Using Chrome Browser
 Test Teardown     Close Browser
 

@@ -9,7 +9,6 @@ Library             SeleniumLibrary     screenshot_root_directory=/Users/angelin
 Resource          ../../resources.robot
 Resource          ../../pages/CookieSettings/CookieSettings_TC001_Pages.robot
 Resource          ../../steps/PDP/PDP_TC003_Steps.robot
-Resource          ../../steps/PDP/PDP_TC004_Steps.robot
 Test Setup        Open Thinx PDP Using Chrome Browser
 Test Teardown     Close Browser
 

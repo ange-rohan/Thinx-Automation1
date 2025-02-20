@@ -6,7 +6,6 @@
 Library             SeleniumLibrary
 Resource          ../../resources.robot
 Resource          ../../steps/HomePage/HomePage_TC003_Steps.robot
-Resource          ../../steps/PDP/PDP_TC004_Steps.robot
 Resource          ../../pages/CookieSettings/CookieSettings_TC001_Pages.robot
 Test Setup        Open Thinx Homepage Using Chrome Browser
 Test Teardown     Close Browser
