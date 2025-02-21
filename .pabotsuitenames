@@ -1,6 +1,7 @@
-datasources:204882ffd4b88412345d2f079f4d019f6e772722
+datasources:dd9b80e937d0f70c2cc9793e882859635e332d92
 commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
 suitesfrom:no-suites-from-option
-file:5240b83d86f48738b6941b30b600bfd756a14448
---suite Checkout.Checkout TC001 Tests
---suite Checkout.Checkout TC002 Tests
+file:ca76da6184a05c1697928c03a98be88f334e9e8a
+--suite Tests.Meganav.Meganav TC001 Tests
+--suite Tests.Meganav.Meganav TC002 Tests
+--suite Tests.Meganav.Meganav TC003 Tests
