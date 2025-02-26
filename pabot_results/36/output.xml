@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-25T10:30:04.303332" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
+<suite id="s1-s1" name="PDP" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/PDP">
+<suite id="s1-s1-s1" name="PDP TC003 Test" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/PDP/PDP_TC003_Test.robot">
+<test id="s1-s1-s1-t1" name="Open Thinx PDP" line="16">
+<kw name="Open Thinx PDP Using Chrome Browser" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:04.621398" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/products/period-all-night-ultra-soft-sleep-shorts?variant=40174028750920'.</msg>
+<arg>${ThinxPDP}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-25T10:30:04.621259" elapsed="5.789921"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-25T10:30:10.411920" elapsed="0.412303"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:15.827586" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:10.824411" elapsed="5.004384"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:04.620899" elapsed="11.208727"/>
+</kw>
+<kw name="Click Accept Cookies Button" owner="CookieSettings_TC001_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${AcceptCookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:15.832579" elapsed="0.050249"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:15.883200" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<arg>${AcceptCookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:15.882989" elapsed="0.101413"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:18.985276" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:15.984654" elapsed="3.000890"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:15.831019" elapsed="3.154754"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:23.987777" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:18.985978" elapsed="5.002713"/>
+</kw>
+<kw name="Accept Cookies and Close Welcome Modal" owner="CookieSettings_TC001_Pages">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:28.993021" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:23.990470" elapsed="5.002907"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${CloseModal}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-25T10:30:28.993756" elapsed="0.029236"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:29.023580" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
+<arg>${CloseModal}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:29.023298" elapsed="0.099351"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:23.989825" elapsed="5.134674"/>
+</kw>
+<kw name="Validate You Can Increase Quantity on PDP" owner="PDP_TC003_Steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:34.133860" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:29.127359" elapsed="5.007698"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${QuantitySelector}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-25T10:30:34.136548" elapsed="0.018235"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:34.169372" level="INFO">Element '//div[@class='w-[6.875rem] flex-none w-[6.875rem] flex-none']/div[@class='qty-input body-3 relative flex h-10 content-center justify-between rounded-3xl border px-5']' is displayed.</msg>
+<arg>${QuantitySelector}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:34.155083" elapsed="0.014448"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:34.188995" level="INFO">Element '//div[@class='w-[6.875rem] flex-none w-[6.875rem] flex-none']//button[2]' is displayed.</msg>
+<arg>${AddQuantity}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:34.169749" elapsed="0.019565"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:34.190145" level="INFO">Clicking element '//div[@class='w-[6.875rem] flex-none w-[6.875rem] flex-none']//button[2]'.</msg>
+<arg>${AddQuantity}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:34.189721" elapsed="0.069205"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:39.261141" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:34.259190" elapsed="5.002032"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${AddtoBagCTA}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-25T10:30:39.261349" elapsed="0.006653"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:39.275486" level="INFO">Element '//button[@class='button button--primary flex-1 whitespace-nowrap']' is displayed.</msg>
+<arg>${AddtoBagCTA}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:39.268122" elapsed="0.007436"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:39.275924" level="INFO">Clicking element '//button[@class='button button--primary flex-1 whitespace-nowrap']'.</msg>
+<arg>${AddtoBagCTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:39.275678" elapsed="0.083843"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:39.687953" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../results/selenium-screenshot-571.png"&gt;&lt;img src="../../results/selenium-screenshot-571.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-25T10:30:39.359793" elapsed="0.328236"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:29.125609" elapsed="10.562513"/>
+</kw>
+<kw name="Validate Cart Count on Add to Cart" owner="PDP_TC003_Steps">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${CartTotal}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-25T10:30:39.688615" elapsed="0.220444"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:44.911328" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:39.909227" elapsed="5.002198"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:44.911993" level="INFO">Verifying element '//div[@class='flex flex-col content-stretch gap-2 border-t border-t-brand-tangerine px-3 py-5 md:px-8']//div[.='$110']' contains exact text '$110'.</msg>
+<arg>${CartTotal}</arg>
+<arg>${Expected_Text_Cart_Total}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-02-25T10:30:44.911712" elapsed="0.011203"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-02-25T10:30:44.923062" elapsed="0.020314"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:39.688367" elapsed="5.255098"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-25T10:30:44.944377" elapsed="0.228801"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:04.620497" elapsed="40.552762"/>
+</test>
+<status status="PASS" start="2025-02-25T10:30:04.336720" elapsed="40.836939"/>
+</suite>
+<status status="PASS" start="2025-02-25T10:30:04.335147" elapsed="40.838837"/>
+</suite>
+<status status="PASS" start="2025-02-25T10:30:04.323299" elapsed="40.850878"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="PDP">Tests.PDP</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="PDP TC003 Test">Tests.PDP.PDP TC003 Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-02-25T10:30:04.617067" level="ERROR">Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/PDP/PDP_TC003_Steps.robot' on line 4: Setting 'Suite Setup' is not allowed in resource file.</msg>
+</errors>
+</robot>

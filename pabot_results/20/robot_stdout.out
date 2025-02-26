@@ -1,0 +1,53 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.HomePage                                                                
+==============================================================================
+Tests.HomePage.HomePage TC002 Test                                            
+==============================================================================
+Open Thinx Homepage Using Chrome Browser                                
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/HomePage/HomePage_TC002_Test.robot:13
+    T:  Open Thinx Homepage Using Chrome Browser    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/HomePage/HomePage_TC002_Test.robot:9
+      Open Thinx Homepage Using Chrome Browser    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/resources.robot:16
+      Open Browser    ${ThinxHomepage}    Chrome
+      |  ${ThinxHomepage} = https://www.thinx.com/ (str)
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+0   chromedriver                        0x00000001007feb58 cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x00000001007f71b8 cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x000000010035dafc cxxbridge1$string$len + 93348
+3   chromedriver                        0x0000000100390720 cxxbridge1$string$len + 301256
+4   chromedriver                        0x000000010038cdec cxxbridge1$string$len + 286612
+5   chromedriver                        0x00000001003d1efc cxxbridge1$string$len + 569508
+6   chromedriver                        0x00000001003d1770 cxxbridge1$string$len + 567576
+7   chromedriver                        0x0000000100398ba0 cxxbridge1$string$len + 335176
+8   chromedriver                        0x00000001007c7610 cxxbridge1$str$ptr + 2498188
+9   chromedriver                        0x00000001007ca924 cxxbridge1$str$ptr + 2511264
+10  chromedriver                        0x00000001007accb0 cxxbridge1$str$ptr + 2389292
+11  chromedriver                        0x00000001007cb1cc cxxbridge1$str$ptr + 2513480
+12  chromedriver                        0x000000010079dc98 cxxbridge1$str$ptr + 2327828
+13  chromedriver                        0x00000001007e7880 cxxbridge1$str$ptr + 2629884
+14  chromedriver                        0x00000001007e7a08 cxxbridge1$str$ptr + 2630276
+15  chromedriver                        0x00000001007f6e2c cxxbridge1$str$ptr + 2692776
+16  libsystem_pthread.dylib             0x0000000190f79f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000190f74d34 thread_start + 8
+------------------------------------------------------------------------------
+Tests.HomePage.HomePage TC002 Test                                    | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.HomePage                                                        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/pabot_results/20/output.xml

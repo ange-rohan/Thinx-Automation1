@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-25T10:28:39.551771" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
+<suite id="s1-s1" name="INTL" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/INTL">
+<suite id="s1-s1-s1" name="International TC001 Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/INTL/International_TC001_Tests.robot">
+<test id="s1-s1-s1-t1" name="Open Thinx" line="18">
+<kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:28:39.730416" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<arg>${ThinxHomepage}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-25T10:28:39.730258" elapsed="25.868712"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-25T10:29:05.599343" elapsed="0.439420"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:28:39.729692" elapsed="26.310511"/>
+</kw>
+<kw name="Click Accept Cookies Button" owner="CookieSettings_TC001_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${AcceptCookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:29:06.042515" elapsed="0.020008"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:29:06.063010" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<arg>${AcceptCookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:29:06.062738" elapsed="0.058492"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:29:09.123561" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:29:06.121619" elapsed="3.002035"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:29:06.041200" elapsed="3.082538"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:29:14.125228" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:29:09.124064" elapsed="5.001932"/>
+</kw>
+<kw name="Accept Cookies and Close Welcome Modal" owner="CookieSettings_TC001_Pages">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:29:19.134352" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:29:14.133712" elapsed="5.000835"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${CloseModal}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-25T10:29:19.134863" elapsed="0.033997"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:29:19.169725" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
+<arg>${CloseModal}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:29:19.169314" elapsed="0.075195"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:29:14.127473" elapsed="5.117666"/>
+</kw>
+<kw name="Scroll to the Footer Section" owner="Footer_TC001_Steps">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:29:19.247068" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-25T10:29:19.246213" elapsed="0.008455"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:29:24.257311" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:29:19.254970" elapsed="5.003534"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:29:19.245550" elapsed="5.013735"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-25T10:29:24.260429" elapsed="4.902963"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:28:39.728624" elapsed="49.434910"/>
+</test>
+<status status="PASS" start="2025-02-25T10:28:39.577214" elapsed="49.587174"/>
+</suite>
+<status status="PASS" start="2025-02-25T10:28:39.576559" elapsed="49.588974"/>
+</suite>
+<status status="PASS" start="2025-02-25T10:28:39.566860" elapsed="49.598901"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="INTL">Tests.INTL</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="International TC001 Tests">Tests.INTL.International TC001 Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

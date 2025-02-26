@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-25T10:29:32.892941" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
+<suite id="s1-s1" name="Modal" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Modal">
+<suite id="s1-s1-s1" name="Modal TC002 Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Modal/Modal_TC002_Tests.robot">
+<test id="s1-s1-s1-t1" name="Open Thinx Homepage Using Chrome Browser" line="16">
+<kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:29:33.733966" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<arg>${ThinxHomepage}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-25T10:29:33.733839" elapsed="12.647073"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-25T10:29:46.382309" elapsed="0.400226"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:29:33.733494" elapsed="13.049536"/>
+</kw>
+<kw name="Click Accept Cookies Button" owner="CookieSettings_TC001_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${AcceptCookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:29:46.784451" elapsed="0.050480"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:29:46.835597" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<arg>${AcceptCookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:29:46.835154" elapsed="0.081663"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:29:49.918108" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:29:46.917289" elapsed="3.000911"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:29:46.783758" elapsed="3.134529"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:29:54.919170" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:29:49.918383" elapsed="5.000995"/>
+</kw>
+<kw name="Validate Welcome Modal Displays" owner="Modal_TC001_Steps">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EntireModal}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-25T10:29:54.920219" elapsed="0.032764"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:29:54.970019" level="INFO">Element '//div[@class='modal rounded-5 bg-brand-light-beige relative']' is displayed.</msg>
+<arg>${EntireModal}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:29:54.953257" elapsed="0.016960"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:29:55.155995" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-1.png"&gt;&lt;img src="selenium-element-screenshot-1.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>${EntireModal}</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2025-02-25T10:29:54.970443" elapsed="0.185709"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:29:54.919708" elapsed="0.236593"/>
+</kw>
+<kw name="Trigger Modal Email Error Message" owner="Modal_TC002_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ModalEmailField}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:29:55.156900" elapsed="0.015758"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${ModalEmailField}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:29:55.172936" elapsed="0.012503"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:29:55.200023" level="INFO">Element '//input[@class='body-2 undefined w-full rounded-[30px] border border-solid border-default px-6 py-3 placeholder:text-default focus:border-default focus:outline-none focus:ring-2 focus:ring-default']' is displayed.</msg>
+<arg>${ModalEmailField}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:29:55.185703" elapsed="0.014520"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ContinueCTA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:29:55.200569" elapsed="0.013296"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${ContinueCTA}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:29:55.214147" elapsed="0.271481"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:29:55.486180" level="INFO">Clicking element '//button[@class='button button--primary w-full']'.</msg>
+<arg>${ContinueCTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:29:55.485870" elapsed="0.062208"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:29:55.156541" elapsed="0.391621"/>
+</kw>
+<kw name="Validate Email Field Error Message" owner="Modal_TC002_Steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:00.549392" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:29:55.548634" elapsed="5.000915"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ModalEmailFieldError}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:00.549680" elapsed="0.013450"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:00.573267" level="INFO">Element '//p[@id='emailHelp']' is displayed.</msg>
+<arg>${ModalEmailFieldError}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:00.563267" elapsed="0.010177"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:00.589659" level="INFO">${ModalEmailFieldError} = Please enter a valid email address.</msg>
+<var>${ModalEmailFieldError}</var>
+<arg>${ModalEmailFieldError}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:00.573739" elapsed="0.015984"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${ModalEmailFieldError}</arg>
+<arg>Please enter a valid email address.</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-25T10:30:00.589982" elapsed="0.000221"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:29:55.548285" elapsed="5.042083"/>
+</kw>
+<kw name="Validate Checkbox Error Message" owner="Modal_TC002_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CheckboxFieldError}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:00.590818" elapsed="0.011419"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:00.611833" level="INFO">Element '//p[@class='body-3 mt-1 text-center text-error']' is displayed.</msg>
+<arg>${CheckboxFieldError}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:00.602533" elapsed="0.009646"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:00.623742" level="INFO">${CheckboxFieldError} = Please check the box to acknowledge our terms and policies to continue.</msg>
+<var>${CheckboxFieldError}</var>
+<arg>${CheckboxFieldError}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:00.612505" elapsed="0.011326"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${CheckboxFieldError}</arg>
+<arg>Please check the box to acknowledge our terms and policies to continue.</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-25T10:30:00.624042" elapsed="0.000407"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:00.590598" elapsed="0.033982"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-25T10:30:00.624868" elapsed="3.772530"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:29:33.733115" elapsed="30.664680"/>
+</test>
+<status status="PASS" start="2025-02-25T10:29:32.948384" elapsed="31.450175"/>
+</suite>
+<status status="PASS" start="2025-02-25T10:29:32.947772" elapsed="31.451552"/>
+</suite>
+<status status="PASS" start="2025-02-25T10:29:32.933407" elapsed="31.466150"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Modal">Tests.Modal</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Modal TC002 Tests">Tests.Modal.Modal TC002 Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

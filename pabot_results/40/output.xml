@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-25T10:30:23.799490" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
+<suite id="s1-s1" name="Registration" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Registration">
+<suite id="s1-s1-s1" name="Registration TC001 Test" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Registration/Registration_TC001_Test.robot">
+<test id="s1-s1-s1-t1" name="Registration of Thinx" line="17">
+<kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:24.017091" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<arg>${ThinxHomepage}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-25T10:30:24.016921" elapsed="8.588364"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-25T10:30:32.609911" elapsed="0.411030"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:24.016381" elapsed="9.004899"/>
+</kw>
+<kw name="Click Accept Cookies Button" owner="CookieSettings_TC001_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${AcceptCookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:33.022555" elapsed="0.063907"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:33.087475" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<arg>${AcceptCookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:33.086921" elapsed="0.085996"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:36.174716" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:33.173239" elapsed="3.001694"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:33.021739" elapsed="3.153386"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:41.175740" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:36.175370" elapsed="5.000479"/>
+</kw>
+<kw name="Accept Cookies and Close Welcome Modal" owner="CookieSettings_TC001_Pages">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:46.179393" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:41.176533" elapsed="5.002975"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${CloseModal}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-25T10:30:46.179624" elapsed="0.012179"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:46.192055" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
+<arg>${CloseModal}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:46.191916" elapsed="0.034940"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:41.176130" elapsed="5.050976"/>
+</kw>
+<kw name="Registration Page Opened" owner="Registration_TC001_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SignInNav}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:46.227558" elapsed="0.010878"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${SignInNav}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:46.238563" elapsed="0.006428"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:46.245233" level="INFO">Clicking element '//header[@class='flex justify-between items-center px-3 h-[3.25rem] lg:h-14.5 lg:px-8 bg-white border-b border-b-brand-tangerine']//a[contains(.,'Sign in')]'.</msg>
+<arg>${SignInNav}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:46.245097" elapsed="0.029801"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:51.276147" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:46.275027" elapsed="5.001199"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CreateAccountLink}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:51.276343" elapsed="0.013143"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${CreateAccountLink}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:51.289603" elapsed="0.012357"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:51.302238" level="INFO">Clicking element '//a[contains(.,'Create account')]'.</msg>
+<arg>${CreateAccountLink}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:51.302084" elapsed="0.028354"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:46.227351" elapsed="5.103187"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:56.332764" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:51.330642" elapsed="5.002200"/>
+</kw>
+<kw name="Validate all the fields" owner="Registration_TC001_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${H1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.333226" elapsed="0.013147"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:56.351790" level="INFO">Element '//h1[@class='flex justify-center mb-8 heading-3']' is displayed.</msg>
+<arg>${H1}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.346507" elapsed="0.005338"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:56.360103" level="INFO">${h1_text} = Create account</msg>
+<var>${h1_text}</var>
+<arg>${H1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.351949" elapsed="0.008185"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${h1_text}</arg>
+<arg>Create account</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.360237" elapsed="0.000114"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Firstname}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.360410" elapsed="0.006857"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:56.372584" level="INFO">Element '//input[@id='RegisterForm-FirstName']' is displayed.</msg>
+<arg>${Firstname}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.367370" elapsed="0.005262"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Lastname}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.372720" elapsed="0.006639"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:56.384423" level="INFO">Element '//input[@id='RegisterForm-LastName']' is displayed.</msg>
+<arg>${Lastname}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.379603" elapsed="0.004862"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${RegisterEmailAddress}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.384541" elapsed="0.006210"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:56.395776" level="INFO">Element '//input[@id='RegisterForm-email']' is displayed.</msg>
+<arg>${RegisterEmailAddress}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.390855" elapsed="0.004971"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${RegisterPassword}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.395912" elapsed="0.006984"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:56.408002" level="INFO">Element '//input[@id='RegisterForm-password']' is displayed.</msg>
+<arg>${RegisterPassword}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.403010" elapsed="0.005040"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${DisclaimerText}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.408133" elapsed="0.006760"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:56.420199" level="INFO">Element '//div[@class='rte body-3 [&amp;_a]:body-3-bold']/p[contains(.,'By signing up, I affirm that I am at least 13 years old (14 years old for reside')]' is displayed.</msg>
+<arg>${DisclaimerText}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.414977" elapsed="0.005268"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${DisclaimerCheckbox}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.420345" elapsed="0.005961"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:56.430581" level="INFO">Element '//input[@id='registration_disclaimer']' is displayed.</msg>
+<arg>${DisclaimerCheckbox}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.426406" elapsed="0.004223"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SignInLink}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.430715" elapsed="0.006807"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:56.442539" level="INFO">Element '//form[@id='create_customer']/a[contains(.,'Sign in')]' is displayed.</msg>
+<arg>${SignInLink}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.437628" elapsed="0.004956"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:56.333020" elapsed="0.109614"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-25T10:30:56.442765" elapsed="0.184269"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:24.015835" elapsed="32.611281"/>
+</test>
+<status status="PASS" start="2025-02-25T10:30:23.823960" elapsed="32.803524"/>
+</suite>
+<status status="PASS" start="2025-02-25T10:30:23.823359" elapsed="32.804411"/>
+</suite>
+<status status="PASS" start="2025-02-25T10:30:23.815349" elapsed="32.812606"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Registration">Tests.Registration</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Registration TC001 Test">Tests.Registration.Registration TC001 Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

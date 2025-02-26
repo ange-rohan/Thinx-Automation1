@@ -1,0 +1,33 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Meganav                                                                 
+==============================================================================
+Tests.Meganav.Meganav TC003 Tests                                             
+==============================================================================
+Open Thinx Homepage Using Chrome Browser                                
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Meganav/Meganav_TC003_Tests.robot:20
+    T:  Open Thinx Homepage Using Chrome Browser    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Meganav/Meganav_TC003_Tests.robot:25
+      Validate Mobile Menu Options - High Level Elements    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/Meganav/Meganav_TC003_Steps.robot:22
+      Wait Until Element Is Visible    ${MobileMenuLogo}
+      |  ${MobileMenuLogo} = //div[@class='flex items-center w-[53px] [&>img]:w-full']/img[@alt='Thinx Inc.'] (str)
+______________________________________________________________________________
+| FAIL |
+Element '//div[@class='flex items-center w-[53px] [&>img]:w-full']/img[@alt='Thinx Inc.']' not visible after 5 seconds.
+------------------------------------------------------------------------------
+Tests.Meganav.Meganav TC003 Tests                                     | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.Meganav                                                         | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  /Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/pabot_results/29/output.xml

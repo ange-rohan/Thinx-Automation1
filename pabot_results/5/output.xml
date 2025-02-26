@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-25T10:26:23.986686" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
+<suite id="s1-s1" name="Checkout" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Checkout">
+<suite id="s1-s1-s1" name="Checkout TC002 Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Checkout/Checkout_TC002_Tests.robot">
+<test id="s1-s1-s1-t1" name="Open Thinx PDP" line="29">
+<kw name="Open Thinx PDP Using Chrome Browser" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:26:24.145083" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/products/period-all-night-ultra-soft-sleep-shorts?variant=40174028750920'.</msg>
+<arg>${ThinxPDP}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-25T10:26:24.144936" elapsed="19.106220"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-25T10:26:43.252457" elapsed="0.384287"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:26:48.646055" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:26:43.637354" elapsed="5.009091"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:26:24.144577" elapsed="24.502483"/>
+</kw>
+<kw name="Click Accept Cookies Button" owner="CookieSettings_TC001_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${AcceptCookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:26:48.648985" elapsed="0.043870"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:26:48.693705" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<arg>${AcceptCookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:26:48.693185" elapsed="0.129188"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:26:51.823662" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:26:48.822536" elapsed="3.001494"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:26:48.647885" elapsed="3.176500"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:26:56.827600" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:26:51.825277" elapsed="5.003431"/>
+</kw>
+<kw name="Accept Cookies and Close Welcome Modal" owner="CookieSettings_TC001_Pages">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:27:01.832700" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:26:56.831410" elapsed="5.001495"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${CloseModal}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-25T10:27:01.833316" elapsed="0.038550"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:01.874375" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
+<arg>${CloseModal}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:27:01.872386" elapsed="0.098375"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:26:56.830211" elapsed="5.140834"/>
+</kw>
+<kw name="Validate Add to Cart From PDP" owner="PDP_TC002_Steps">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FirstSize}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-25T10:27:01.972556" elapsed="0.035955"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:02.027824" level="INFO">Element '//div[@id='product-option-Size']//div[.='XS']' is displayed.</msg>
+<arg>${FirstSize}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:02.008769" elapsed="0.019180"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:02.028651" level="INFO">Clicking element '//div[@id='product-option-Size']//div[.='XS']'.</msg>
+<arg>${FirstSize}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:27:02.028179" elapsed="0.062216"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:27:04.092745" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:27:02.090651" elapsed="2.002472"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ColorSwatch}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-25T10:27:04.093650" elapsed="0.011809"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:04.131712" level="INFO">Element '//div[@id='product-option-Color']' is displayed.</msg>
+<arg>${ColorSwatch}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:04.105712" elapsed="0.026164"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:27:09.134225" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:27:04.132034" elapsed="5.002291"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${AddtoBagCTA}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-25T10:27:09.134491" elapsed="0.012920"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:09.159061" level="INFO">Element '//button[@class='button button--primary flex-1 whitespace-nowrap']' is displayed.</msg>
+<arg>${AddtoBagCTA}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:09.147624" elapsed="0.011616"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:09.159751" level="INFO">Clicking element '//button[@class='button button--primary flex-1 whitespace-nowrap']'.</msg>
+<arg>${AddtoBagCTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:27:09.159391" elapsed="0.166537"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:09.848008" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-25T10:27:09.326218" elapsed="0.522745"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:27:01.971905" elapsed="7.877476"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:27:14.851331" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:27:09.849651" elapsed="5.002317"/>
+</kw>
+<kw name="Navigate From Cart to Checkout" owner="Checkout_TC001_Steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:27:19.855270" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:27:14.854547" elapsed="5.001195"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:19.857242" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-25T10:27:19.856095" elapsed="0.019058"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${CheckoutCTA}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:27:19.875497" elapsed="0.297708"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CheckoutCTA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:20.174008" elapsed="0.015550"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:20.189992" level="INFO">Clicking element '//a[@id='cart-checkout-button']'.</msg>
+<arg>${CheckoutCTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:27:20.189724" elapsed="0.053000"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:27:14.852991" elapsed="5.389844"/>
+</kw>
+<kw name="Enter New Account Email on Checkout" owner="Checkout_TC002_Steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:27:25.245029" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:27:20.243207" elapsed="5.001899"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>locator=${ContactEmail}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:27:25.245231" elapsed="0.320678"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ContactEmail}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:25.566045" elapsed="0.007091"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${ContactEmail}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-25T10:27:25.573294" elapsed="0.009977"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:25.583610" level="INFO">Typing text 'testpurchase1@yopmail.com' into text field '//input[@id='email']'.</msg>
+<arg>${ContactEmail}</arg>
+<arg>${CheckoutEmail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:27:25.583423" elapsed="0.129638"/>
+</kw>
+<arg>${CheckoutEmail}</arg>
+<status status="PASS" start="2025-02-25T10:27:20.242980" elapsed="5.470229"/>
+</kw>
+<kw name="Enter First Name on Checkout" owner="Checkout_TC002_Steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:27:30.714688" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:27:25.713544" elapsed="5.001318"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${FirstName}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-25T10:27:30.715000" elapsed="0.024697"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>locator=${Firstname}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:27:30.740044" elapsed="0.272395"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:31.013168" level="INFO">Typing text 'Test' into text field '//div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='firstName']'.</msg>
+<arg>${Firstname}</arg>
+<arg>${FName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:27:31.012870" elapsed="0.077489"/>
+</kw>
+<arg>FName=${FName}</arg>
+<status status="PASS" start="2025-02-25T10:27:25.713335" elapsed="5.377233"/>
+</kw>
+<kw name="Enter Last Name on Checkout" owner="Checkout_TC002_Steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:27:36.092910" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:27:31.091805" elapsed="5.001284"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>locator=${Lastname}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:27:36.093212" elapsed="0.269257"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Lastname}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:36.362714" elapsed="0.007488"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${Lastname}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-25T10:27:36.370385" elapsed="0.007992"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:36.378682" level="INFO">Typing text 'Tweet' into text field '//div[@id='shippingAddressForm']//div[@class='_1ip0g651 _1ip0g650 _1fragemlj _1fragem3w _1fragem5p _1fragem2s']//input[@name='lastName']'.</msg>
+<arg>${Lastname}</arg>
+<arg>${LName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:27:36.378518" elapsed="0.072560"/>
+</kw>
+<arg>${LName}</arg>
+<status status="PASS" start="2025-02-25T10:27:31.091140" elapsed="5.360020"/>
+</kw>
+<kw name="Enter Street Address on Checkout" owner="Checkout_TC002_Steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:27:41.452526" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:27:36.451468" elapsed="5.001148"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>locator=${AddressLine1}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:27:41.452776" elapsed="0.271009"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${AddressLine1}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:41.723902" elapsed="0.006339"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${AddressLine1}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-25T10:27:41.730355" elapsed="0.007657"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:41.738261" level="INFO">Typing text '277 Gedney Hill Road' into text field '//div[@id='shippingAddressForm']//input[@class='_7ozb2uq _7ozb2up _1fragemlj _1fragemsv _1fragemof _1fragems1 _7ozb2ut _7ozb2us _1fragemsh _1fragemsc _1fragemsr _7ozb2uv _7ozb2uu _1fragemoz _1fragemp9 _7ozb2u11 _7ozb2u1h _7ozb2ur']'.</msg>
+<arg>${AddressLine1}</arg>
+<arg>${StreetAddress}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:27:41.738118" elapsed="0.067347"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:27:46.807349" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:27:41.805600" elapsed="5.001829"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${AddressDropdown}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:46.807595" elapsed="0.010725"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${AddressDropdown}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:27:46.818450" elapsed="0.264295"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:47.083027" level="INFO">Clicking element '//li[.='277 Gedney Hill Road, Coeymans Hollow, NY, USA']'.</msg>
+<arg>${AddressDropdown}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:27:47.082870" elapsed="0.026241"/>
+</kw>
+<arg>${StreetAddress}</arg>
+<status status="PASS" start="2025-02-25T10:27:36.451285" elapsed="10.657903"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:47.250376" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-25T10:27:47.109442" elapsed="0.141107"/>
+</kw>
+<kw name="Validate Shipping Method" owner="Checkout_TC002_Steps">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:47.251713" level="INFO">Executing JavaScript:
+document.getElementById //h3[@class='n8k95w1 n8k95w0 _1fragemlj n8k95w3'].scrollIntoView();
+Without any arguments.</msg>
+<arg>document.getElementById ${Shippingheader}.scrollIntoView();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-25T10:27:47.251310" elapsed="0.003635"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${StandardShipping}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:47.255065" elapsed="1.534685"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:48.799693" level="INFO">Element '//p[.='Standard Shipping']' is displayed.</msg>
+<arg>${StandardShipping}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:48.789937" elapsed="0.009831"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${StandardShippingPrice}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:27:48.799874" elapsed="0.269545"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${StandardShippingPrice}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:49.069540" elapsed="0.006918"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:49.083338" level="INFO">Element '//fieldset[@id='shipping_methods']//div[.='$7.00']' is displayed.</msg>
+<arg>${StandardShippingPrice}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:49.076603" elapsed="0.006797"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:49.195648" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-25T10:27:49.083525" elapsed="0.112206"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PriorityShipping}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:49.195855" elapsed="0.009220"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:49.212394" level="INFO">Element '//p[.='Priority Shipping']' is displayed.</msg>
+<arg>${PriorityShipping}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:49.205203" elapsed="0.007262"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${PriorityShippingPrice}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:27:49.212572" elapsed="0.271172"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PriorityShippingPrice}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:49.483898" elapsed="0.009072"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:49.501352" level="INFO">Element '//div[.='$14.00']' is displayed.</msg>
+<arg>${PriorityShippingPrice}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:49.493101" elapsed="0.008315"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:27:47.251006" elapsed="2.250473"/>
+</kw>
+<kw name="Validate Payment Information" owner="Checkout_TC002_Steps">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${PaymentOptionsCC}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:27:49.501752" elapsed="0.268938"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:49.777130" level="INFO">Element '//div[@id='basic-creditCards-collapsible']//div[@class='yyi4ny1b yyi4ny1d yyi4ny1f']' is displayed.</msg>
+<arg>${PaymentOptionsCC}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:49.770813" elapsed="0.006380"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:27:49.501587" elapsed="0.275670"/>
+</kw>
+<kw name="Validate Terms &amp; Pay Now Section" owner="Checkout_TC002_Steps">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:49.777797" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-25T10:27:49.777523" elapsed="0.004104"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${PayNowCTA}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:27:49.781835" elapsed="0.266171"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PayNowCTA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:50.048127" elapsed="0.006433"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:27:50.060859" level="INFO">Element '//button[@id='checkout-pay-button']' is displayed.</msg>
+<arg>${PayNowCTA}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:27:50.054684" elapsed="0.006237"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:27:49.777366" elapsed="0.283618"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-25T10:27:50.061158" elapsed="0.294781"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:26:24.144119" elapsed="86.211901"/>
+</test>
+<status status="PASS" start="2025-02-25T10:26:24.002352" elapsed="86.354081"/>
+</suite>
+<status status="PASS" start="2025-02-25T10:26:24.001943" elapsed="86.354881"/>
+</suite>
+<status status="PASS" start="2025-02-25T10:26:23.996575" elapsed="86.360535"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Checkout">Tests.Checkout</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Checkout TC002 Tests">Tests.Checkout.Checkout TC002 Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

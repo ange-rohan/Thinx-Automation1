@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-25T10:30:23.840325" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
+<suite id="s1-s1" name="Registration" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Registration">
+<suite id="s1-s1-s1" name="Registration TC002 Test" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Registration/Registration_TC002_Test.robot">
+<test id="s1-s1-s1-t1" name="Registration of Thinx" line="22">
+<kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:24.027467" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<arg>${ThinxHomepage}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-25T10:30:24.027046" elapsed="5.438619"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-25T10:30:29.466272" elapsed="0.463736"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:24.026356" elapsed="5.903861"/>
+</kw>
+<kw name="Click Accept Cookies Button" owner="CookieSettings_TC001_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${AcceptCookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:29.931112" elapsed="0.233961"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:30.165969" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<arg>${AcceptCookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:30.165531" elapsed="0.076449"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:33.244388" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:30.242276" elapsed="3.003474"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:29.930660" elapsed="3.317770"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:38.251472" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:33.249443" elapsed="5.002226"/>
+</kw>
+<kw name="Accept Cookies and Close Welcome Modal" owner="CookieSettings_TC001_Pages">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:43.253434" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:38.252902" elapsed="5.000643"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${CloseModal}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-25T10:30:43.253731" elapsed="0.013527"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:43.267575" level="INFO">Clicking element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']'.</msg>
+<arg>${CloseModal}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:43.267392" elapsed="0.029749"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:38.252020" elapsed="5.045213"/>
+</kw>
+<kw name="Registration Page Opened" owner="Registration_TC001_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SignInNav}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:43.297855" elapsed="0.013232"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${SignInNav}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:43.311230" elapsed="0.008670"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:43.320242" level="INFO">Clicking element '//header[@class='flex justify-between items-center px-3 h-[3.25rem] lg:h-14.5 lg:px-8 bg-white border-b border-b-brand-tangerine']//a[contains(.,'Sign in')]'.</msg>
+<arg>${SignInNav}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:43.320043" elapsed="0.042019"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:48.363064" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:43.362184" elapsed="5.000959"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CreateAccountLink}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:48.363267" elapsed="0.012132"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${CreateAccountLink}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:48.375510" elapsed="0.015479"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:48.391249" level="INFO">Clicking element '//a[contains(.,'Create account')]'.</msg>
+<arg>${CreateAccountLink}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:48.391109" elapsed="0.025271"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:43.297359" elapsed="5.119134"/>
+</kw>
+<kw name="Generate Timestamped Email" owner="Registration_TC002_Pages">
+<kw name="Get Time" owner="BuiltIn">
+<msg time="2025-02-25T10:30:48.417073" level="INFO">${timestamp} = 1740497448</msg>
+<var>${timestamp}</var>
+<arg>epoch</arg>
+<doc>Returns the given time in the requested format.</doc>
+<status status="PASS" start="2025-02-25T10:30:48.416894" elapsed="0.000196"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-02-25T10:30:48.417257" level="INFO">${RegisterEmail} = email+1740497448@mailinator.com</msg>
+<var>${RegisterEmail}</var>
+<arg>email+${timestamp}@${EMAIL_DOMAIN}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-02-25T10:30:48.417160" elapsed="0.000109"/>
+</kw>
+<return>
+<value>${RegisterEmail}</value>
+<status status="PASS" start="2025-02-25T10:30:48.417315" elapsed="0.000096"/>
+</return>
+<status status="PASS" start="2025-02-25T10:30:48.416693" elapsed="0.000775"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:53.418358" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:48.417516" elapsed="5.000915"/>
+</kw>
+<kw name="Enter First Name" owner="Registration_TC002_Pages">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:58.421564" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:53.418812" elapsed="5.003086"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${Firstname}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-25T10:30:58.422677" elapsed="0.049223"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>locator=${Firstname}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:30:58.472064" elapsed="0.268508"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:58.741629" level="INFO">Typing text 'Test' into text field '//input[@id='RegisterForm-FirstName']'.</msg>
+<arg>${Firstname}</arg>
+<arg>${FName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:58.740957" elapsed="0.112708"/>
+</kw>
+<arg>${Fname}</arg>
+<status status="PASS" start="2025-02-25T10:30:53.418601" elapsed="5.435364"/>
+</kw>
+<kw name="Enter Last Name" owner="Registration_TC002_Pages">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:31:03.855252" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:58.854367" elapsed="5.001078"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>locator=${Lastname}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:31:03.855740" elapsed="0.286617"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Lastname}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:31:04.142772" elapsed="0.015299"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${Lastname}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-25T10:31:04.158217" elapsed="0.009373"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:31:04.167889" level="INFO">Typing text 'Tweet' into text field '//input[@id='RegisterForm-LastName']'.</msg>
+<arg>${Lastname}</arg>
+<arg>${LName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:31:04.167715" elapsed="0.039779"/>
+</kw>
+<arg>${Lname}</arg>
+<status status="PASS" start="2025-02-25T10:30:58.854105" elapsed="5.353557"/>
+</kw>
+<kw name="Generate Timestamped Email" owner="Registration_TC002_Pages">
+<kw name="Get Time" owner="BuiltIn">
+<msg time="2025-02-25T10:31:04.208816" level="INFO">${timestamp} = 1740497464</msg>
+<var>${timestamp}</var>
+<arg>epoch</arg>
+<doc>Returns the given time in the requested format.</doc>
+<status status="PASS" start="2025-02-25T10:31:04.208458" elapsed="0.000378"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-02-25T10:31:04.209231" level="INFO">${RegisterEmail} = email+1740497464@mailinator.com</msg>
+<var>${RegisterEmail}</var>
+<arg>email+${timestamp}@${EMAIL_DOMAIN}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-02-25T10:31:04.209088" elapsed="0.000195"/>
+</kw>
+<return>
+<value>${RegisterEmail}</value>
+<status status="PASS" start="2025-02-25T10:31:04.209340" elapsed="0.000049"/>
+</return>
+<msg time="2025-02-25T10:31:04.209468" level="INFO">${RegisterEmail} = email+1740497464@mailinator.com</msg>
+<var>${RegisterEmail}</var>
+<status status="PASS" start="2025-02-25T10:31:04.207864" elapsed="0.001617"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:31:04.209886" level="INFO">Typing text 'email+1740497464@mailinator.com' into text field 'id=RegisterForm-email'.</msg>
+<arg>id=RegisterForm-email</arg>
+<arg>${RegisterEmail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:31:04.209555" elapsed="0.078559"/>
+</kw>
+<kw name="Enter New Account Email" owner="Registration_TC002_Pages">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:31:09.290210" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:31:04.288546" elapsed="5.001845"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>locator=${RegisterEmailAddress}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:31:09.290733" elapsed="0.285979"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${RegisterEmailAddress}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:31:09.577154" elapsed="0.015218"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${RegisterEmailAddress}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-25T10:31:09.592705" elapsed="0.015708"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:31:09.608945" level="INFO">Typing text 'email+1740497464@mailinator.com' into text field '//input[@id='RegisterForm-email']'.</msg>
+<arg>${RegisterEmailAddress}</arg>
+<arg>${RegisterEmail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:31:09.608609" elapsed="0.067882"/>
+</kw>
+<arg>${RegisterEmail}</arg>
+<status status="PASS" start="2025-02-25T10:31:04.288294" elapsed="5.388280"/>
+</kw>
+<kw name="Enter New Account Password" owner="Registration_TC002_Pages">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:31:14.677479" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:31:09.676966" elapsed="5.000759"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>locator=${RegisterPassword}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:31:14.678105" elapsed="0.279403"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${RegisterPassword}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:31:14.957821" elapsed="0.015645"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${RegisterPassword}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-25T10:31:14.973793" elapsed="0.016054"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:31:14.990283" level="INFO">Typing text 'Welcome@12345' into text field '//input[@id='RegisterForm-password']'.</msg>
+<arg>${RegisterPassword}</arg>
+<arg>${RegisterPwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:31:14.990038" elapsed="0.038584"/>
+</kw>
+<arg>${RegisterPwd}</arg>
+<status status="PASS" start="2025-02-25T10:31:09.676692" elapsed="5.352015"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:31:20.030213" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:31:15.028809" elapsed="5.001661"/>
+</kw>
+<kw name="Check Account Disclaimer Checkbox" owner="Registration_TC002_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${DisclaimerCheckbox}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:31:20.031336" elapsed="0.020118"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${DisclaimerCheckbox}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:31:20.051710" elapsed="0.017867"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:31:20.069995" level="INFO">Clicking element '//input[@id='registration_disclaimer']'.</msg>
+<arg>${DisclaimerCheckbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:31:20.069748" elapsed="0.039728"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:31:20.110474" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight / 2)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight / 2)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-25T10:31:20.109752" elapsed="0.014207"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CreateAccountCTA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:31:20.124232" elapsed="0.021386"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${CreateAccountCTA}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:31:20.145753" elapsed="0.007703"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:31:20.271156" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../results/selenium-screenshot-572.png"&gt;&lt;img src="../../results/selenium-screenshot-572.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-25T10:31:20.153588" elapsed="0.117739"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:31:20.271696" level="INFO">Clicking element '//button[@class='w-full button button--primary']'.</msg>
+<arg>${CreateAccountCTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:31:20.271511" elapsed="0.036610"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:31:20.030867" elapsed="0.277335"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-25T10:31:20.308395" elapsed="0.251665"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:24.025920" elapsed="56.534226"/>
+</test>
+<status status="PASS" start="2025-02-25T10:30:23.858415" elapsed="56.702124"/>
+</suite>
+<status status="PASS" start="2025-02-25T10:30:23.857809" elapsed="56.703028"/>
+</suite>
+<status status="PASS" start="2025-02-25T10:30:23.850743" elapsed="56.710290"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Registration">Tests.Registration</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Registration TC002 Test">Tests.Registration.Registration TC002 Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

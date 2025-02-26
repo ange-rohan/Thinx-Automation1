@@ -1,0 +1,3 @@
+[ ERROR ] Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/Cart/Cart_TC002_Steps.robot' on line 5: Resource file '../../pages/PDP/PDP_TC004_Pages.robot' does not exist.
+[ ERROR ] Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/Cart/Cart_TC003_Steps.robot' on line 5: Resource file '../../pages/PDP/PDP_TC004_Pages.robot' does not exist.
+[ ERROR ] Error in file '/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/steps/Cart/Cart_TC004_Steps.robot' on line 5: Resource file '../../pages/PDP/PDP_TC004_Pages.robot' does not exist.

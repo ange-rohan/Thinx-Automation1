@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-25T10:29:49.095575" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
+<suite id="s1-s1" name="Modal" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Modal">
+<suite id="s1-s1-s1" name="Modal TC003 Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Modal/Modal_TC003_Tests.robot">
+<test id="s1-s1-s1-t1" name="Open Thinx Homepage Using Chrome Browser" line="17">
+<kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:29:49.869875" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<arg>${ThinxHomepage}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-25T10:29:49.869724" elapsed="1.853930"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-25T10:29:51.724356" elapsed="2.250219"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:29:49.869333" elapsed="4.105622"/>
+</kw>
+<kw name="Reject All Cookies" owner="CookieSettings_TC004_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${RejectCookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:29:53.976281" elapsed="0.042110"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:29:54.040057" level="INFO">Element '//button[@id='onetrust-reject-all-handler']' is displayed.</msg>
+<arg>locator=${RejectCookies}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:29:54.018612" elapsed="0.021618"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:29:54.040956" level="INFO">Clicking element '//button[@id='onetrust-reject-all-handler']'.</msg>
+<arg>locator=${RejectCookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:29:54.040540" elapsed="0.081282"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:29:53.975579" elapsed="0.146413"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:29:59.124248" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:29:54.122189" elapsed="5.002264"/>
+</kw>
+<kw name="Validate Welcome Modal Displays" owner="Modal_TC001_Steps">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EntireModal}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-25T10:29:59.125221" elapsed="2.756191"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:01.892519" level="INFO">Element '//div[@class='modal rounded-5 bg-brand-light-beige relative']' is displayed.</msg>
+<arg>${EntireModal}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:01.881556" elapsed="0.011131"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:02.311738" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-1.png"&gt;&lt;img src="selenium-element-screenshot-1.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>${EntireModal}</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2025-02-25T10:30:01.892827" elapsed="0.419190"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:29:59.124759" elapsed="3.187455"/>
+</kw>
+<kw name="Trigger Cookies Error Message on Modal" owner="Modal_TC003_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ContinueCTA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:02.313073" elapsed="0.020571"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${ContinueCTA}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:30:02.333966" elapsed="0.276635"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:02.611486" level="INFO">Clicking element '//button[@class='button button--primary w-full']'.</msg>
+<arg>${ContinueCTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:02.611008" elapsed="0.054837"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:02.312532" elapsed="0.353540"/>
+</kw>
+<kw name="Review Cookies Error Messaging Content on Modal" owner="Modal_TC003_Steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:04.667285" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:02.666646" elapsed="2.000816"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ModalEmailFieldErrorCookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:04.667680" elapsed="0.012213"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:04.688548" level="INFO">Element '//p[@class='body-3 mt-1 text-center text-error']' is displayed.</msg>
+<arg>${ModalEmailFieldErrorCookies}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:04.680330" elapsed="0.008304"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:04.700472" level="INFO">${ModalEmailFieldErrorCookies} = Unable to complete request. Please review cookie settings.</msg>
+<var>${ModalEmailFieldErrorCookies}</var>
+<arg>${ModalEmailFieldErrorCookies}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:04.688775" elapsed="0.011725"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${ModalEmailFieldErrorCookies}</arg>
+<arg>Unable to complete request. Please review cookie settings.</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-25T10:30:04.700622" elapsed="0.000137"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:02.666371" elapsed="2.034430"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-25T10:30:04.700918" elapsed="0.398012"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:29:49.868752" elapsed="15.230368"/>
+</test>
+<status status="PASS" start="2025-02-25T10:29:49.214432" elapsed="15.885150"/>
+</suite>
+<status status="PASS" start="2025-02-25T10:29:49.212737" elapsed="15.887161"/>
+</suite>
+<status status="PASS" start="2025-02-25T10:29:49.197358" elapsed="15.902741"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Modal">Tests.Modal</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Modal TC003 Tests">Tests.Modal.Modal TC003 Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

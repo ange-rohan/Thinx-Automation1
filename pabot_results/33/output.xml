@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-02-25T10:29:50.991633" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests">
+<suite id="s1-s1" name="Modal" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Modal">
+<suite id="s1-s1-s1" name="Modal TC004 Tests" source="/Users/angeline.rohan/Desktop/QA Automation_Thinx.robot.py/ThinxAutomation1/Thinx-Automation1/tests/Modal/Modal_TC004_Tests.robot">
+<test id="s1-s1-s1-t1" name="Open Thinx Homepage Using Chrome Browser" line="22">
+<kw name="Open Thinx Homepage Using Chrome Browser" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:29:51.414885" level="INFO">Opening browser 'Chrome' to base url 'https://www.thinx.com/'.</msg>
+<arg>${ThinxHomepage}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-25T10:29:51.414482" elapsed="3.050590"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-25T10:29:54.472566" elapsed="4.817808"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:29:51.413533" elapsed="7.877058"/>
+</kw>
+<kw name="Click Accept Cookies Button" owner="CookieSettings_TC001_Pages">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${AcceptCookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:29:59.291404" elapsed="0.161856"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:29:59.454097" level="INFO">Clicking element '//button[@id='onetrust-accept-btn-handler']'.</msg>
+<arg>${AcceptCookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:29:59.453648" elapsed="0.066071"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:02.520362" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:29:59.519893" elapsed="3.000670"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:29:59.291062" elapsed="3.229751"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:07.523595" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:02.521086" elapsed="5.002928"/>
+</kw>
+<kw name="Enter Email Address on Welcome Modal" owner="Modal_TC004_Steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:12.526877" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:07.525669" elapsed="5.001776"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${ModalEmailField}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:30:12.528007" elapsed="0.303069"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ModalEmailField}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:12.831530" elapsed="0.015121"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${ModalEmailField}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-25T10:30:12.846935" elapsed="0.017596"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:12.865238" level="INFO">Typing text 'Test@test.com' into text field '//input[@class='body-2 undefined w-full rounded-[30px] border border-solid border-default px-6 py-3 placeholder:text-default focus:border-default focus:outline-none focus:ring-2 focus:ring-default']'.</msg>
+<arg>${ModalEmailField}</arg>
+<arg>${ModalEmail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:12.864814" elapsed="0.212719"/>
+</kw>
+<arg>ModalEmail=${ModalEmail}</arg>
+<status status="PASS" start="2025-02-25T10:30:07.524783" elapsed="5.553230"/>
+</kw>
+<kw name="Click Continue CTA on Modal" owner="Modal_TC004_Steps">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${ModalCheckbox}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:30:13.078549" elapsed="0.279545"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ModalCheckbox}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:13.358227" elapsed="0.012296"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:13.371231" level="INFO">Clicking element '//input[@id='registration_disclaimer']'.</msg>
+<arg>${ModalCheckbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:13.370874" elapsed="0.064069"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${ContinueCTA}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:30:13.435213" elapsed="0.279045"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ContinueCTA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:13.715194" elapsed="0.012628"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:13.728610" level="INFO">Clicking element '//button[@class='button button--primary w-full']'.</msg>
+<arg>${ContinueCTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:13.728219" elapsed="0.099416"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:13.078327" elapsed="0.749405"/>
+</kw>
+<kw name="Confirm Visibility of All Set Modal" owner="Modal_TC004_Steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-25T10:30:18.838170" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-25T10:30:13.830442" elapsed="5.008965"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ThinxLogo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:18.840946" elapsed="0.036249"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:18.949044" level="INFO">Element '//img[@alt='Thinx Logo']' is displayed.</msg>
+<arg>${ThinxLogo}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:18.877487" elapsed="0.071697"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ModalCloseX}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:18.949430" elapsed="0.021694"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:18.983743" level="INFO">Element '//button[@class='absolute right-3 top-3 [&amp;&gt;svg]:size-6']' is displayed.</msg>
+<arg>${ModalCloseX}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:18.971507" elapsed="0.012307"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:19.720337" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-25T10:30:18.983933" elapsed="0.736632"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HeadingAllSet}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:19.720954" elapsed="0.021251"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:19.758207" level="INFO">Element '//h2[@class='text-28 text-center']' is displayed.</msg>
+<arg>${HeadingAllSet}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:19.742473" elapsed="0.015877"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:19.776813" level="INFO">${HeadingAllSet} = all set!</msg>
+<var>${HeadingAllSet}</var>
+<arg>${HeadingAllSet}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:19.758635" elapsed="0.018235"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${HeadingAllSet}</arg>
+<arg>all set!</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-25T10:30:19.777237" elapsed="0.000369"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ConfirmationDescription}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:19.777812" elapsed="0.011476"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:19.801171" level="INFO">Element '//p[@class='mt-[15px] text-center']' is displayed.</msg>
+<arg>${ConfirmationDescription}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:19.789431" elapsed="0.011862"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:19.814748" level="INFO">${ConfirmationDescription} = Check your email for your $5 off code, and get those undies you've been eyeing.</msg>
+<var>${ConfirmationDescription}</var>
+<arg>${ConfirmationDescription}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:19.802556" elapsed="0.012251"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${ConfirmationDescription}</arg>
+<arg>Check your email for your $5 off code, and get those undies you've been eyeing.</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-02-25T10:30:19.815089" elapsed="0.000242"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:13.829249" elapsed="5.986266"/>
+</kw>
+<kw name="Confirm Visibility of Keep Shopping CTA &amp; Click" owner="Modal_TC004_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${KeepShoppingCTA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:19.816578" elapsed="0.015364"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:19.843711" level="INFO">Element '//button[@class='button button--primary mt-6 w-full']' is displayed.</msg>
+<arg>${KeepShoppingCTA}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-25T10:30:19.832192" elapsed="0.011621"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${KeepShoppingCTA}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-25T10:30:19.843973" elapsed="0.273536"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-25T10:30:20.117914" level="INFO">Clicking element '//button[@class='button button--primary mt-6 w-full']'.</msg>
+<arg>${KeepShoppingCTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-25T10:30:20.117684" elapsed="0.088920"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:30:19.816010" elapsed="0.390688"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-25T10:30:20.207406" elapsed="3.177426"/>
+</kw>
+<status status="PASS" start="2025-02-25T10:29:51.412615" elapsed="31.972617"/>
+</test>
+<status status="PASS" start="2025-02-25T10:29:51.051747" elapsed="32.334583"/>
+</suite>
+<status status="PASS" start="2025-02-25T10:29:51.050955" elapsed="32.335839"/>
+</suite>
+<status status="PASS" start="2025-02-25T10:29:51.037457" elapsed="32.349770"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Modal">Tests.Modal</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Modal TC004 Tests">Tests.Modal.Modal TC004 Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
